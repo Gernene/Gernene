@@ -1,3 +1,10 @@
+.gallery-gernene-2018 { background-image: url('../img/web/Gernene2018Home.png'); }
+.gallery-just-tangerine-2017 { background-image: url('../img/web/JustTangerine2017Home.png'); }
+.gallery-fhsgwc { background-image: url('../img/web/FHSGWCHome.png'); }
+.gallery-ogb { background-image: url('../img/web/OGBPost.png'); }
+.gallery-just-tangerine-2016 { background-image: url('../img/web/JustTangerine2016Home.png'); }
+.gallery-solisles { background-image: url('../img/web/SolislesHome.png'); }
+
 html {
   height: 100%;
   margin: 0;
@@ -52,6 +59,11 @@ h1, h2 {
   position: relative;
   text-align: center;
   z-index: 10;
+}
+
+#nav-top {
+  display: flex;
+  flex: 1;
 }
 
 #nav ul {
@@ -140,6 +152,7 @@ h1, h2 {
 }
 
 #footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #aaa;
   padding: 1.5% 5%;
   text-align: center;
@@ -290,7 +303,7 @@ h1, h2 {
 }
 
 #index-about {
-  padding: 7%;
+  padding: 5% 7%;
 }
 
 #index-links { text-align: center; }
@@ -418,8 +431,14 @@ h1, h2 {
 
 .list-item p { margin: 0; }
 
+.gallery-h1 {
+  margin: 2rem 4% 3rem 4%;
+  text-align: center;
+}
+
 .gallery-x {
   box-shadow: 0 .2rem 1rem .3rem rgba(0, 0, 0, .8);
+  margin: 0 0 2rem 0;
 }
 
 .gallery-row {
@@ -427,7 +446,8 @@ h1, h2 {
 }
 
 .gallery-item {
-  background: #ccc;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex: 1;
   height: 20rem;
@@ -436,15 +456,36 @@ h1, h2 {
 }
 
 .gallery-item-slide {
-  background: rgba(255, 255, 255, .6);
+  background: rgba(255, 255, 255, .8);
   color: #132a33;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   font-size: 1.4rem;
-  height: 80%;
-  padding: 10%;
-  position: absolute;
+  height: 100%;
+  position: relative;
+  text-align: center;
   top: 100%;
   transition: all ease .6s;
-  width: 80%;
+}
+
+.gallery-item-slide p {
+  flex: 1;
+  margin: 10% 10% 0 10%;
+}
+
+.gallery-item-slide a {
+  display: block;
+  border: 3px solid #132a33;
+  color: #132a33;
+  margin: 10%;
+  padding: .4rem;
+  transition: all ease .4s;
+}
+
+.gallery-item-slide a:hover {
+  background: #132a33;
+  color: #ddd;
 }
 
 .gallery-item:hover .gallery-item-slide { top: 0; }
@@ -480,6 +521,7 @@ h1, h2 {
 @media only screen and (max-width: 900px) {
 
 #nav {
+  display: block;
   padding: 0;
   position: fixed;
   text-align: right;
@@ -550,6 +592,12 @@ h1, h2 {
   height: 12rem;
 }
 
+.gallery-item-slide { font-size: 1.1rem; }
+
+.gallery-item-slide p { margin: 5%; }
+
+.gallery-item-slide a { margin: 5%; }
+
 }
 
 
@@ -591,5 +639,9 @@ body { font-size: 1.1rem; }
 .gallery-row {
   display: block;
 }
+
+.gallery-item-slide p { margin: 10% 10% 0 10%; }
+
+.gallery-item-slide a { margin: 10%; }
 
 }
