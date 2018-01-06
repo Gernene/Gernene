@@ -17,6 +17,11 @@ $(document).ready(function() {
     $('.gallery-viewer').hide();
   });
 
+  $('#contact h2').on('click', function() {
+    $(this).closest('div').find('.list-item-cont').slideToggle();
+    $(this).find('div').toggleClass('active');
+  });
+
   //Cache reference to window and animation items
   var $animation_elements = $('.animation-element');
   var $window = $(window);

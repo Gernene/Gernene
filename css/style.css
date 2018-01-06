@@ -312,6 +312,112 @@ h1, h2 {
 
 #index-links a:hover div { border-left: .8rem solid #0c82af; }
 
+#contact {
+  display: flex;
+  padding: 2% 7%;
+}
+
+#contact-info {
+  flex: 1;
+  margin: 0 5rem 0 0;
+}
+
+#contact-info h1 {
+  margin: 0 0 2rem 0;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+#contact form label { margin: 0 0 .2rem 0; }
+
+#contact form input,
+#contact form textarea {
+  background: #ddd;
+  border: none;
+  box-shadow: .1rem .1rem .5rem .1rem rgba(0, 0, 0, .8);
+  flex: 1, 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+  padding: .5rem;
+}
+
+#contact form textarea {
+  height: 15rem;
+}
+
+#contact form input[type="submit"] {
+  background: #bc4b00;
+  font-size: 1.4rem;
+  transition: all ease .4s;
+}
+
+#contact form input[type="submit"]:hover {
+  background: #992d00;
+  color: rgba(255, 255, 255, .7);
+  cursor: pointer;
+}
+
+#contact h2 {
+  background: #bc4b00;
+  box-shadow: .1rem .1rem .5rem .1rem rgba(0, 0, 0, .8);
+  display: flex;
+  margin: 2rem 0;
+  padding: .2rem .8rem;
+}
+
+#contact h2:hover {
+  background: #992d00;
+  cursor: pointer;
+  transition: all ease .4s;
+}
+
+#contact h2 div:first-child { flex: 1; }
+
+#contact h2 div:last-child {
+  background-image: url('../img/arrowWhite.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all ease .4s;
+  width: 2.5rem;
+}
+
+#contact h2 div:last-child.active {
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.list-item-cont { display: none; }
+
+.list-item {
+  display: flex;
+  margin: 0 0 2rem 0;
+}
+
+.list-item h3 { margin: 0 0 1rem 0; }
+
+.list-item div:first-child {
+  background: #bc4b00;
+  box-shadow: .1rem .1rem .5rem .1rem rgba(0, 0, 0, .8);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+}
+
+.list-item div:last-child {
+  flex: 1;
+  margin: 0 0 0 1rem;
+}
+
+.list-item p { margin: 0; }
+
 .gallery-x {
   box-shadow: 0 .2rem 1rem .3rem rgba(0, 0, 0, .8);
 }
@@ -432,6 +538,14 @@ h1, h2 {
   padding: 2rem 0 .5rem 0;
 }
 
+#contact { display: block; }
+
+#contact-info,
+#contact form {
+  width: auto;
+  margin: 0;
+}
+
 .gallery-item {
   height: 12rem;
 }
@@ -471,6 +585,8 @@ body { font-size: 1.1rem; }
 }
 
 #index-mountains { margin: 1rem 0 2rem 0; }
+
+#contact { padding: 1rem 4%; }
 
 .gallery-row {
   display: block;
