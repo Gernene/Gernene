@@ -356,6 +356,21 @@ h1, h2 {
   padding: 2% 7%;
 }
 
+#about-definitions {
+  background: #ddd;
+  box-shadow: .1rem .1rem .5rem .1rem rgba(0, 0, 0, .8);
+  color: #132a33;
+  display: flex;
+  margin: 2rem 0;
+}
+
+#about-definitions div {
+  flex: 1;
+  padding: 3% 5%;
+}
+
+#about-definitions div:first-child { border-right: 1px solid #ccc; }
+
 #contact-info {
   flex: 1;
   margin: 0 5rem 0 0;
