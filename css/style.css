@@ -341,6 +341,16 @@ h1, h2 {
 
 #index-links a:hover div { border-left: .8rem solid #0c82af; }
 
+#resume,
+#about { padding: 2% 7%; }
+
+#resume h1 {
+  align-items: center;
+  display: flex;
+}
+
+#resume span { flex: 1; }
+
 #contact {
   display: flex;
   padding: 2% 7%;
@@ -696,7 +706,9 @@ body { font-size: 1.1rem; }
 
 #index-mountains { margin: 1rem 0 2rem 0; }
 
-#contact { padding: 1rem 4%; }
+#contact,
+#resume,
+#about { padding: 1rem 4%; }
 
 .gallery-row {
   display: block;
