@@ -5,6 +5,19 @@
 .gallery-just-tangerine-2016 { background-image: url('../img/web/JustTangerine2016Home.png'); }
 .gallery-solisles { background-image: url('../img/web/SolislesHome.png'); }
 
+.gallery-creature-mask { background-image: url('../img/art/CreatureMask.png'); }
+.gallery-fire-dance { background-image: url('../img/art/FireDance.png'); }
+.gallery-hwona { background-image: url('../img/art/Hwona.png'); }
+.gallery-just-tangerine-logo-2016 {
+  background-color: #393939;
+  background-image: url('../img/art/JustTangerineLogo2016.png');
+}
+.gallery-dawn-of-keilien { background-image: url('../img/art/DawnoftheKeilien.png'); }
+.gallery-bride-of-blooms { background-image: url('../img/art/BrideofBlooms.png'); }
+.gallery-paradise-whemzel { background-image: url('../img/art/ParadiseWhemzelPainting.png'); }
+.gallery-rainbow-wallie { background-image: url('../img/art/RainbowWalliePainting.png'); }
+.gallery-wallie { background-image: url('../img/art/Wallie.png'); }
+
 html {
   height: 100%;
   margin: 0;
@@ -132,14 +145,17 @@ h1, h2 {
     transition: 0.4s;
 }
 
-.change .bar1 {
+.change .bar1,
+.gallery-viewer .bar1 {
     -webkit-transform: rotate(-45deg) translate(-.4rem, .4rem) ;
     transform: rotate(-45deg) translate(-.6rem, .6rem) ;
 }
 
-.change .bar2 { opacity: 0; }
+.change .bar2,
+.gallery-viewer .bar2 { opacity: 0; }
 
-.change .bar3 {
+.change .bar3,
+.gallery-viewer .bar3 {
     -webkit-transform: rotate(45deg) translate(-.5rem,-.5rem) ;
     transform: rotate(45deg) translate(-.5rem,-.5rem) ;
 }
@@ -431,12 +447,58 @@ h1, h2 {
 
 .list-item p { margin: 0; }
 
+.gallery-viewer {
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.gallery-viewer.active { display: flex; }
+
+.gallery-cross-cont { text-align: right; }
+
+.gallery-cross {
+  display: inline-block;
+  margin: 1rem;
+  transition: all ease .4s;
+}
+
+.gallery-cross:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.gallery-viewer-item {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem 4%;
+}
+
+.gallery-viewer-item img {
+  max-height: 50rem;
+  max-width: 60rem;
+}
+
 .gallery-h1 {
   margin: 2rem 4% 3rem 4%;
   text-align: center;
 }
 
+.gallery-art .gallery-item { transition: all ease .4s; }
+
+.gallery-art .gallery-item:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
 .gallery-x {
+  background: #ddd;
   box-shadow: 0 .2rem 1rem .3rem rgba(0, 0, 0, .8);
   margin: 0 0 2rem 0;
 }
@@ -456,7 +518,7 @@ h1, h2 {
 }
 
 .gallery-item-slide {
-  background: rgba(255, 255, 255, .8);
+  background: rgba(255, 255, 255, .9);
   color: #132a33;
   display: flex;
   flex: 1;

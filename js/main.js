@@ -5,8 +5,16 @@ $(document).ready(function() {
     $('#nav nav').slideToggle();
   }
 
-  $('.gallery-cross i').on('click', function() {
-    $('.gallery-viewer').hide();
+  $('.gallery-art .gallery-item').on('click', function() {
+    var id = $(this).attr("class").replace(" gallery-item", "").replace("gallery-", "");
+    var galleryView = ".gallery-viewer-item-" + id;
+    $('.gallery-viewer-item').hide();
+    $('.gallery-viewer').addClass("active");
+    $(galleryView).show();
+  });
+
+  $('.gallery-cross').on('click', function() {
+    $('.gallery-viewer').removeClass("active");
   });
 
   $('#contact h2').on('click', function() {
