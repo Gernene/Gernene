@@ -1,9 +1,9 @@
-.gallery-gernene-2018 { background-image: url('../img/web/Gernene2018Home.png'); }
-.gallery-just-tangerine-2017 { background-image: url('../img/web/JustTangerine2017Home.png'); }
-.gallery-fhsgwc { background-image: url('../img/web/FHSGWCHome.png'); }
-.gallery-ogb { background-image: url('../img/web/OGBPost.png'); }
-.gallery-just-tangerine-2016 { background-image: url('../img/web/JustTangerine2016Home.png'); }
-.gallery-solisles { background-image: url('../img/web/SolislesHome.png'); }
+.gallery-gernene-2018 { background-image: url('../img/web/gernene-2018-home.jpg'); }
+.gallery-just-tangerine-2017 { background-image: url('../img/web/just-tangerine-2017-home.jpg'); }
+.gallery-fhsgwc { background-image: url('../img/web/fhsgwc-home.jpg'); }
+.gallery-ogb { background-image: url('../img/web/ogb-home.jpg'); }
+.gallery-just-tangerine-2016 { background-image: url('../img/web/just-tangerine-2016-home.jpg'); }
+.gallery-solisles { background-image: url('../img/web/solisles-home.jpg'); }
 
 .gallery-creature-mask { background-image: url('../img/art/CreatureMask.png'); }
 .gallery-fire-dance { background-image: url('../img/art/FireDance.png'); }
@@ -370,6 +370,30 @@ h1, h2 {
 }
 
 #about-definitions div:first-child { border-right: 1px solid #ccc; }
+
+#web { padding: 0 7% 2% 7%; }
+
+#web-top { display: flex; }
+
+#web-top-info {
+  flex: 1;
+  flex-direction: column;
+  margin: 0 0 0 3rem;
+}
+
+#web-top-info p { margin: 0; }
+
+#monitors {
+  box-shadow: none !important;
+  height: 50%;
+  width: 50%;
+}
+
+#web img {
+  box-shadow: .1rem .1rem 1rem .1rem rgba(0, 0, 0, .3);
+  margin: 1rem 0;
+  max-width: 100%;
+}
 
 #contact-info {
   flex: 1;
