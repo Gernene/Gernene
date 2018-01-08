@@ -102,18 +102,14 @@ permalink: /contact/
   <div class="list-item">
     <div>2</div>
     <div>
-      <p>
-        Before I begin a project, I request an initial non-refundable deposit.
-      </p>
+      <p>I request an initial non-refundable deposit.</p>
     </div>
   </div>
 
   <div class="list-item">
     <div>3</div>
     <div>
-      <p>
-        All payments are non-refundable after final approval.
-      </p>
+      <p>All payments are non-refundable after final approval.</p>
     </div>
   </div>
 
@@ -142,14 +138,19 @@ permalink: /contact/
 
 </div>
 
-<form action="https://docs.google.com/forms/d/e/1FAIpQLSelruAlQ5tg5gsa36Bjt-hmb5sCoS-zVfVhtReyRiVV7jdtkg/formResponse">
+<form target="contact-iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSelruAlQ5tg5gsa36Bjt-hmb5sCoS-zVfVhtReyRiVV7jdtkg/formResponse">
+  <div id="contact-error">Please fill in all the fields.</div>
+  <div id="contact-success">Your message has been sent!</div>
+
   <label>Name:</label>
-  <input name="entry.1852039877" type="text"/>
+  <input id="contact-name" name="entry.1852039877" type="text"/>
   <label>Email:</label>
-  <input name="entry.336565433" type="text"/>
+  <input id="contact-email" name="entry.336565433" type="text"/>
   <label>Message:</label>
-  <textarea name="entry.899785974"></textarea>
-  <input class="btn" type="submit" value="Send">
+  <textarea id="contact-message" name="entry.899785974"></textarea>
+  <input id="contact-submit" class="btn" type="submit" value="Send">
 </form>
+
+<iframe name="contact-iframe" style="display: none;"></iframe>
 
 </div>

@@ -22,6 +22,21 @@ $(document).ready(function() {
     $(this).find('div').toggleClass('active');
   });
 
+  $('#contact-submit').on('click', function() {
+    if(!$("#contact-name").val() || !$("#contact-email").val() || !$("#contact-message").val()) {
+      $("#contact-error").show();
+      $("#contact-success").hide();
+    }
+    else {
+      $("#contact-error").hide();
+      $("#contact-success").show();
+      $("#contact-name").val("");
+      $("#contact-email").val("");
+      $("#contact-message").val("");
+    }
+    window.scrollTo(0, 0);
+  });
+
   //Cache reference to window and animation items
   var $animation_elements = $('.animation-element');
   var $window = $(window);
