@@ -5,6 +5,26 @@
   <meta name="description" content="I'm a web developer and designer who builds
   custom websites that are both beautiful and functional. Request a quote today!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.url }}/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.url }}/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.url }}/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.url }}/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="{{ site.url }}/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="{{ site.url }}/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="{{ site.url }}/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="{{ site.url }}/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="{{ site.url }}/mstile-310x310.png" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Spectral+SC:700,800|Fredericka+the+Great" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css">
   <script src="https://use.fontawesome.com/d9824fe07b.js"></script>
@@ -25,28 +45,7 @@
       <div class='bar3'></div>
     </div>
   </div>
-  <nav>
-    <ul>
-      <li>
-        <a href='/'>Home</a>
-      </li>
-      <li>
-        <a href='/about'>About</a>
-      </li>
-      <li>
-        <a href='/web'>Websites</a>
-      </li>
-      <li>
-        <a href='/art'>Art</a>
-      </li>
-      <li>
-        <a href='/resume'>Resume</a>
-      </li>
-      <li>
-        <a href='/contact'>Contact</a>
-      </li>
-    </ul>
-  </nav>
+  {% include nav.html %}
 </div>
 
 <div id="content">
@@ -59,6 +58,7 @@
     <a href="https://github.com/Gernene" target="blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
     <a href="https://www.instagram.com/gernene.tan" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
   </div>
+  {% include nav.html %}
 </div>
 
 </body>

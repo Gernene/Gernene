@@ -185,6 +185,16 @@ h1, h2 {
   padding: 0 .2rem;
 }
 
+#footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+#footer li {
+  display: inline-block;
+  padding: .5rem 1rem;
+}
+
 #intro {
   display: flex;
   padding: 4% 7% 7% 7%;
@@ -734,6 +744,13 @@ h1, h2 {
 @media only screen and (max-width: 500px) {
 
 body { font-size: 1.1rem; }
+
+#footer { text-align: left; }
+
+#footer nav li {
+  display: block;
+  padding: .5rem 0;
+}
 
 #intro {
   padding: 4% 4% 2rem 4%;
