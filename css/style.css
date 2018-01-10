@@ -1,22 +1,22 @@
-.gallery-gernene-2018 { background-image: url('../img/web/gernene-2018-home.jpg'); }
-.gallery-just-tangerine-2017 { background-image: url('../img/web/just-tangerine-2017-home.jpg'); }
-.gallery-fhsgwc { background-image: url('../img/web/fhsgwc-home.jpg'); }
-.gallery-ogb { background-image: url('../img/web/ogb-home.jpg'); }
-.gallery-just-tangerine-2016 { background-image: url('../img/web/just-tangerine-2016-home.jpg'); }
-.gallery-solisles { background-image: url('../img/web/solisles-home.jpg'); }
+.gallery-gernene-2018 { background-image: url('../img/web/thumb/gernene-2018-home.jpg'); }
+.gallery-just-tangerine-2017 { background-image: url('../img/web/thumb/just-tangerine-2017-home.jpg'); }
+.gallery-fhsgwc { background-image: url('../img/web/thumb/fhsgwc-home.jpg'); }
+.gallery-ogb { background-image: url('../img/web/thumb/ogb-home.jpg'); }
+.gallery-just-tangerine-2016 { background-image: url('../img/web/thumb/just-tangerine-2016-home.jpg'); }
+.gallery-solisles { background-image: url('../img/web/thumb/solisles-home.jpg'); }
 
-.gallery-creature-mask { background-image: url('../img/art/CreatureMask.png'); }
-.gallery-fire-dance { background-image: url('../img/art/FireDance.png'); }
-.gallery-hwona { background-image: url('../img/art/Hwona.png'); }
+.gallery-creature-mask { background-image: url('../img/art/thumb/creature-mask.jpg'); }
+.gallery-fire-dance { background-image: url('../img/art/thumb/fire-dance.jpg'); }
+.gallery-hwona { background-image: url('../img/art/thumb/hwona.jpg'); }
 .gallery-just-tangerine-logo-2016 {
   background-color: #393939;
-  background-image: url('../img/art/JustTangerineLogo2016.png');
+  background-image: url('../img/art/thumb/just-tangerine-2016-logo.jpg');
 }
-.gallery-dawn-of-keilien { background-image: url('../img/art/DawnoftheKeilien.png'); }
-.gallery-bride-of-blooms { background-image: url('../img/art/BrideofBlooms.png'); }
-.gallery-paradise-whemzel { background-image: url('../img/art/ParadiseWhemzelPainting.png'); }
-.gallery-rainbow-wallie { background-image: url('../img/art/RainbowWalliePainting.png'); }
-.gallery-wallie { background-image: url('../img/art/Wallie.png'); }
+.gallery-dawn-of-keilien { background-image: url('../img/art/thumb/dawn-of-the-keilien.jpg'); }
+.gallery-bride-of-blooms { background-image: url('../img/art/thumb/bride-of-blooms.jpg'); }
+.gallery-paradise-whemzel { background-image: url('../img/art/thumb/paradise-whemzel-painting.jpg'); }
+.gallery-rainbow-wallie { background-image: url('../img/art/thumb/rainbow-wallie-painting.jpg'); }
+.gallery-wallie { background-image: url('../img/art/thumb/wallie.jpg'); }
 
 html {
   height: 100%;
