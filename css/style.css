@@ -793,4 +793,13 @@ body { font-size: 1.1rem; }
 
 .gallery-item-slide a { margin: 10%; }
 
+#web-top { display: block; }
+
+#monitors {
+  display: block;
+  width: 100%;
+}
+
+#web-top-info { margin: 0; }
+
 }
