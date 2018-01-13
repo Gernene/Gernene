@@ -373,7 +373,8 @@ h1, h2 {
 
 #contact-error,
 #contact-success {
-  box-shadow: .1rem .1rem .5rem .1rem rgba(0, 0, 0, .8);
+  border-radius: 5px;
+  box-shadow: .1rem .1rem .4rem .05rem rgba(0, 0, 0, .3);
   display: none;
   margin: 0 0 2rem 0;
   padding: 1rem;
@@ -381,13 +382,13 @@ h1, h2 {
 }
 
 #contact-error {
-  background: #ef8570;
-  color: #490c00;
+  background: #ff927f;
+  color: #8c1400;
 }
 
 #contact-success {
-  background: #dee5b0;
-  color: #2c3300;
+  background: #d8ef9e;
+  color: #477000;
 }
 
 #about-definitions {
