@@ -25,9 +25,9 @@ html {
 }
 
 body {
-  background: #132a33;
-  color: #ccc;
-  font-family: 'Open Sans', sans-serif;
+  background: #EBFBFB;
+  color: #162F3F;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   height: 100%;
   margin: 0;
@@ -35,21 +35,21 @@ body {
 }
 
 a {
-  color: #1794c4;
+  color: #E3573B;
   text-decoration: none;
   transition: all ease .4s;
 }
 
-a:hover { color: #0c82af; }
+a:hover { color: #FF8D49; }
 
 h1, h2 {
-  font-family: "Spectral SC", cursive;
+  font-family: "Julius Sans One", cursive;
 }
 
 .btn {
-  background: #bc4b00;
-  box-shadow: .1rem .1rem .5rem .1rem rgba(0, 0, 0, .8);
-  color: #ccc;
+  background: #E3573B;
+  box-shadow: -.1rem -.1rem .3rem .1rem rgba(255, 141, 73, .4), .1rem .1rem .4rem .1rem rgba(56, 213, 217, .4);
+  color: #EBFBFB;
   display: inline-block;
   margin: 2rem 0 0 0;
   padding: .5rem 1rem;
@@ -57,17 +57,17 @@ h1, h2 {
 }
 
 .btn:hover {
-  background: #992d00;
-  color: rgba(255, 255, 255, .7);
+  background: #FF8D49;
+  color: #EBFBFB;
 }
 
 #nav {
-  background: #bc4b00;
-  border-bottom: 1px solid rgba(0, 0, 0, .5);
-  box-shadow: 0 0 1rem .3rem rgba(0, 0, 0, .8);
+  background: #162F3F;
+  box-shadow: 0 0 .6rem .1rem #10AEBD;
   display: flex;
-  font-family: 'Spectral SC', serif;
+  font-family: 'Julius Sans One', serif;
   font-size: 1.4rem;
+  font-weight: bold;
   padding: 0 2rem;
   position: relative;
   text-align: center;
@@ -99,7 +99,7 @@ h1, h2 {
 
 #nav li a:hover {
   color: rgba(255, 255, 255, .7);
-  background: #992d00;
+  background: #486E87;
 }
 
 #nav-sm {
@@ -123,7 +123,7 @@ h1, h2 {
 
 #nav-sm a:hover .fa {
   color: rgba(255, 255, 255, .7);
-  background: #992d00;
+  background: #486E87;
   border: 2px solid rgba(255, 255, 255, .7);
 }
 
@@ -198,6 +198,7 @@ h1, h2 {
 #intro {
   display: flex;
   padding: 4% 7% 7% 7%;
+  position: relative;
 }
 
 #intro-right,
@@ -220,19 +221,20 @@ h1, h2 {
 #intro-right { flex-direction: column; }
 
 #intro-right div {
-  background: rgba(19, 42, 51, .5);
-  animation: .5s ease-out 1s 1 slideDown forwards;
+  background: rgba(235, 251, 251, .5);
+  animation: .5s ease-out 1.5s 1 slideDown forwards;
   transform: translateY(-10rem);
 }
 
 #intro-right a {
-  animation: 2s ease-out 2s 1 fadeIn forwards;
+  animation: 2s ease-out 2.5s 1 fadeIn forwards;
   opacity: 0;
 }
 
 #intro-hello {
+  color: #486E87;
   flex-direction: column;
-  font-family: 'Spectral SC', cursive;
+  font-family: 'Julius Sans One', sans-serif;
   overflow: hidden;
 }
 
@@ -255,41 +257,40 @@ h1, h2 {
 #index-angies { background: #bc4b00; }
 #index-art { background: #004b68; }
 
-#index-stripe1 {
-	width: 100%;
-	height: 2vw;
-	transform: rotate(-50deg) skew(40deg);
-	background: #ccc;
+#index-bubble1 {
+  border-radius: 50%;
+	width: 9rem;
+	height: 9rem;
+	background: #38D5D9;
   position: absolute;
-  left: 52vw;
-  opacity: .5;
-  transform: translate(100%, 100%);
-  animation: 1s ease-out 0s 1 slideStripe forwards;
+  left: 90%;
+  opacity: 0;
+  top: 10%;
+  animation: 3s ease-out 1s 1 popBubble forwards;
 }
 
-#index-stripe2 {
-	width: 100%;
-	height: 1.2vw;
-	transform: rotate(-50deg) skew(40deg);
-	background: #ccc;
+#index-bubble2 {
+  border-radius: 50%;
+	width: 6rem;
+	height: 6rem;
+	background: #38D5D9;
+  opacity: 0;
   position: absolute;
-  left: 58vw;
-  opacity: .6;
-  transform: translate(100%, 100%);
-  animation: 1.2s ease-out 0s 1 slideStripe forwards;
+  left: 30%;
+  top: 80%;
+  animation: 1.5s ease-out .2s 1 popBubble forwards;
 }
 
-#index-stripe3 {
-	width: 14%;
-  margin: 0 43%;
-	height: 1.6vw;
-	background: #bc4b00;
+#index-bubble3 {
+  border-radius: 50%;
+	width: 4rem;
+	height: 4rem;
+	background: #38D5D9;
   position: absolute;
-  top: 15vw;
-  left: 42.5vw;
-  opacity: .6;
-  transform: translate(200%, 100%);
-  animation: .5s ease-out 0s 1 slideStripe forwards;
+  left: 0%;
+  top: 5%;
+  opacity: 0;
+  animation: 1s ease-out 0s 1 popBubble forwards;
 }
 
 #index-mountains {
@@ -306,14 +307,14 @@ h1, h2 {
 	height: 0;
 	border-left: 5rem solid transparent;
 	border-right: 5rem solid transparent;
-	border-bottom: 5rem solid rgba(255, 255, 255, .5);
+	border-bottom: 5rem solid rgba(22, 47, 63, .5);
 }
 
 #index-mountains div:last-child {
   position: absolute;
   top: 0;
   padding: 3rem;
-  background: #bc4b00;
+  background: #FF8D49;
   border: none;
   border-radius: 50%;
   width: auto;
@@ -324,7 +325,7 @@ h1, h2 {
 }
 
 #index-mountains div:last-child.in-view {
-  opacity: .6;
+  opacity: .8;
   transform: translate3d(0, 0, 0);
 }
 
@@ -344,12 +345,12 @@ h1, h2 {
 #index-links a div {
   border-top: .5rem solid transparent;
 	border-bottom: .5rem solid transparent;
-	border-left: .8rem solid #1794c4;
+	border-left: .8rem solid #E3573B;
   margin: 0 0 0 1rem;
   transition: all ease .4s;
 }
 
-#index-links a:hover div { border-left: .8rem solid #0c82af; }
+#index-links a:hover div { border-left: .8rem solid #FF8D49; }
 
 #resume,
 #about { padding: 2% 7%; }
@@ -398,7 +399,7 @@ h1, h2 {
   padding: 3% 5%;
 }
 
-#about-definitions div:first-child { border-right: 1px solid #ccc; }
+#about-definitions div:first-child { border-right: 1px solid #EBFBFB; }
 
 #web { padding: 0 7% 2% 7%; }
 
@@ -447,7 +448,7 @@ h1, h2 {
   border: none;
   box-shadow: .1rem .1rem .5rem .1rem rgba(0, 0, 0, .8);
   flex: 1, 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   margin: 0 0 1rem 0;
   padding: .5rem;
@@ -576,9 +577,7 @@ h1, h2 {
 }
 
 .gallery-x {
-  background: #ddd;
-  box-shadow: 0 .2rem 1rem .3rem rgba(0, 0, 0, .8);
-  margin: 0 0 2rem 0;
+  padding: 0 2rem;
 }
 
 .gallery-row {
@@ -588,12 +587,18 @@ h1, h2 {
 .gallery-item {
   background-position: center;
   background-size: cover;
+  box-shadow: .1rem .1rem .4rem .05rem rgba(0, 0, 0, .3);
   display: flex;
   flex: 1;
   height: 20rem;
   overflow: hidden;
+  margin: 1rem;
   position: relative;
 }
+
+.gallery-item:first-child { margin-left: 0; }
+
+.gallery-item:last-child { margin-right: 0; }
 
 .gallery-item-slide {
   background: rgba(255, 255, 255, .9);
@@ -639,12 +644,13 @@ h1, h2 {
   }
 }
 
-@keyframes slideStripe {
-  0% {
-    transform: translate(100%, 100%) rotate(-50deg) skew(40deg);
+@keyframes popBubble {
+  10% {
+  opacity: .5;
   }
   100% {
-    transform: translate(0, 0) rotate(-50deg) skew(40deg);
+    opacity: 0;
+    transform: scale(1.5, 1.5);
   }
 }
 
