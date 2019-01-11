@@ -171,15 +171,15 @@ h1, h2 {
 }
 
 #footer {
-  border-top: 1px solid #38D5D9;
-  color: #38D5D9;
+  border-top: 1px solid #486E87;
+  color: #486E87;
   padding: 1.5% 5%;
   text-align: center;
 }
 
 #footer-sm { padding: .5rem 0; }
 
-#footer-sm a { color: #38D5D9; }
+#footer-sm a { color: #486E87; }
 
 #footer-sm a:hover { opacity: .5; }
 
@@ -804,6 +804,14 @@ body { font-size: 1.1rem; }
 #contact,
 #resume,
 #about { padding: 1rem 4%; }
+
+#about-definitions {
+  display: block;
+}
+
+#about-definitions div:first-child {
+  border-bottom: 1px solid rgba(22, 47, 63, .2);
+}
 
 .gallery-x { padding: 0; }
 
