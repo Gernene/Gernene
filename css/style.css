@@ -1,3 +1,5 @@
+.gallery-jsc { background-image: url('../img/web/thumb/jsc-home.jpg'); }
+.gallery-ddcc { background-image: url('../img/web/thumb/ddcc-home.jpg'); }
 .gallery-gernene-2018 { background-image: url('../img/web/thumb/gernene-2018-home.jpg'); }
 .gallery-just-tangerine-2017 { background-image: url('../img/web/thumb/just-tangerine-2017-home.jpg'); }
 .gallery-fhsgwc { background-image: url('../img/web/thumb/fhsgwc-home.jpg'); }
@@ -428,6 +430,21 @@ h1, h2 {
   max-width: 100%;
 }
 
+.web-vid {
+  border-radius: 5px;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  width: 30rem
+}
+
+.web-vid iframe {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 #contact-info {
   flex: 1;
   margin: 0 5rem 0 0;
@@ -758,6 +775,20 @@ h1, h2 {
 
 .gallery-item-slide a { margin: 5%; }
 
+#web-top { display: block; }
+
+#monitors {
+  display: block;
+  width: 100%;
+}
+
+#web-top-info { margin: 0; }
+
+.web-vid {
+  margin: 0 0 1rem 0;
+  width: auto;
+}
+
 }
 
 
@@ -824,14 +855,5 @@ body { font-size: 1.1rem; }
 .gallery-item-slide p { margin: 10% 10% 0 10%; }
 
 .gallery-item-slide a { margin: 10%; }
-
-#web-top { display: block; }
-
-#monitors {
-  display: block;
-  width: 100%;
-}
-
-#web-top-info { margin: 0; }
 
 }
