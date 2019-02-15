@@ -34,32 +34,36 @@
 </head>
 <body>
 
-<div id="nav">
-  <div id="nav-top">
-    <div id="nav-sm">
+<div class="wrapper">
+
+  <div id="nav">
+    <div id="nav-top">
+      <div id="nav-sm">
+        <a href="https://github.com/Gernene" target="blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/gernene.tan" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <div id='hamburger' onclick='hamburger(this)'>
+        <div class='bar1'></div>
+        <div class='bar2'></div>
+        <div class='bar3'></div>
+      </div>
+    </div>
+    {% include nav.html %}
+  </div>
+
+  <div id="content">
+    {{ content }}
+  </div>
+
+  <div id="footer">
+    &copy; Gernene 2016-2019
+    <div id="footer-sm">
       <a href="https://github.com/Gernene" target="blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
       <a href="https://www.instagram.com/gernene.tan" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
     </div>
-    <div id='hamburger' onclick='hamburger(this)'>
-      <div class='bar1'></div>
-      <div class='bar2'></div>
-      <div class='bar3'></div>
-    </div>
+    {% include nav.html %}
   </div>
-  {% include nav.html %}
-</div>
 
-<div id="content">
-  {{ content }}
-</div>
-
-<div id="footer">
-  &copy; Gernene 2016-2019
-  <div id="footer-sm">
-    <a href="https://github.com/Gernene" target="blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-    <a href="https://www.instagram.com/gernene.tan" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-  </div>
-  {% include nav.html %}
 </div>
 
 </body>
