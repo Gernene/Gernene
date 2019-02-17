@@ -6,6 +6,9 @@
 .gallery-ogb { background-image: url('../img/web/thumb/ogb-home.jpg'); }
 .gallery-just-tangerine-2016 { background-image: url('../img/web/thumb/just-tangerine-2016-home.jpg'); }
 .gallery-solisles { background-image: url('../img/web/thumb/solisles-home.jpg'); }
+.gallery-silent-auction { background: linear-gradient(to bottom right, #7c003c, #ff8c5b); }
+.gallery-fhs { background: linear-gradient(to bottom right, #2c0042, #5edeff); }
+.gallery-jelly-do { background: linear-gradient(to bottom right, #008996, #d5ff7c); }
 
 .gallery-creature-mask { background-image: url('../img/art/thumb/creature-mask.jpg'); }
 .gallery-fire-dance { background-image: url('../img/art/thumb/fire-dance.jpg'); }
@@ -38,13 +41,13 @@ body {
 }
 
 .wrapper {
-  box-shadow: 0 0 .4rem .1rem rgba(0, 0, 0, .3);
   max-width: 1500px;
   overflow-x: hidden;
+  width: 100%;
 }
 
 a {
-  color: #E3573B;
+  color: #f4694a;
   text-decoration: none;
   transition: all ease .4s;
 }
@@ -58,10 +61,10 @@ h1, h2 {
 }
 
 .btn {
-  background: #E3573B;
-  border-radius: 5px;
+  background: #f4694a;
+  border-radius: 2rem;
   box-shadow: -.1rem -.1rem .3rem .1rem rgba(255, 141, 73, .4), .1rem .1rem .4rem .1rem rgba(56, 213, 217, .4);
-  color: #EBFBFB;
+  color: #fff;
   display: inline-block;
   margin: 2rem 0 0 0;
   padding: .5rem 1rem;
@@ -70,7 +73,7 @@ h1, h2 {
 
 .btn:hover {
   background: #FF8D49;
-  color: #EBFBFB;
+  color: #fff;
 }
 
 #nav {
@@ -92,6 +95,7 @@ h1, h2 {
 }
 
 #nav ul {
+  display: inline-flex;
   margin: 0;
   padding: 0;
 }
@@ -105,7 +109,7 @@ h1, h2 {
   color: #ddd;
   display: inline-block;
   flex: 1;
-  padding: .8rem 1.2rem;
+  padding: .8rem 1.5rem;
   transition: all ease .4s;
 }
 
@@ -343,7 +347,7 @@ h1, h2 {
 }
 
 #index-about {
-  padding: 5% 7%;
+  padding: 5% 15%;
 }
 
 #index-links { text-align: center; }
@@ -620,14 +624,92 @@ h1, h2 {
 .gallery-item {
   background-position: center;
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 1rem;
   box-shadow: .1rem .1rem .4rem .05rem rgba(0, 0, 0, .3);
-  display: flex;
+  color: #fff;
+  display: inline-block;
   flex: 1;
   height: 20rem;
   overflow: hidden;
   margin: 1.5rem;
   position: relative;
+}
+
+.gallery-item:hover {
+  color: #fff;
+  opacity: .8;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.feature {
+  background: #edf9f9;
+  border-radius: 1rem;
+  box-shadow: .1rem .1rem .4rem .05rem rgba(22, 47, 63, .3);
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  overflow: hidden;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  position: relative;
+  text-align: left;
+  width: 20rem;
+}
+
+.feature:hover {
+  opacity: .8;
+}
+
+.feature-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.feature p,
+.feature h4 {
+  margin: 0 0 .5rem 0;
+}
+
+.feature p {
+  color: #000;
+}
+
+.feature-img {
+  height: 10rem;
+  background: url("/img/web/thumb/ogb-home.jpg");
+  background-position: top center;
+  background-size: cover;
+}
+
+.feature-call {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-arrow {
+  border-top: .4rem solid transparent;
+	border-bottom: .4rem solid transparent;
+	border-left: .6rem solid #E3573B;
+  margin: 0 0 0 1rem;
+  transition: all ease .4s;
+}
+
+
+.feature:hover .feature-arrow { border-left: .6rem solid #FF8D49; }
+
+.gallery-item p {
+  margin: 1rem;
+}
+
+.gallery-item img {
+  width: 100%;
 }
 
 .gallery-item:first-child { margin-left: 0; }
@@ -795,6 +877,20 @@ h1, h2 {
   margin: 0 0 1rem 0;
   width: auto;
 }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .features {
+    display: block;
+  }
+
+  .feature {
+    display: block;
+    margin: 0 4% 1.5rem 4%;
+    width: auto;
+  }
 
 }
 
