@@ -635,18 +635,12 @@ h1, h2 {
   position: relative;
 }
 
-.gallery-item:hover {
-  color: #fff;
-  opacity: .8;
-}
-
 .features {
   display: flex;
   justify-content: center;
 }
 
 .feature {
-  background: #edf9f9;
   border-radius: 1rem;
   box-shadow: .1rem .1rem .4rem .05rem rgba(22, 47, 63, .3);
   display: inline-flex;

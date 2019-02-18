@@ -1,0 +1,140 @@
+---
+layout: default
+title: Fairview Girls Who Code
+permalink: /projects/fhs/
+counselingWireframes:
+  - img/projects/FHS/CounselingWireframes/home.jpg
+  - img/projects/FHS/CounselingWireframes/about.jpg
+  - img/projects/FHS/CounselingWireframes/academics.jpg
+  - img/projects/FHS/CounselingWireframes/counseling.jpg
+  - img/projects/FHS/CounselingWireframes/athletics.jpg
+  - img/projects/FHS/CounselingWireframes/arts.jpg
+  - img/projects/FHS/CounselingWireframes/clubs.jpg
+  - img/projects/FHS/CounselingWireframes/college.jpg
+---
+
+<div class="project">
+    <div class="project-overview">
+        <div class="project-summary">
+            <h1>Fairview High School</h1>
+            <p>
+                I led a responsive redesign and content restructure of Fairview High School’s website to improve user experience and content accessibility. My team also designed a GUI to simplify content management for site editors. 
+            </p>
+            <p>
+                Role: Webmaster and Co-Leader, Redesign Lead
+            </p>
+            <a class="btn" href="https://fairviewhs.org" target="_blank">Visit fairviewhs.org</a>
+        </div>
+        <div class="project-product">
+                {% include slideshow.html 
+                    id="counselingWireframes"
+                    slides=page.counselingWireframes 
+                %}
+        </div>
+    </div>
+
+    <div class="accordion expand">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Problem</h2>
+            <div class="accordion-icon expand"></div>
+        </div>
+        <div class="accordion-content">
+            <ol>
+                <li>
+                    <b>The website was not responsive</b>
+                    <br>
+                    Additionally, a completely separate set of styles/views was created for mobile devices. This setup was difficult for the Fairview Web Team to maintain and failed to provide the same information and usability across different devices.
+                </li>
+                <li>
+                    <b>Poor content organization</b>
+                    <br>
+                    Content provided by the school’s counseling department was relegated to a separate section of the site even when more appropriate elsewhere.
+                </li>
+                <li>
+                    <b>Complicated content management system (CMS)</b>
+                    <br>
+                    Site editors often lacked the knowledge of HTML and CSS needed to add/edit content on the site.
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Audience</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content">  
+            The Fairview website is viewed thousands of times a day by parents, students, and staff - both from Fairview and other schools. My team had to be mindful of the unique needs of each user group.
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Design & Development Process</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content">  
+            {% include slideshow.html 
+                id="counselingWireframes"
+                slides=page.counselingWireframes 
+            %}
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Challenges</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content"> 
+            <ul>
+                <li>
+                    <b>Large project scope</b>
+                    <br>
+                    A wide array of features and ideas were implemented simultaneously by a small team.
+                </li>
+                <li>
+                    <b>Time constraints</b>
+                    <br>
+                    Web Team is run by student volunteers. Members have a limited amount of time to contribute to project development.
+                </li>
+                <li>
+                    <b>Technical barriers</b>
+                    <br>
+                    Site editors often lacked the knowledge of HTML and CSS needed to add/edit content on the site. This limited the number of viable CMS options.
+                </li>
+                <li>
+                    <b>Compromise and communication</b>
+                    <br>
+                    Reconciling content/information retention with technical and time constraints was very difficult. There were many situations where individuals held differing opinions about what changes were necessary and how to implement them.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Takeaways</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content"> 
+            <ul>
+                <li>
+                    <b>Avoid assumptions</b>
+                    <br>
+                    While developing a system site editors could use to transfer old content to the redesign, I made the erroneous assumption that the old CMS was sufficient simply because the team had never received complaints about its complexity. We found out after the fact that newer volunteers were struggling with the existing arrangements and decided to devise a GUI to solve the problem.
+                </li>
+                <li>
+                    <b>Learn about your audience</b>
+                    <br>
+                    Due to a lack of resources, Web Team had to rely heavily on simple research conducted by individuals outside the team. This limited the amount of detail and context the team could use to inform design decisions. In similar future projects with more generous timeframes, I would like to spend more time consulting audience members about their experiences and needs.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="{{ site.url }}/js/projects.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/projects.css">
+
+</div>
