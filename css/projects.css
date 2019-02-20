@@ -112,15 +112,99 @@
 }
 
 .project {
-    margin: 1rem 3rem 5rem 3rem;
+    margin: 2rem 3rem 3rem 3rem;
+}
+
+.project-p {
+    margin-right: 40%;
+}
+
+.project-hero {
+    margin: 0 0 2rem 0;
+    max-width: 100%;
 }
 
 .project-overview {
     display: flex;
+    margin: 0 0 1rem 0;
+}
+
+.project-overview h1 {
     margin: 0 0 2rem 0;
+}
+
+.project ol,
+.project ul {
+    margin: 1rem 40% 2rem 0;
+}
+
+.project li {
+    margin: 0 0 1rem 0;
 }
 
 .project-summary {
     flex: 1;
+    padding: 0 3rem 0 0;
+}
+
+.project-details {
+    width: 20rem;
+}
+
+.project-details p:first-child {
+    margin-top: 0;
+}
+
+.project-l {
+    align-items: flex-start;
+    display: flex;
+    margin: 0 0 3rem 0;
+}
+
+.project-l-content {
+    flex: 1;
     margin: 0 2rem 0 0;
+}
+
+.project-l-preview {
+    border-radius: 1rem;
+    width: 30rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .project-overview {
+        display: block;
+    }
+
+    .project-p {
+        margin-right: 0;
+    }
+    
+    .project ol,
+    .project ul {
+        margin: 1rem 0 2rem 0;
+    }
+
+    .project-l {
+        display: block;
+    }
+    
+    .project-l-content {
+        margin: 0;
+    }
+    
+    .project-l-preview {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .project {
+        margin: 2rem .5rem 3rem .5rem;
+    }
+
 }

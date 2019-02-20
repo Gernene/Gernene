@@ -790,6 +790,10 @@ h1, h2 {
 
 #nav nav { display: none; }
 
+#nav ul {
+  display: block;
+}
+
 #nav li {
   background: #132a33;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
