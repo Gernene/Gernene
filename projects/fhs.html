@@ -3,14 +3,14 @@ layout: default
 title: Fairview Girls Who Code
 permalink: /projects/fhs/
 counselingWireframes:
-  - img/projects/FHS/CounselingWireframes/home.jpg
-  - img/projects/FHS/CounselingWireframes/about.jpg
-  - img/projects/FHS/CounselingWireframes/academics.jpg
-  - img/projects/FHS/CounselingWireframes/counseling.jpg
-  - img/projects/FHS/CounselingWireframes/athletics.jpg
-  - img/projects/FHS/CounselingWireframes/arts.jpg
-  - img/projects/FHS/CounselingWireframes/clubs.jpg
-  - img/projects/FHS/CounselingWireframes/college.jpg
+  - img/projects/fhs/counseling-wires/home.jpg
+  - img/projects/fhs/counseling-wires/about.jpg
+  - img/projects/fhs/counseling-wires/academics.jpg
+  - img/projects/fhs/counseling-wires/counseling.jpg
+  - img/projects/fhs/counseling-wires/athletics.jpg
+  - img/projects/fhs/counseling-wires/arts.jpg
+  - img/projects/fhs/counseling-wires/clubs.jpg
+  - img/projects/fhs/counseling-wires/college.jpg
 ---
 
 <div class="project">
@@ -19,7 +19,7 @@ counselingWireframes:
         <div class="project-summary">
             <h1>Fairview High School</h1>
             <p>
-                I led a <b>responsive redesign</b> and content restructure of Fairview High School’s website to improve user experience and content accessibility. My team also designed a GUI to simplify content management for site editors. 
+                I led a <b>responsive redesign</b> and content restructure of Fairview High School’s website to provide an intuitive experience for students, staff, and parents to find information and manage their content. 
             </p>
         </div>
         <div class="project-details">
@@ -29,11 +29,14 @@ counselingWireframes:
             <p>
                 <b>Duration:</b> 2016-2019
             </p>
+            <p>
+                <b>Technologies:</b> Ruby on Rails
+            </p>
         </div>
     </div>
 </div>
     
-<img class="project-hero" src="{{ site.url }}/img/projects/FHS/overview.jpg" alt="Fairview High School Website Redesign">
+<img class="project-hero" src="{{ site.url }}/img/projects/fhs/overview.jpg" alt="Fairview High School Website Redesign">
 <div class="project">
 
     <div class="accordion expand">
@@ -46,7 +49,7 @@ counselingWireframes:
                 <li>
                     <b>Improve cross-device usability</b>
                     <br>
-                    The original site was not responsive and built specifically for desktop. A completely separate set of styles/views was created for mobile devices. This setup was difficult for the Fairview Web Team to maintain and failed to provide the same information and usability across different devices.
+                    The original site was not responsive and built specifically for desktop. A completely separate set of styles/views was created for mobile devices. This setup was difficult for the Fairview Web Team to maintain and failed to provide the same information and ease-of-use across different devices.
                 </li>
                 <li>
                     <b>Improve content organization</b>
@@ -60,10 +63,10 @@ counselingWireframes:
                 </li>
             </ol>
             <div class="project-old">
-                <img src="{{ site.url }}/img/projects/FHS/old-desktop.png">
-                <img src="{{ site.url }}/img/projects/FHS/old-mobile.png">
-                <img src="{{ site.url }}/img/projects/FHS/old-counseling.png">
-                <img src="{{ site.url }}/img/projects/FHS/old-cms.png">
+                <img src="{{ site.url }}/img/projects/fhs/old-desktop.png">
+                <img src="{{ site.url }}/img/projects/fhs/old-mobile.png">
+                <img src="{{ site.url }}/img/projects/fhs/old-counseling.png">
+                <img src="{{ site.url }}/img/projects/fhs/old-cms.png">
             </div>
         </div>
     </div>
@@ -109,14 +112,14 @@ counselingWireframes:
             <p class="project-p">
                 In 2016, I helped Web Team prepare various mockups in anticipation of a purely visual redesign. These mockups were reviewed by other team members and adjusted according to their feedback.
             </p>
-            <img class="project-mockups" src="{{ site.url }}/img/projects/FHS/visual-mockups.png">
+            <img class="project-mockups" src="{{ site.url }}/img/projects/fhs/visual-mockups.png">
             <div class="project-l">
                 <div class="project-l-content">
                     <p>
                         Development of the new UI took place over several months. In 2017, Web Team revealed the new design for beta testing. We collected feedback from staff and students through surveys and personal interviews.
                     </p>
                 </div>
-                <img class="project-l-preview" src="{{ site.url }}/img/projects/FHS/redesign1.jpg">
+                <img class="project-l-preview" src="{{ site.url }}/img/projects/fhs/redesign1.jpg">
             </div>
             <h3>Content Restructure</h3>
             <div class="project-l">
@@ -129,17 +132,29 @@ counselingWireframes:
                     </p>
                 </div>
                 
-            {% include slideshow.html 
-                id="counselingWireframes"
-                slides=page.counselingWireframes 
-            %}
+                {% include slideshow.html 
+                    id="counselingWireframes"
+                    slides=page.counselingWireframes 
+                %}
+            </div>
+
+            
+            <p class="project-p">
+                While exploring ways to present so much information, we also made significant stylistic adjustments to the redesign to enhance clarity and scannability.
+            </p>
+            
+            <div class="restructure-sketches">
+                <img src="{{ site.url }}/img/projects/fhs/restructure-sketch-1.jpg">
+                <img src="{{ site.url }}/img/projects/fhs/restructure-sketch-2.jpg">
+                <img src="{{ site.url }}/img/projects/fhs/restructure-sketch-3.jpg">
+                <img src="{{ site.url }}/img/projects/fhs/restructure-sketch-4.jpg">
             </div>
 
             <h3>Simplifying Content Management</h3>
             <p class="project-p">
                 After multiple discussions, the team decided to build a “templating” system for counseling. Editors could contribute to integration efforts by reformatting old content using pre-made responsive templates. We also made significant stylistic changes to accomodate the content overhaul.
             </p>
-            <img class="cms-sketch" src="{{ site.url }}/img/projects/FHS/cms-sketch.jpg">
+            <img class="cms-sketch" src="{{ site.url }}/img/projects/fhs/cms-sketch.jpg">
             <p class="project-p">
                 When the team proposed the templating system to Fairview’s counseling editors, we learned that the number of editors knowledgeable in HTML and CSS had decreased over time. The current CMS (and by extension, the templating system) were too complicated for the existing volunteers to operate. The situation forced my team to consider alternatives.
             </p>
@@ -153,8 +168,9 @@ counselingWireframes:
         </div>
         <div class="accordion-content">  
             <p class="project-p">
-                Web Team decided to release the responsive redesign and most structural changes in March 2019. We presented Fairview's website editors a CMS GUI to aid the restructuring process and allow them to manage content more efficiently in the future.
+                Web Team decided to release the responsive redesign and most structural changes in March 2019. We presented Fairview's website editors a CMS GUI to aid the restructuring process and allow them to manage content more efficiently. Due to time constraints, the GUI currently exists as a separate application from the rest of the site but will be integrated in the near future.
             </p>
+            <img class="project-solution" src="{{ site.url }}/img/projects/fhs/solution.jpg">
         </div>
     </div>
 
@@ -183,25 +199,42 @@ counselingWireframes:
         width: 100%;
     }
 
-    .project-old {
+    .project-old,
+    .restructure-sketches {
+        margin: 3rem 0;
         text-align: center;
     }
 
     .project-old img {
         border-radius: .5rem;
         display: inline-block;
-        height: 15rem;
         margin: 0 .5rem 1rem .5rem;
+        max-height: 15rem;
+        max-width: 100%;
+    }
+
+    .restructure-sketches img {
+        border-radius: .5rem;
+        display: inline-block;
+        margin: 0 .5rem 1rem .5rem;
+        max-height: 25rem;
         max-width: 100%;
     }
 
     .project-mockups {
-        margin: 0 0 3rem 0;
+        margin: 2rem 0 3rem 0;
+        width: 100%;
+    }
+
+    .project-solution {
+        border-radius: 1rem;
+        margin: 2rem 0;
         width: 100%;
     }
 
     @media only screen and (max-width: 400px) {
-        .project-old img {
+        .project-old img,
+        .restructure-sketches img {
             margin: 0 0 .5rem 0;
         }
 

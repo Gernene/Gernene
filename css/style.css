@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  background: #EBFBFB;
+  background: #f7fdff;
   color: #162F3F;
   display: flex;
   font-family: 'Poppins', sans-serif;
@@ -178,7 +178,7 @@ h1, h2 {
 
 #content {
   min-height: 100vh;
-  padding: 1.5rem 0 0 0;
+  padding: 1.5rem 0 5rem 0;
   overflow: hidden;
   position: relative;
 }
@@ -237,7 +237,7 @@ h1, h2 {
 #intro-right { flex-direction: column; }
 
 #intro-right div {
-  background: rgba(235, 251, 251, .5);
+  background: rgba(247, 253, 255, .5);
   border-radius: 5px;
   animation: .5s ease-out 1.5s 1 slideDown forwards;
   transform: translateY(-10rem);
@@ -475,7 +475,7 @@ h1, h2 {
 
 #contact form input,
 #contact form textarea {
-  background: #EBFBFB;
+  background: #f7fdff;
   border: none;
   border-radius: 5px;
   box-shadow: .1rem .1rem .4rem .05rem rgba(0, 0, 0, .3);
@@ -507,7 +507,7 @@ h1, h2 {
   background: #E3573B;
   border-radius: 5px;
   box-shadow: -.1rem -.1rem .3rem .1rem rgba(255, 141, 73, .4), .1rem .1rem .4rem .1rem rgba(56, 213, 217, .4);
-  color: #EBFBFB;
+  color: #f7fdff;
   display: flex;
   margin: 2rem 0;
   padding: .8rem 1rem;
@@ -548,7 +548,7 @@ h1, h2 {
   background: #E3573B;
   border-radius: 5px;
   box-shadow: -.1rem -.1rem .3rem .1rem rgba(255, 141, 73, .4), .1rem .1rem .4rem .1rem rgba(56, 213, 217, .4);
-  color: #EBFBFB;
+  color: #f7fdff;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 3rem;
@@ -674,11 +674,16 @@ h1, h2 {
   color: #000;
 }
 
-.feature-img {
+.feature-img-box {
   height: 10rem;
-  background: url("/img/web/thumb/ogb-home.jpg");
   background-position: top center;
   background-size: cover;
+  overflow: hidden;
+}
+
+.feature-img {
+  max-width: 100%;
+  min-height: 100%;
 }
 
 .feature-call {
@@ -741,7 +746,7 @@ h1, h2 {
 
 .gallery-item-slide a:hover {
   background: #162F3F;
-  color: #EBFBFB;
+  color: #f7fdff;
 }
 
 .gallery-item:hover .gallery-item-slide { top: 0; }

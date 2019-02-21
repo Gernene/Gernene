@@ -16,6 +16,7 @@
     display: none;
     max-height: 100%;
     max-width: 100%;
+    width: 100%;
 }
 
 .slide:first-child {
@@ -83,6 +84,7 @@
     flex: 1;
     font-size: 1.2rem;
     margin: 0;
+    padding: .5rem 0;
 }
 
 .accordion-icon {
@@ -108,7 +110,7 @@
 
 .accordion-content {
     display: none;
-    padding: 1rem 0;
+    padding: 1rem 0 2rem 0;
 }
 
 .project {
@@ -177,6 +179,10 @@
         display: block;
     }
 
+    .project-overview h1 {
+        font-size: 1.8rem;
+    }
+
     .project-p {
         margin-right: 0;
     }
@@ -203,8 +209,18 @@
 
 @media only screen and (max-width: 400px) {
 
+    .accordion-h {
+        font-size: 1.1rem;
+    }
+
     .project {
-        margin: 2rem .5rem 3rem .5rem;
+        font-size: 1rem;
+        margin: 1rem .5rem 2rem .5rem;
+    }
+
+    .project-overview h1 {
+        font-size: 1.3rem;
+        margin: 0 0 1rem 0;
     }
 
 }
