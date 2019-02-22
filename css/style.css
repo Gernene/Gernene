@@ -476,9 +476,9 @@ h1, h2 {
 #contact form input,
 #contact form textarea {
   background: #f7fdff;
-  border: none;
-  border-radius: 5px;
-  box-shadow: .1rem .1rem .4rem .05rem rgba(0, 0, 0, .3);
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 1rem;
+  box-shadow: inset .1rem .1rem .6rem .05rem rgba(0, 0, 0, .3);
   flex: 1, 0;
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
@@ -491,7 +491,8 @@ h1, h2 {
 }
 
 #contact form input[type="submit"] {
-  background: #E3573B;
+  background: #f4694a;
+  border: none;
   box-shadow: -.1rem -.1rem .3rem .1rem rgba(255, 141, 73, .4), .1rem .1rem .4rem .1rem rgba(56, 213, 217, .4);
   font-size: 1.4rem;
   transition: all ease .4s;
@@ -697,11 +698,15 @@ h1, h2 {
 	border-bottom: .4rem solid transparent;
 	border-left: .6rem solid #E3573B;
   margin: 0 0 0 1rem;
+  position: relative;
   transition: all ease .4s;
 }
 
 
-.feature:hover .feature-arrow { border-left: .6rem solid #FF8D49; }
+.feature:hover .feature-arrow { 
+  animation: arrowR 1.2s linear infinite;
+  border-left: .6rem solid #FF8D49; 
+}
 
 .gallery-item p {
   margin: 1rem;
@@ -776,6 +781,19 @@ h1, h2 {
   }
   100% {
     opacity: 1;
+  }
+}
+
+
+@keyframes arrowR {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -.3rem;
+  }
+  100% {
+    left: 0;
   }
 }
 
