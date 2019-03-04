@@ -8,7 +8,11 @@
             <p>{{ include.desc }}</p>
             </div>
             <div class="feature-call">
-            See Project
+                {% if include.cta %}
+                    {{ include.cta }}
+                {% else %}
+                    See Project
+                {% endif %}
             <div class="feature-arrow"></div>
         </div>
     </div>

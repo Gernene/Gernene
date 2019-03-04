@@ -1,0 +1,42 @@
+.post {
+    margin: 0 20%;
+}
+
+.post-h1 {
+    margin: 2rem 0 1rem 0;
+}
+
+.post-h4 {
+    margin: 0 0 2rem 0;
+}
+
+.blog-top {
+    align-items: flex-start;
+    display: flex;
+    margin: 3rem 10%;
+}
+
+.blog-top img {
+    max-width: 100%;
+    width: 20rem;
+}
+
+.blog-intro {
+    flex: 1;
+    margin: 0 0 0 3rem;
+}
+
+.tiny {
+    font-size: .5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .blog-top {
+      display: block;
+      margin: 3rem 1rem;
+    }
+
+    .blog-intro {
+        margin: 0;
+    }
+}
