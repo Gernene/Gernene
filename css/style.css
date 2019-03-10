@@ -363,7 +363,18 @@ h1, h2 {
 }
 
 #index-about {
-  padding: 5% 15%;
+  padding: 8rem 15%;
+}
+
+.index-skills {
+  padding: 0 15%;
+}
+
+.index-skill {
+  border-radius: 10rem;
+  display: inline-block;
+  margin: 0 1rem 1rem 0;
+  padding: .2rem 1rem;
 }
 
 #index-links { text-align: center; }
@@ -387,6 +398,22 @@ h1, h2 {
 
 #resume,
 #about { padding: 2% 7%; }
+
+#about {
+  align-items: flex-start;
+  display: flex;
+}
+
+#about img {
+  border-radius: 1rem;
+  max-width: 100%;
+  width: 20rem;
+}
+
+.about-cont {
+  flex: 1;
+  margin: 0 0 0 3rem;
+}
 
 #resume h1 {
   align-items: center;
@@ -656,6 +683,7 @@ h1, h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 0 8rem 0;
 }
 
 .feature {
@@ -916,12 +944,23 @@ h1, h2 {
   width: auto;
 }
 
+#about {
+  align-items: flex-start;
+  display: block;
 }
+
+.about-cont {
+  margin: 0;
+}
+
+}
+
 
 @media only screen and (max-width: 600px) {
 
   .features {
     display: block;
+    margin: 4rem 0;
   }
 
   .feature {
@@ -969,6 +1008,10 @@ body { font-size: 1.1rem; }
 
 #index-about {
   padding: 2rem 4%;
+}
+
+.index-skills {
+  padding: 0 4%;
 }
 
 #index-mountains { margin: 1rem 0 2rem 0; }
