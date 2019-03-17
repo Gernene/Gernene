@@ -1034,7 +1034,10 @@ body { font-size: 1.1rem; }
   display: block;
 }
 
-.gallery-item { margin: 0 0 1.5rem 0; }
+.gallery-item { 
+  display: block;
+  margin: 0 0 1.5rem 0; 
+}
 
 .gallery-item-slide p { margin: 10% 10% 0 10%; }
 
