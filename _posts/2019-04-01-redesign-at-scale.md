@@ -24,14 +24,14 @@ If you can do something with CSS code... don’t use an image. Please... I beg y
 Fairview’s existing website was non-responsive, built specifically for desktop. Of its thousands of weekly visitors, more than 25% access the site by phone. These mobile users were presented a completely different design which was mantained separately and lacked half the desktop content.
 
 <figure>
-    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-old-home.png">
+    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-old-home.png" alt="Old Farview desktop landing page">
     <figcaption>
         Fairview's old desktop landing page.
     </figcaption>
 </figure>
 
 <figure>
-    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-old-mobile.png" style="width: 20rem;">
+    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-old-mobile.png" alt="Old Fairview mobile landing page" style="width: 20rem;">
     <figcaption>
         Fairview's old mobile home page.
     </figcaption>
@@ -44,7 +44,8 @@ What then-me was really worried about was the atrocious fact that not only were 
 But so were solid-color borders.
 
 <figure>
-    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-solid-border.png">
+    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-solid-border.png" alt=
+    "Old design border image">
     <figcaption>
         This line here was used as a divider. I's a PNG. Did I mention that there's also a vertical version and a thin version?
     </figcaption>
@@ -55,7 +56,7 @@ Despite its problematic elements, the existing site most certainly had its merit
 The first mockup I made did not live up to anything.
 
 <figure>
-    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-first-mockup.png" style="width: 20rem;">
+    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-first-mockup.png" alt="First redesign mockup" style="width: 20rem;">
     <figcaption>
         My very first redesign mockup. You can cringe now.
     </figcaption>
@@ -66,7 +67,7 @@ This was made in Photoshop Elements 11 - with love and half a brain.
 With the help of some team feedback, I made more appealing alternatives near the end of the 2016 school year. 
 
 <figure>
-    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-final-mockup.png">
+    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-final-mockup.png" alt="Final redesign mockup">
     <figcaption>
         My final redesign mockup. I'd say it came a long way.
     </figcaption>
@@ -77,7 +78,7 @@ Over the entire upcoming summer, a teammate and I started developing the redesig
 In 2017, we released our work for optional beta testing. It was buggy, janky, and as expected, received with mixed reviews. Still, it was a huge accomplishment I was eager to celebrate.
 
 <figure>
-    <img src="{{ site.url }}/img/projects/fhs/redesign1.jpg">
+    <img src="{{ site.url }}/img/projects/fhs/redesign1.jpg" alt="Redesign beta release">
     <figcaption>
         Shots from the redesign's beta release.
     </figcaption>
@@ -88,7 +89,7 @@ This was also the year I joined Web Team leadership!
 And by extension... the chaos that is web support.
 
 <figure>
-    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-meme-mouse.jpg">
+    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-meme-mouse.jpg" alt="Web support">
     <figcaption>
         I think I'll leave now...
     </figcaption>
@@ -99,7 +100,7 @@ During a community feedback session, Web Team was approached by our school’s c
 With bugs and broken pages popping up left and right, I admittedly forgot about the content organization issue. We were too busy repairing the redesign as it was. It was when counseling submitted a full-blown content hierarchy proposal that we realized we’d eventually have to do something about the problem.
 
 <figure>
-    <img src="{{ site.url }}/img/projects/fhs/counseling-wires/about.jpg">
+    <img src="{{ site.url }}/img/projects/fhs/counseling-wires/about.jpg" alt="Counseling content restructure proposal">
     <figcaption>
         One section of the eight-page content proposal.
     </figcaption>
@@ -140,7 +141,7 @@ For more experienced UX folk, I’m pretty sure the alarm bells were sounding fr
 Well, I’m glad you asked because…
 
 <figure>
-    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-meme-aliens.jpg">
+    <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-meme-aliens.jpg" alt="Research">
     <figcaption>
         <em>The research does not exist.</em>
     </figcaption>
@@ -197,7 +198,7 @@ I forgot to take into account that the current parent volunteers weren’t the o
 2. As someone with web development experience, I tried using counseling’s content editor. The code box was the size of my phone screen. I couldn’t even add whitespace. I felt *miserable*.
 
 <figure>
-    <img src="https://media.giphy.com/media/KvWUKOYR8phja/giphy.gif">
+    <img src="https://media.giphy.com/media/KvWUKOYR8phja/giphy.gif" alt="Bad design">
     <figcaption>
         *Barfs*
     </figcaption>
@@ -232,7 +233,7 @@ We were always hurrying about, whether it was to set up development environments
 I cannot emphasize how fortunate I was to work with the team that I did. The redesign would not have been possible without their feedback, support, and countless nights of work. **I believe that catching each other when we fell was what made all the difference in the end.**
 
 <figure>
-    <img src="{{ site.url }}/img/projects/fhs/overview.jpg">
+    <img src="{{ site.url }}/img/projects/fhs/overview.jpg" alt="Official redesign mockups">
     <figcaption>
         Web Team's official redesign.
     </figcaption>
