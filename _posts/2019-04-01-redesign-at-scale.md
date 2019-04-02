@@ -10,7 +10,7 @@ img: blog/2019-04-01-redesign-at-scale/redesign-at-scale-illustration.png
 desc: I was part of my high school’s student-run web team. This is what it was like to overhaul our website’s entire user interface… and these are the lessons I took away from it.
 ---
 
-On March 26, 2019, Fairview High School’s Web Team released <a href="{{ site.url}}/projects/fhs">an official website redesign</a>. Web Team is the student-run group that maintains, services, and develops fairviewhs.org - the Ruby on Rails web app the team's first leaders built in 2010. I made my first contributions to Web Team in 2016, back when many of the site’s backgrounds were actually images of solid color.
+On March 26, 2019, Fairview High School’s Web Team released an official<a href="{{ site.url}}/projects/fhs">website redesign</a>. Web Team is the student-run group that maintains, services, and develops fairviewhs.org - the Ruby on Rails web app the team's first leaders built in 2010. I made my first contributions to Web Team in 2016, back when many of the site’s backgrounds were actually images of solid color.
 
 <figure>
     <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-solid-bg.jpg">
@@ -21,7 +21,7 @@ On March 26, 2019, Fairview High School’s Web Team released <a href="{{ site.u
 
 If you can do something with CSS code... don’t use an image. Please... I beg you.
 
-Fairview’s existing website was non-responsive, built specifically for desktop. Of its thousands of weekly visitors, more than 25% access the site by phone. These mobile users were presented a completely different design which was mantained separately and lacked half the desktop content.
+Fairview’s existing website was non-responsive, built specifically for desktop. Of its thousands of weekly visitors, more than 25% access the site by phone. These mobile users were presented a completely different design which was maintained separately and lacked half the desktop content.
 
 <figure>
     <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-old-home.png" alt="Old Farview desktop landing page">
@@ -149,7 +149,7 @@ Well, I’m glad you asked because…
 
 Web Team has been, by far, a group of developers - and mostly backend developers at that. Its few designers were inexperienced with research and more likely to ask *“How do I design a great website?”* rather than *“How can I identify the needs of my audience?”*. The team’s UX knowledge deficit and confusing industry verbiage certainly didn’t help. 
 
-Trust me, the first question your typical sleep-deprived high school geek would have is not “How can I create an effective design language?” and definitely not “How can I practice design thinking?”.
+Trust me, the first question your typical sleep-deprived high school geek would have is not *“How can I create an effective <span class="cursive">design language</span>?”* and *definitely* not *“How can I practice <span class="cursive">design thinking</span>?”*.
 
 The issue wasn’t that we didn’t bother to collect data. It’s that we didn’t collect all the right types. As far as the visual redesign was concerned, we got plenty of feedback through the optional beta testing. Otherwise, I was limited to statistics from Google Analytics. **The problem with this information is that it focused solely on how people were already using the site as opposed to what they needed from it.**
 
@@ -171,7 +171,7 @@ I noticed that I kept visualizing the redesign on two very specific screen sizes
 
 <h2>Design for Development</h2>
 
-The redesign’s official release looks very different from its earlier beta test version. Originally, Web Team was aiming to give the new design a familiar feel. We re-used the same landing page image, kept some of the old site’s gray, and were careful to incorporate a lot of red (one of the school colors) to help preserve the Fairview’s “brand identity”.
+The redesign’s official release looks very different from its earlier beta test version. Originally, Web Team was aiming to give the new design a familiar feel. We re-used the same landing page image, kept some of the old site’s gray, and were careful to incorporate a lot of red (one of the school colors) to help preserve Fairview’s “brand identity”.
 
 The landing image looked great on the old design - at a fixed width, fixed height, with the navigation links positioned perfectly atop a red ribbon. But in order to display most of the picture on the redesign, the header was made unusually tall. Not only did this push the main page announcements further down (which many people disliked), but the image’s background blur looked odd. At certain screen sizes, we had to choose between bad cropping and making the whole thing take up way too much space.
 
