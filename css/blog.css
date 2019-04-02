@@ -1,13 +1,30 @@
 .post {
     margin: 0 20%;
+    font-size: 1.1rem;
+}
+
+.post img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.post figure {
+    margin: 2rem 5rem;
+}
+
+.post figcaption {
+    font-size: .9rem;
+    margin: 1rem 0;
 }
 
 .post-h1 {
     margin: 2rem 0 1rem 0;
 }
 
-.post-h4 {
-    margin: 0 0 2rem 0;
+.post-desc {
+    font-style: italic;
+    margin: 1rem 0 3rem 0;
 }
 
 .blog-top {
@@ -38,5 +55,13 @@
 
     .blog-intro {
         margin: 0;
+    }
+
+    .post {
+        margin: 2rem 1rem;
+    }
+
+    .post figure {
+        margin: 2rem 0;
     }
 }
