@@ -10,7 +10,7 @@ img: blog/2019-04-01-redesign-at-scale/redesign-at-scale-illustration.png
 desc: I was part of my high school’s student-run web team. This is what it was like to overhaul our website’s entire user interface… and these are the lessons I took away from it.
 ---
 
-On March 26, 2019, Fairview High School’s Web Team released an official website redesign. Web Team is the student-run group that maintains, services, and develops fairviewhs.org - the Ruby on Rails web app the team's first leaders built in 2010. I made my first contributions to Web Team in 2016, back when many of the site’s backgrounds were actually images of solid color.
+On March 26, 2019, Fairview High School’s Web Team released <a href="{{ site.url}}/projects/fhs">an official website redesign</a>. Web Team is the student-run group that maintains, services, and develops fairviewhs.org - the Ruby on Rails web app the team's first leaders built in 2010. I made my first contributions to Web Team in 2016, back when many of the site’s backgrounds were actually images of solid color.
 
 <figure>
     <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-solid-bg.jpg">
@@ -58,7 +58,7 @@ The first mockup I made did not live up to anything.
 <figure>
     <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-first-mockup.png" alt="First redesign mockup" style="width: 20rem;">
     <figcaption>
-        My very first redesign mockup. You can cringe now.
+        My very first redesign mockup (for mobile). You can cringe now.
     </figcaption>
 </figure>
 
@@ -206,7 +206,7 @@ I forgot to take into account that the current parent volunteers weren’t the o
 
 *Props to Fairview’s counseling department for making something out of nothing. I would have lost my mind.*
 
-On a side note, the template code we made ended up being quite useful (more on that later).
+On a side note, the template code we made is now being used to develop a codeless content editing GUI for Fairview.
 
 <br>
 

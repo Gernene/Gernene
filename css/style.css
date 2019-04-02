@@ -48,7 +48,6 @@ body {
 
 a {
   color: #f4694a;
-  text-decoration: none;
   transition: all ease .4s;
 }
 
@@ -68,6 +67,7 @@ h1, h2 {
   display: inline-block;
   margin: 2rem 0 0 0;
   padding: .5rem 1rem;
+  text-decoration: none;
   transition: all ease .4s;
 }
 
@@ -104,6 +104,10 @@ h1, h2 {
 #nav li {
   display: inline-flex;
   flex-direction: row;
+}
+
+#nav a {
+  text-decoration: none;
 }
 
 #nav li a {
@@ -696,6 +700,7 @@ h1, h2 {
   margin: 0 1.5rem 1.5rem 1.5rem;
   position: relative;
   text-align: left;
+  text-decoration: none;
   width: 20rem;
 }
 
@@ -736,6 +741,7 @@ h1, h2 {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .feature-arrow {
