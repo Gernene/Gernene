@@ -10,7 +10,7 @@ img: blog/2019-04-01-redesign-at-scale/redesign-at-scale-illustration.png
 desc: I was part of my high school’s student-run web team. This is what it was like to overhaul our website’s entire user interface… and these are the lessons I took away from it.
 ---
 
-On March 26, 2019, Fairview High School’s Web Team released an official<a href="{{ site.url}}/projects/fhs">website redesign</a>. Web Team is the student-run group that maintains, services, and develops fairviewhs.org - the Ruby on Rails web app the team's first leaders built in 2010. I made my first contributions to Web Team in 2016, back when many of the site’s backgrounds were actually images of solid color.
+On March 26, 2019, Fairview High School’s Web Team released an official [website redesign](/projects/fhs). Web Team is the student-run group that maintains, services, and develops fairviewhs.org - the Ruby on Rails web app the team's first leaders built in 2010. I made my first contributions to Web Team in 2016, back when many of the site’s backgrounds were actually images of solid color.
 
 <figure>
     <img src="{{ site.url }}{{ page.contentsrc }}/redesign-at-scale-solid-bg.jpg">
