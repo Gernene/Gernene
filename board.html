@@ -1,0 +1,29 @@
+---
+layout: default
+title: Mood Board
+permalink: /board/
+---
+
+<link rel="stylesheet" type="text/css" href="/css/board.css">
+<script src="/js/board.js"></script>
+
+<h1 class="gallery-h1">Inspiration Board</h1>
+
+<div class="board" id="inspo-board">
+    <div class="board-x">
+	<div></div>
+	<div></div>
+    </div>
+    <div class="board-arrow-l board-arrow"></div>
+    <div class="board-arrow-r board-arrow"></div>
+    <div class="board-content">
+    	{% include board-item.html
+            img="2019-04-13-linux-bg.jpg" 
+	    desc="Add description here"
+        %}
+        {% include board-item.html
+            img="j.png" 
+	    desc="Add description here"
+        %}
+    </div>
+</div>
