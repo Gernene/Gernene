@@ -23,6 +23,10 @@
 .gallery-rainbow-wallie { background-image: url('../img/art/thumb/rainbow-wallie-painting.jpg'); }
 .gallery-wallie { background-image: url('../img/art/thumb/wallie.jpg'); }
 
+.no-js .lazy {
+  display: none;
+}
+
 html {
   height: 100%;
   margin: 0;

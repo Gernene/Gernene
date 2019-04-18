@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", yall);
 
 $(document).ready(function() {
     var indexes = [];

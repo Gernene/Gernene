@@ -1,3 +1,5 @@
+document.documentElement.classList.remove("no-js");
+
 $(document).ready(function() {
 
   hamburger = function(x) {
