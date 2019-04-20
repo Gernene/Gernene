@@ -152,11 +152,12 @@
 
 @media only screen and (max-width: 600px) {
     .board-fig {
-        height: 20rem;
+	border-radius: 0;
+        height: auto;
 	margin: 0 0 1rem 0;
-        width: auto%;
+        width: 100%;
     }
-
+    
     .board.slides {
 	padding: 3rem 0 6rem 0;
     }
