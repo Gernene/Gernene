@@ -93,4 +93,4 @@ Whitespace can have an enormous impact. I kept adjusting the amount of blank spa
 ## Final Product
 I'm very pleased with the final graphic novel. While I did make a few mistakes with details and anatomy, I'm generally happy with the way everything comes together to tell a larger story. If you're not afraid of spoilers or a bit of violence, you can [read the full Sun Slayer webtoon!](/sunslayer/webtoon)
 
-And of course, I learned that unexpected situations can be great opportunities to do more of what I love.
+And of course, I learned that unexpected situations can be great opportunities to do more of what you love.
