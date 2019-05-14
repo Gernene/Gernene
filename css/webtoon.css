@@ -5,11 +5,64 @@ body {
     margin: 0;
 }
 
+html {
+    font-size: 1.2rem;
+}
+
+.page {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto 20rem auto;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.page:last-child {
+    margin-bottom: 0;
+}
+
+.page p {
+    margin: 2rem;
+}
+
+.frame {
+    width: 100%;
+}
+
 .title {
     font-weight: normal;
     letter-spacing: .4rem;
     text-transform: uppercase;
 }
+
+.frame-white {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    padding: 2rem;
+}
+
+.frame-black {
+    align-items: center;
+    background: #333;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    height: 100%;
+    padding: 2rem;
+    width: 100%;
+}
+
+.end {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
 
 @media only screen and (min-width: 992px) {
 
@@ -18,27 +71,21 @@ body {
     }
 
     .page {
-	align-items: center;
-	box-sizing: border-box;
-	display: flex;
-	height: 100%;
-	justify-content: center;
-	margin: 0 auto 20rem auto;
+	flex-direction: row;
 	max-width: 1200px;
-	overflow: hidden;
 	padding: 2rem 5rem;
     }
 
-    .page:last-child {
-	margin-bottom: 0;
-    }
+    
     
     .page p {
 	flex: 1;
+	padding: default;
     }
 
     .frame {
 	max-height: 100%;
+	width: auto;
     }
 
     .page-row .frame,
@@ -106,32 +153,17 @@ body {
     }
     
     .frame-white {
-	align-items: center;
-	box-sizing: border-box;
-	display: flex;
-	height: 100%;
 	margin: 0 5rem;
 	padding: 2rem 4rem;
     }
 
     .frame-black {
-	align-items: center;
-	background: #333;
-	box-sizing: border-box;
-	color: #fff;
-	display: flex;
-	height: 100%;
 	margin: 0 5rem;
 	padding: 2rem 4rem;
-	width: 100%;
     }
 
     .frame-shadow {
 	box-shadow: 2px 4px 6px #444;
     }
 
-    .end {
-	font-size: 2rem;
-	text-transform: uppercase;
-    }
 }
