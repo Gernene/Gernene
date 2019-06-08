@@ -49,7 +49,7 @@ Let’s say Fairview High School decides to start using Halp. I know of three gr
 Fairview creates its own Slack team and makes all teachers, staff, admin, and student web masters members. The Slack team needs four channels: #administrators, #it, #web, and #general. #administrators would be restricted to administrators, #it for the school’s tech support, and #web for student web masters, like myself. #general would be available for all members (including teachers and staff). After Halp is installed to the Slack team, someone invites @Halp (the Halp bot) to each channel.
 
 <figure>
-    <img src="{{ site.url }}{{ page.contentsrc }}/slack-pic.png">
+    <img src="{{ site.url }}{{ page.contentsrc }}/slack-pic.png" style="width: 20rem;">
     <figcaption>
        Slack 
     </figcaption>
