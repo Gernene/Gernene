@@ -24,7 +24,7 @@ Confusion, chaos, and lots of in-team squabbling.
 
 The whole fiasco became such a nuisance that we programmed our own bot to send email notifications to the team’s Slack.
 
-Sad story: It broke.
+Sad story: *It broke.*
 
 <figure>
     <img src="{{ site.url }}{{ page.contentsrc }}/this-is-fine.jpg">
