@@ -1,14 +1,18 @@
 ---
 layout: post
 title:  "Microsoft Teams: How to Create and Upload an App"
-date:   2019-06-07 00:00:00 -0700
+date:   2019-06-06 00:00:00 -0700
 author: Gernene
 categories: blog
 permalink: /:categories/:title
-contentsrc: /img/blog/2019-06-08-teams-app-upload
-img: /blog/2019-06-08-teams-app-upload/gernene-coding.png
+contentsrc: /img/blog/2019-06-06-teams-app-upload
+img: /blog/2019-06-06-teams-app-upload/gernene-coding.png
 desc: Building apps for Microsoft Teams can feel pretty tricky. I've assembled this guide to help developers get up and running.
 ---
+
+*This piece was originally written for Halp. Halp builds Slack-first ticketing tools for support teams and shares tips and tricks on its [blog](https://halp.com/blog).*
+
+<br>
 
 About two weeks ago, I started my engineering internship with Halp. We’re building a Halp integration for Microsoft Teams. With Teams’s rapid growth, Microsoft’s multitude of services, and boatloads of documentation, uploading our custom Halp app to Teams became a convoluted process.
 

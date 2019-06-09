@@ -1,14 +1,18 @@
 ---
 layout: post
 title:  "A Fresh Look at Support Ticketing"
-date:   2019-06-06 00:00:00 -0700
+date:   2019-05-29 00:00:00 -0700
 author: Gernene
 categories: blog
 permalink: /:categories/:title
-contentsrc: /img/blog/2019-06-06-ticketing-perspective
-img: /blog/2019-06-06-ticketing-perspective/halp-gernene.gif
+contentsrc: /img/blog/2019-05-29-ticketing-perspective
+img: /blog/2019-05-29-ticketing-perspective/halp-gernene.gif
 desc: I started my first internship at Halp and am reimagining the company's product in the context of my own experience.
 ---
+
+*This piece was originally written for Halp. Halp builds Slack-first ticketing tools for support teams and shares tips and tricks on its [blog](https://halp.com/blog).*
+
+<br>
 
 Senior year in high school, I landed a summer internship with local tech startup Halp. At the time, I co-led my school’s student web support team - and one of my responsibilities was answering support emails. These were questions about site features, password reset requests, and the like.
 
