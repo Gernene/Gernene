@@ -131,9 +131,11 @@ Go to **Finish-&gt;Test and distribute-&gt;Download** to download your new app�
 <br>
 
 ### Edit your manifest.json
-Once you unzip your app’s zip file, you’ll be able to make any necessary changes in accordance with Microsoft’s schema for Teams.
+Once you unzip your app’s zip file, you’ll be able to make any necessary changes in accordance with [Microsoft’s schema](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema) for Teams.
 
 Here’s an example manifest. Yours will be different. Note: I am using the same bot for messaging extensions and bot commands.
+
+<script src="https://gist.github.com/Gernene/e6dd58a08c1db6127a42b775fc03ac86.js"></script>
 
 <br>
 
