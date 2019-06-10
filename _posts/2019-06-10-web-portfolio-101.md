@@ -47,13 +47,13 @@ Don't forget to give content and design components ample breathing room! Not onl
 ### Scalability
 It's important to design with your site's growth in mind! What works now may not work as well later.
 
-Take for instance a single-page scroll site. If the website features a short about secton, three projects, and contact information (first-to-last down the page), a visitor may easily be able to scroll from one section to the next. However, if fifty projects are featured instead of the original three, the site needs to be designed so vistors can still access the about section and contact information easily.
+Take for instance a single-page scroll site. If the website features a short about section, three projects, and contact information (first-to-last down the page), a visitor may easily be able to scroll from one section to the next. However, if fifty projects are featured instead of the original three, the site needs to be designed so vistors can still access the about section and contact information easily.
 
 <br>
 
 ## Code/Construction
 ### Required Functionality
-I can't emphasize this enough. Choose a technology/website platform that supports all the features you want without feeling excessively complex. Don't forget that you may want to updata your portfolio fairly frequently. You may want to consider making the process as intuitive and convenient as possible.
+I can't emphasize this enough. Choose a technology/website platform that supports all the features you want without feeling excessively complex. Don't forget that you may want to update your portfolio fairly frequently. You may want to consider making the process as intuitive and convenient as possible.
 
 My own portfolio site uses Github Pages. I've found Github Pages a convenient solution for hosting static sites like my portfolio - and it has a neat blog feature that had just what I need.
 ### HTML and CSS
