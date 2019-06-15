@@ -106,10 +106,13 @@ Once you create the bot, you’ll be able to retrieve its Bot ID and generate a 
     <img src="{{ site.url }}{{ page.contentsrc }}/screenshot9.jpg">
 </figure>
 
-**By now, you should have three values to keep track of:**
+You will also need to set your bot messaging endpoint/bot endpoint address. This is the endpoint your bot will listen to events from. You define this value in your code.
+
+**By now, you should have four values to keep track of:**
 1. App ID (I use this for deeplinking)
 2. Bot ID (I use this for bot commands and messaging extensions)
 3. Bot Password (Used with Bot ID)
+4. Bot messaging endpoint
 
 These are the values you will use to authorize your app to interact with Teams and any bots you may have created. Usually, you would specify these values via environment variables and call said variables in your code as necessary.
 Update applicable fields in App Studio
