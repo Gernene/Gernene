@@ -106,7 +106,11 @@ Once you create the bot, you’ll be able to retrieve its Bot ID and generate a 
     <img src="{{ site.url }}{{ page.contentsrc }}/screenshot9.jpg">
 </figure>
 
-You will also need to set your bot messaging endpoint/bot endpoint address. This is the endpoint your bot will listen to events from. You define this value in your code.
+You will also need to set your bot messaging endpoint/bot endpoint address. This is the endpoint your bot will listen to events from. You will use this value in your code.
+
+<figure>
+    <img src="{{ site.url }}{{ page.contentsrc }}/screenshot12.jpg">
+</figure>
 
 **By now, you should have four values to keep track of:**
 1. App ID (I use this for deeplinking)

@@ -5,7 +5,7 @@ date:   2019-06-09 19:34:00 -0700
 author: Gernene
 categories: blog
 permalink: /:categories/:title
-img: blog/2019-02-24-welcome.png
+img: blog/2019-06-09-web-portfolio-101.jpg
 desc: Portfolio website 101
 ---
 
