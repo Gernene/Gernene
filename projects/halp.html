@@ -1,0 +1,180 @@
+---
+layout: default
+title: Halp
+permalink: /projects/halp/
+---
+
+<div class="project">
+    
+    <div class="project-overview">
+        <div class="project-summary">
+            <h1>Halp</h1>
+            <p>
+               Halp's Slack-first ticketing system helps support teams work better and faster. Support agents can engage requesters in a conversational experience - right inside the popular group-messaging platform Slack. 
+            </p>
+            <p>
+                As my first true industry experience, my internship at Halp taught me what it's like to work in a commercial setting, specifically that of a growing venture-backed startup. I was able to develop crucial technical skills, but more importantly, learn to work in a team with professional engineers.
+        </div>
+        <div class="project-details">
+            <p>
+                <b>Role:</b> Engineering Intern
+            </p>
+            <p>
+                <b>Duration:</b> Summer 2019
+            </p>
+            <p>
+                <b>Technologies:</b> NodeJS, React, TypeScript, Postgresql, MongoDB, TypeORM
+            </p>
+        </div>
+    </div>
+</div>
+    
+<img class="project-hero" src="{{ site.url }}/img/projects/halp/preview.jpg" alt="Halp Project Previews">
+<div class="project">
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Web Content Editor</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content">
+            Halp's orginal web app content editor lacked the complex functionality needed to support a conversational UX consistent with that of Slack.
+
+            I provided Halp a new, improved editor inline with three major goals:
+            <ul>
+                <li>Support three essential features: Newlines, emojis, and mentions</li>
+                <li>
+                    Emulate the Slack message editor as closely as possible to improve consistency
+                </li>
+                <li>
+                    Make the editor as extensible as possible to allow easy integration across the web app
+                </li>
+            </ul>
+
+            Development turned out to be more complicated than anticipated. Midway, I outlined a spec sheet comparing Slack's editor with Halp's and rewrote parts of the code to support more of the detailed edge cases.
+            
+            To optimize for time constraints, I approached the new project with the mindset: How could I make the greatest improvement to the editor using the least amount of complexity and least amount of time? Unfortunately, though simple in implementation, the first version of the new editor failed to support Slack mentions.
+
+            Despite the significant time commitment, I ultimately decided to rebuild the editor using a different web "technology" (switching from a textarea input field to a contenteditable div). The change was based on serveral considerations:
+            <ul>
+                <li>Ability to support mentions</li>
+                <li>Potential for future improvements to emoji support - including custom emojis</li>
+            </ul>
+
+            The finished product is a flexible editor that implements (or imitates) some of the Slack editor's most integral features:
+            <ul>
+                <li>An emoji picker with categories and emoji shortcode autocomplete</li>
+                <li>Newline and Slack markdown formatting</li>
+                <li>Mention suggestions and autocomplete</li>
+            </ul>
+
+            As someone used to designing at scale, the web editor project made me reconsider many of the more subtle nuances of UI design including:
+            <ul>
+                <li>
+                    Handling the different content formats displayed in the editor, displayed in other parts of the web app, and stored in the database
+                    
+                </li>
+                <li>
+                    Locating and positioning the cursor
+                </li>
+                <li>
+                    Correctly inserting items into the editor
+                </li>
+            </ul>
+            Building such a small but intricate UI element reminded me that sometimes, the smallest design components can be the most important and most complicated to build.
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Halp Answers</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content">
+            <p class="project-p">
+                Answers is a Halp product that simplifies the process of responding to support tickets by "suggesting" pre-written answers based on relevant key terms.
+            </p>
+            <p class="project-p">
+                While users were able to create and select answers right within Slack, there was no way for them to edit or delete said answers.
+            </p>
+            <p class="project-p">
+                Using existing Halp interfaces as a reference, I planned various answer management views, aiming for inutitive use and consistency with the rest of the Halp web app.
+            </p>
+            <p class="project-p">
+                Based on the mockup designs, I created several basic components that could be reused across views as needed including:
+            </p>
+            <ul>
+                <li>Answer editing form (contains content editor for updating answer text)</li>
+                <li>Popup modal that appears when answer is being edited from all answers view</li>
+            </ul>
+            <p class="project-p">
+                I was able to deliver several web UIs that enable users to view all their answers and edit or delete individuals. While helping improve one of Halp's premium features, I acquired experience working with technologies like GraphQl and a real commercial codebase/code review process.
+            </p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Halp-Teams Integration</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content"> 
+            <p class="project-p">
+                Halp wanted to validate demand for a potential Microsoft Teams version of the product. To accomplish this, we followed a prepared "demo script" that outlined the essental features our demo needed to showcase. At the same time, we were able to explore and research the capabilities of the MS Teams platform.
+            </p>
+            <p class="project-p">
+                The Halp-Teams demo product could:
+            </p>
+            <ul>
+                <li>Open the integration web app inside Teams itself (via a "tab")</li>
+                <li>Create and delete tickets within Teams (via messaging the Halp bot or through message action)</li>
+                <li>Sync replies to a ticket between Teams and the web app</li>
+            </ul>
+            <p class="project-p">
+                One of the most valuable takeaways from the Halp-Teams experiment was recognizing the value of a minimum viable product. Limiting the scope of our work to the basics allowed us to use our resources more efficiently and to greater effect.
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Teams-Jira Integration</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content">
+            <p class="project-p">
+                To help introduce Halp to the Microsoft Teams market, Halp built a free Teams integration for popular project management tool Jira.Through the project, I was able to gain exposure to TypeORM, Postgresql, and gain more familiarity with API work.
+            </p>
+       </div>
+    </div>
+</div>
+
+
+<script src="{{ site.url }}/js/projects.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/projects.css">
+<style>
+    .project-sketches {
+        margin: 3rem 0;
+        text-align: center;
+    }
+
+    .project-sketches img {
+        border-radius: .5rem;
+        display: inline-block;
+        margin: 0 .5rem 1rem .5rem;
+        max-height: 25rem;
+        max-width: 100%;
+    }
+
+    .project-mockups {
+        border-radius: 1rem;
+        margin: 2rem 0 3rem 0;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 400px) {
+        .project-sketches img {
+            margin: 0 0 .5rem 0;
+        }
+
+    }
+</style>
