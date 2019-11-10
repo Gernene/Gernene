@@ -61,6 +61,8 @@ permalink: /projects/halp/
                 <li>Potential for future improvements to emoji support - including custom emojis</li>
             </ul>
 
+            At this point in time, the editor and parser sanitized and parsed content strings server-side using regex. After another engineer expressed concern over the way content was being injected into the UI, I proceeded to rebuild the editor and parser using a client-side abstract syntax tree.
+
             The finished product is a flexible editor that implements (or imitates) some of the Slack editor's most integral features:
             <ul>
                 <li>An emoji picker with categories and emoji shortcode autocomplete</li>
