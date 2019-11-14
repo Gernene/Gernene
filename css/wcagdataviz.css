@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+a {
+  color: #2969FF;
+}
+
 div {
   box-sizing: border-box;
 }
@@ -26,7 +30,7 @@ div {
 }
 
 .quiz {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0 auto;
 }
 
@@ -83,7 +87,7 @@ div {
 }
 
 .wcag-dataviz-cube.yes {
-  background: #4e84ff
+  background: #2969FF
 }
 
 .wcag-dataviz-cube.no {
@@ -104,4 +108,166 @@ div {
 
 .wcag-dataviz-key .wcag-dataviz-cube:first-child {
   margin: 0 .5rem 0 0;
+}
+
+
+.map-dataviz {
+  position: relative;
+}
+
+.map-dataviz img {
+  width: 100%;
+}
+
+.map-dataviz-marker {
+  align-items: center;
+  background: #2969FF;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.map-dataviz-marker.ny {
+  height: 4rem;
+  left: 80%;
+  top: 18%;
+  width: 4rem;
+}
+
+.map-dataviz-marker.fl {
+  height: 3rem;
+  left: 80%;
+  top: 80%;
+  width: 3rem;
+}
+
+.map-dataviz-marker.ca {
+  height: .8rem;
+  left: 7%;
+  top: 50%;
+  width: .8rem;
+}
+
+.map-dataviz-marker.tx {
+  height: .8rem;
+  left: 45%;
+  top: 78%;
+  width: .8rem;
+}
+
+.map-dataviz-marker.ma {
+  height: .8rem;
+  left: 90%;
+  top: 25%;
+  width: .8rem;
+}
+
+.map-dataviz-marker.pa {
+  height: .8rem;
+  left: 80%;
+  top: 35%;
+  width: .8rem;
+}
+
+.map-dataviz-marker.ga {
+  height: .8rem;
+  left: 75%;
+  top: 70%;
+  width: .8rem;
+}
+
+.progress-bar {
+  border-radius: .5rem;
+  display: flex;
+  height: 3rem;
+  overflow: hidden;
+}
+
+.progress-bar .base {
+  background: #2969FF;
+  flex: 1;
+}
+
+.progress-bar .fill {
+  background: #ffbb33;
+  transition: all .4s ease;
+  width: 30%;
+}
+
+.graph-lawsuits {
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  border-left: 1px solid rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.graph-lawsuits .line-y {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  flex: 1;
+  position: relative;
+}
+
+.graph-lawsuits .line-y div {
+  position: absolute;
+  margin: -.6rem 0 0 -3rem;
+}
+
+.graph-lawsuits .bar {
+  background: #2969FF;
+  border-radius: .8rem .8rem 0 0;
+  color: #fff;
+  margin: 0 0 0 2rem;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+
+.graph-lawsuits .bar.bar-2017 {
+  height: 27%;
+}
+
+.graph-lawsuits .bar.bar-2018 {
+  height: 75%;
+  left: 8rem;
+}
+
+.graph-lawsuits .bar.bar-2019 {
+  height: 80%;
+  left: 16rem;
+}
+
+.graph-lawsuits-x {
+  display: flex;
+}
+
+.graph-lawsuits-x div {
+  margin: 0 0 0 2rem;
+  text-align: center;
+  width: 6rem;
+}
+
+.slide-0 {
+  background: #2969FF;
+  height: 100vh;
+}
+
+.title {
+  font-size: 10rem;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 10rem;
+}
+
+.title span {
+  color: #FFCC66;
+}
+
+.subtitle {
+  color: #FFCC66;
+  font-size: 3rem;
 }
