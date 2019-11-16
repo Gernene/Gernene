@@ -9,7 +9,7 @@ body {
 }
 
 a {
-  color: #2969FF;
+  color: #4747d1;
 }
 
 div {
@@ -72,12 +72,7 @@ div {
 }
 
 .wcag-dataviz td {
-  width: 40%;
   vertical-align: top;
-}
-
-.wcag-dataviz td:first-child {
-  width: 20%;
 }
 
 .wcag-dataviz-cube {
@@ -89,7 +84,7 @@ div {
 }
 
 .wcag-dataviz-cube.yes {
-  background: #2969FF
+  background: #4747d1
 }
 
 .wcag-dataviz-cube.no {
@@ -123,10 +118,11 @@ div {
 
 .map-dataviz-marker {
   align-items: center;
-  background: #2969FF;
+  background: #4747d1;
   border-radius: 50%;
   color: #fff;
   display: flex;
+  font-weight: bold;
   justify-content: center;
   position: absolute;
 }
@@ -188,7 +184,7 @@ div {
 }
 
 .progress-bar .base {
-  background: #2969FF;
+  background: #4747d1;
   flex: 1;
 }
 
@@ -219,7 +215,7 @@ div {
 }
 
 .graph-lawsuits .bar {
-  background: #2969FF;
+  background: #4747d1;
   border-radius: .8rem .8rem 0 0;
   color: #fff;
   font-weight: bold;
@@ -255,7 +251,7 @@ div {
 }
 
 .slide-0 {
-  background: #2969FF;
+  background: #4747d1;
   height: 100vh;
   position: relative;
 }
@@ -288,4 +284,169 @@ div {
   bottom: 0;
   left: 0;
   position: fixed;
+}
+
+.access-anim {
+  margin: 0 0 0 4rem;
+  perspective: 100vw;
+  position: absolute;
+  top: 3rem;
+}
+
+.access-anim-bar-chart {
+  border: 1px solid #fff;
+  border-top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-45deg) translateZ(-1rem);
+  width: 14rem;
+}
+
+.access-anim-bar-chart-line {
+  border-top: 1px solid #fff;
+  flex: 1;
+}
+
+.access-anim-bar {
+  bottom: 0;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(1rem);
+  width: 2rem;
+}
+
+.access-anim-bar.bar-1 {
+  height: 8rem;
+  left: 2rem;
+}
+
+.access-anim-bar.bar-2 {
+  height: 6rem;
+  left: 6rem;
+}
+
+.access-anim-bar.bar-3 {
+  height: 4rem;
+  left: 10rem;
+}
+
+.access-anim-bar-t {
+  background: #4747d1;
+  border: 3px solid #fff;
+  border-right: 0;
+  height: 2rem;
+  position: absolute;
+  width: 2rem;
+}
+
+.access-anim-bar-f {
+  background: #fff;
+  border: 3px solid #fff;
+  position: absolute;
+  transform: translateZ(1rem);
+  width: 2rem;
+}
+
+.access-anim-bar-r {
+  background: #4747d1;
+  border: 3px solid #fff;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(1rem);
+  width: 2rem;
+}
+
+.access-anim-bar.bar-1 .access-anim-bar-t {
+  top: 3rem;
+  transform: rotateX(-90deg) translateZ(-4rem);
+}
+
+.access-anim-bar.bar-1 .access-anim-bar-f,
+.access-anim-bar.bar-1 .access-anim-bar-r {
+  height: 8rem;
+}
+
+.access-anim-bar.bar-2 .access-anim-bar-t {
+  top: 2rem;
+  transform: rotateX(-90deg) translateZ(-3rem);
+}
+
+.access-anim-bar.bar-2 .access-anim-bar-f,
+.access-anim-bar.bar-2 .access-anim-bar-r {
+  height: 6rem;
+}
+
+.access-anim-bar.bar-3 .access-anim-bar-t {
+  top: 1rem;
+  transform: rotateX(-90deg) translateZ(-2rem);
+}
+
+.access-anim-bar.bar-3 .access-anim-bar-f,
+.access-anim-bar.bar-3 .access-anim-bar-r {
+  height: 4rem;
+}
+
+.access-anim-progress {
+  height: 2rem;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-45deg) translateY(13rem) translateZ(3rem);
+  width: 14rem;
+}
+
+.access-anim-progress-t {
+  background: #4747d1;
+  display: flex;
+  height: 2rem;
+  position: absolute;
+  transform: rotateX(-90deg) translateZ(-1rem);
+  width: 14rem;
+}
+
+.access-anim-progress-f {
+  background: #4747d1;
+  display: flex;
+  height: 2rem;
+  position: absolute;
+  transform: translateZ(1rem);
+  width: 14rem;
+}
+
+.access-anim-progress-r {
+  background: #4747d1;
+  border: 3px solid #fff;
+  height: 2rem;
+  left: 6rem;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(7rem);
+  width: 2rem;
+}
+
+.access-anim-progress-f-l {
+  background: #ffbb33;
+  border: 3px solid #ffbb33;
+  width: 4rem;
+}
+
+.access-anim-progress-t-l {
+  background: #4747d1;
+  border: 3px solid #ffbb33;
+  width: 4rem;
+}
+
+.access-anim-progress-t-r {
+  border: 3px solid #fff;
+  border-left: 0;
+  border-right: 0;
+  flex: 1;
+}
+
+.access-anim-progress-f-r {
+  background: #fff;
+  border: 3px solid #fff;
+  border-left: 0;
+  border-top: 0;
+  flex: 1;
 }
