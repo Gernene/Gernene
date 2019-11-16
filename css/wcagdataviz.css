@@ -251,16 +251,16 @@ div {
 }
 
 .slide-0 {
+  align-items: center;
   background: #4747d1;
+  display: flex;
   height: 100vh;
+  justify-content: flex-end;
   position: relative;
 }
 
 .heading {
-  margin: 3rem 5rem 0 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+  margin: -2rem 5rem 0 0;
 }
 
 .title {
@@ -287,14 +287,15 @@ div {
 }
 
 .access-anim {
+  left: 0;
   margin: 0 0 0 4rem;
   perspective: 100vw;
   position: absolute;
-  top: 3rem;
+  top: 10rem;
 }
 
 .access-anim-bar-chart {
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   border-top: 0;
   display: flex;
   flex-direction: column;
@@ -306,7 +307,7 @@ div {
 }
 
 .access-anim-bar-chart-line {
-  border-top: 1px solid #fff;
+  border-top: 3px solid #fff;
   flex: 1;
 }
 
@@ -392,7 +393,7 @@ div {
   height: 2rem;
   position: absolute;
   transform-style: preserve-3d;
-  transform: rotateX(-30deg) rotateY(-45deg) translateY(13rem) translateZ(3rem);
+  transform: rotateX(-30deg) rotateY(-45deg) translateY(13rem) translateZ(5rem);
   width: 14rem;
 }
 
@@ -437,6 +438,7 @@ div {
 }
 
 .access-anim-progress-t-r {
+  background: #4747d1;
   border: 3px solid #fff;
   border-left: 0;
   border-right: 0;
@@ -449,4 +451,72 @@ div {
   border-left: 0;
   border-top: 0;
   flex: 1;
+}
+
+.access-anim-ppl {
+  background: #fff;
+  border: 3px solid #4747d1;
+  color: #4747d1;
+  font-size: 2rem;
+  padding: 1rem;
+  transform: rotateX(-30deg) rotateY(-45deg) translateY(5rem) translateZ(3rem);
+  width: 10rem;
+}
+
+.access-anim-ppl i:first-child {
+  color: #ffbb33;
+}
+
+.access-anim-cubes {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-45deg) translateZ(-8rem);
+  width: 10rem;
+}
+
+.access-anim-cube {
+  height: 1rem;
+  margin: 0 1rem 1rem 0;
+  transform-style: preserve-3d;
+  width: 1rem;
+}
+
+.access-anim-cube-t,
+.access-anim-cube-f,
+.access-anim-cube-r {
+  height: 1rem;
+  position: absolute;
+  width: 1rem;
+}
+
+.access-anim-cube-t {
+  background: #4747d1;
+  border: 3px solid #ffbb33;
+  transform: rotateX(-90deg) translateZ(-.5rem);
+}
+
+.access-anim-cube-f {
+  background: #ffbb33;
+  transform: translateZ(.5rem);
+}
+
+.access-anim-cube-r {
+  background: #4747d1;
+  border: 3px solid #ffbb33;
+  transform: rotateY(90deg) translateZ(.5rem);
+}
+
+.access-anim-platform-box {
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-45deg) translateY(5rem);
+}
+
+.access-anim-platform {
+  border: 3px solid #fff;
+  height: 20rem;
+  width: 20rem;
+  transform: rotateX(-90deg) translateZ(10rem);
 }
