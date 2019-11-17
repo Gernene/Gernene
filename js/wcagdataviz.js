@@ -39,8 +39,6 @@ const submitQuiz = () => {
     const className = $(this).attr("class");
     const classData = className.split("-");
     const principle = classData[1];
-    // const guideline = classData[2];
-    // const num = classData[3];
     const complianceLevel = classData[4];
     const sectionClass = `#wcag-dataviz-${principle}-${complianceLevel}`;
     const option = $(this).find("input[type='radio']:checked");
