@@ -141,15 +141,51 @@ permalink: /projects/wcagdataviz/
             <p>
               Many websites are not designed to accomodate the unique challenges individuals may face - including ability to see/hear content or operate a mouse.
             </p>
+
+            <div class="clear"></div>
+
             <h3>Visualizing Abilities and Needs</h3>
             <p>
               The progress bar below represents the percentage of Americans affected by a given condition(s).
-              Toggle the different checkboxes below to calculate the portion of the population affected.
+              Toggle the different radioes below to calculate the portion of the population affected.
             </p>
-            <div class="progress-bar">
-              <div class="fill"></div>
-              <div class="base"></div>
+            <div class="progress-bar" id="types-dataviz">
+              <div class="fill" id="types-dataviz-fill"></div>
+              <div class="base" id="types-dataviz-base">25.7%</div>
             </div>
+            <div id="types-dataviz-radios">
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-1" value="13.7">
+                <label for="types-dataviz-radio-1">Mobility</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-2" value="10.8">
+                <label for="types-dataviz-radio-2">Cognition</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-3" value="6.8">
+                <label for="types-dataviz-radio-3">Independent Living</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-4" value="5.9">
+                <label for="types-dataviz-radio-4">Hearing</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-5" value="4.6">
+                <label for="types-dataviz-radio-5">Vision</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-6" value="3.7">
+                <label for="types-dataviz-radio-6">Self-Care</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-7" value="25.7" checked>
+                <label for="types-dataviz-radio-7">All</label>
+              </div>
+            </div>
+
+            <div class="clear"></div>
+
             <blockquote cite="https://www.w3.org/standards/webdesign/accessibility">
               <p>
                 The power of the web is in its universality. Access by everyone regardless of disability is an essential aspect.
@@ -169,6 +205,9 @@ permalink: /projects/wcagdataviz/
             <p>
               Originally enacted in 1991, ADA Title III also encompasses websites. Recent years have seen a surge in web accessibility litigation.
             </p>
+
+            <div class="clear"></div>
+
             <h3>Number of Website Accessibility Lawsuits</h3>
             <p>
               The bar chart below depicts the number of web accessibility lawsuits filed that year -
@@ -203,11 +242,14 @@ permalink: /projects/wcagdataviz/
               <div>2019 (Projected)</div>
             </div>
             
+            <div class="clear"></div>
+
             <h3>Distribution of Lawsuits Across the US (Top 10 States in 2018)</h3>
             <p>
               Each blue marker on the US map below represents one of the top 10 states where web accessibility lawsuits were filed in 2018.
               New York (64%) and Florida (32%) make up 96% of all cases.
             </p>
+            
             <div class="map-dataviz">
               <div class="map-dataviz-marker ny">64%</div>
               <div class="map-dataviz-marker fl">32%</div>
@@ -233,7 +275,7 @@ permalink: /projects/wcagdataviz/
               <li>Percievable: Content can be perceived and consumed.</li>
               <li>Operable: People can use a website's functionality.</li>
               <li>Understandable: Functionality is understandable and predictable.</li>
-              <li>Robust: Content can be interpreted reliable in different situations</li>
+              <li>Robust: Content can be interpreted reliably in different situations</li>
             </ul>
             <p>
               WGAG identifies three conformance levels that become progressively stringent:
@@ -258,18 +300,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-1">No</label>
                     <input type="radio" id="quiz-no-1" name="quiz-no-1" value="no" checked>
+                    <label for="quiz-no-1">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-1">Yes</label>
                     <input type="radio" id="quiz-yes-1" name="quiz-yes-1" value="yes">
+                    <label for="quiz-yes-1">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-1">Unsure</label>
                     <input type="radio" id="quiz-unsure-1" name="quiz-unsure-1" value="unsure">
+                    <label for="quiz-unsure-1">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -279,18 +321,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-2">No</label>
                     <input type="radio" id="quiz-no-2" name="quiz-no-2" value="no" checked>
+                    <label for="quiz-no-2">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-2">Yes</label>
                     <input type="radio" id="quiz-yes-2" name="quiz-yes-2" value="yes">
+                    <label for="quiz-yes-2">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-2">Unsure</label>
                     <input type="radio" id="quiz-unsure-2" name="quiz-unsure-2" value="unsure">
+                    <label for="quiz-unsure-2">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -300,18 +342,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-3">No</label>
                     <input type="radio" id="quiz-no-3" name="quiz-no-3" value="no" checked>
+                    <label for="quiz-no-3">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-3">Yes</label>
                     <input type="radio" id="quiz-yes-3" name="quiz-yes-3" value="yes">
+                    <label for="quiz-yes-3">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-3">Unsure</label>
                     <input type="radio" id="quiz-unsure-3" name="quiz-unsure-3" value="unsure">
+                    <label for="quiz-unsure-3">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -321,18 +363,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-4">No</label>
                     <input type="radio" id="quiz-no-4" name="quiz-no-4" value="no" checked>
+                    <label for="quiz-no-4">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-4">Yes</label>
                     <input type="radio" id="quiz-yes-4" name="quiz-yes-4" value="yes">
+                    <label for="quiz-yes-4">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-4">Unsure</label>
                     <input type="radio" id="quiz-unsure-4" name="quiz-unsure-4" value="unsure">
+                    <label for="quiz-unsure-4">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -342,18 +384,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-5">No</label>
                     <input type="radio" id="quiz-no-5" name="quiz-no-5" value="no" checked>
+                    <label for="quiz-no-5">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-5">Yes</label>
                     <input type="radio" id="quiz-yes-5" name="quiz-yes-5" value="yes">
+                    <label for="quiz-yes-5">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-5">Unsure</label>
                     <input type="radio" id="quiz-unsure-5" name="quiz-unsure-5" value="unsure">
+                    <label for="quiz-unsure-5">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -363,18 +405,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-6">No</label>
                     <input type="radio" id="quiz-no-6" name="quiz-no-6" value="no" checked>
+                    <label for="quiz-no-6">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-6">Yes</label>
                     <input type="radio" id="quiz-yes-6" name="quiz-yes-6" value="yes">
+                    <label for="quiz-yes-6">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-6">Unsure</label>
                     <input type="radio" id="quiz-unsure-6" name="quiz-unsure-6" value="unsure">
+                    <label for="quiz-unsure-6">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -384,18 +426,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-7">No</label>
                     <input type="radio" id="quiz-no-7" name="quiz-no-7" value="no" checked>
+                    <label for="quiz-no-7">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-7">Yes</label>
                     <input type="radio" id="quiz-yes-7" name="quiz-yes-7" value="yes">
+                    <label for="quiz-yes-7">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-7">Unsure</label>
                     <input type="radio" id="quiz-unsure-7" name="quiz-unsure-7" value="unsure">
+                    <label for="quiz-unsure-7">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -405,18 +447,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-8">No</label>
                     <input type="radio" id="quiz-no-8" name="quiz-no-8" value="no" checked>
+                    <label for="quiz-no-8">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-8">Yes</label>
                     <input type="radio" id="quiz-yes-8" name="quiz-yes-8" value="yes">
+                    <label for="quiz-yes-8">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-8">Unsure</label>
                     <input type="radio" id="quiz-unsure-8" name="quiz-unsure-8" value="unsure">
+                    <label for="quiz-unsure-8">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -426,18 +468,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-9">No</label>
                     <input type="radio" id="quiz-no-9" name="quiz-no-9" value="no" checked>
+                    <label for="quiz-no-9">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-9">Yes</label>
                     <input type="radio" id="quiz-yes-9" name="quiz-yes-9" value="yes">
+                    <label for="quiz-yes-9">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-9">Unsure</label>
                     <input type="radio" id="quiz-unsure-9" name="quiz-unsure-9" value="unsure">
+                    <label for="quiz-unsure-9">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -447,18 +489,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-10">No</label>
                     <input type="radio" id="quiz-no-10" name="quiz-no-10" value="no" checked>
+                    <label for="quiz-no-10">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-10">Yes</label>
                     <input type="radio" id="quiz-yes-10" name="quiz-yes-10" value="yes">
+                    <label for="quiz-yes-10">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-10">Unsure</label>
                     <input type="radio" id="quiz-unsure-10" name="quiz-unsure-10" value="unsure">
+                    <label for="quiz-unsure-10">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -468,18 +510,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-11">No</label>
                     <input type="radio" id="quiz-no-11" name="quiz-no-11" value="no" checked>
+                    <label for="quiz-no-11">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-11">Yes</label>
                     <input type="radio" id="quiz-yes-11" name="quiz-yes-11" value="yes">
+                    <label for="quiz-yes-11">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-11">Unsure</label>
                     <input type="radio" id="quiz-unsure-11" name="quiz-unsure-11" value="unsure">
+                    <label for="quiz-unsure-11">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -489,18 +531,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-12">No</label>
                     <input type="radio" id="quiz-no-12" name="quiz-no-12" value="no" checked>
+                    <label for="quiz-no-12">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-12">Yes</label>
                     <input type="radio" id="quiz-yes-12" name="quiz-yes-12" value="yes">
+                    <label for="quiz-yes-12">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-12">Unsure</label>
                     <input type="radio" id="quiz-unsure-12" name="quiz-unsure-12" value="unsure">
+                    <label for="quiz-unsure-12">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -510,18 +552,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-13">No</label>
                     <input type="radio" id="quiz-no-13" name="quiz-no-13" value="no" checked>
+                    <label for="quiz-no-13">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-13">Yes</label>
                     <input type="radio" id="quiz-yes-13" name="quiz-yes-13" value="yes">
+                    <label for="quiz-yes-13">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-13">Unsure</label>
                     <input type="radio" id="quiz-unsure-13" name="quiz-unsure-13" value="unsure">
+                    <label for="quiz-unsure-13">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -531,18 +573,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-14">No</label>
                     <input type="radio" id="quiz-no-14" name="quiz-no-14" value="no" checked>
+                    <label for="quiz-no-14">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-13">Yes</label>
                     <input type="radio" id="quiz-yes-14" name="quiz-yes-14" value="yes">
+                    <label for="quiz-yes-14">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-14">Unsure</label>
                     <input type="radio" id="quiz-unsure-14" name="quiz-unsure-14" value="unsure">
+                    <label for="quiz-unsure-14">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -552,18 +594,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-15">No</label>
                     <input type="radio" id="quiz-no-15" name="quiz-no-15" value="no" checked>
+                    <label for="quiz-no-15">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-15">Yes</label>
                     <input type="radio" id="quiz-yes-15" name="quiz-yes-15" value="yes">
+                    <label for="quiz-yes-15">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-15">Unsure</label>
                     <input type="radio" id="quiz-unsure-15" name="quiz-unsure-15" value="unsure">
+                    <label for="quiz-unsure-15">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -573,18 +615,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-16">No</label>
                     <input type="radio" id="quiz-no-16" name="quiz-no-16" value="no" checked>
+                    <label for="quiz-no-16">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-16">Yes</label>
                     <input type="radio" id="quiz-yes-16" name="quiz-yes-16" value="yes">
+                    <label for="quiz-yes-16">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-16">Unsure</label>
                     <input type="radio" id="quiz-unsure-16" name="quiz-unsure-16" value="unsure">
+                    <label for="quiz-unsure-16">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -594,18 +636,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-17">No</label>
                     <input type="radio" id="quiz-no-17" name="quiz-no-17" value="no" checked>
+                    <label for="quiz-no-17">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-17">Yes</label>
                     <input type="radio" id="quiz-yes-17" name="quiz-yes-17" value="yes">
+                    <label for="quiz-yes-17">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-17">Unsure</label>
                     <input type="radio" id="quiz-unsure-17" name="quiz-unsure-17" value="unsure">
+                    <label for="quiz-unsure-17">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -615,18 +657,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-18">No</label>
                     <input type="radio" id="quiz-no-18" name="quiz-no-18" value="no" checked>
+                    <label for="quiz-no-18">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-18">Yes</label>
                     <input type="radio" id="quiz-yes-18" name="quiz-yes-18" value="yes">
+                    <label for="quiz-yes-18">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-18">Unsure</label>
                     <input type="radio" id="quiz-unsure-18" name="quiz-unsure-18" value="unsure">
+                    <label for="quiz-unsure-18">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -636,18 +678,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-19">No</label>
                     <input type="radio" id="quiz-no-19" name="quiz-no-19" value="no" checked>
+                    <label for="quiz-no-19">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-19">Yes</label>
                     <input type="radio" id="quiz-yes-19" name="quiz-yes-19" value="yes">
+                    <label for="quiz-yes-19">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-19">Unsure</label>
                     <input type="radio" id="quiz-unsure-19" name="quiz-unsure-19" value="unsure">
+                    <label for="quiz-unsure-19">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -657,18 +699,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-20">No</label>
                     <input type="radio" id="quiz-no-20" name="quiz-no-20" value="no" checked>
+                    <label for="quiz-no-20">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-20">Yes</label>
                     <input type="radio" id="quiz-yes-20" name="quiz-yes-20" value="yes">
+                    <label for="quiz-yes-20">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-20">Unsure</label>
                     <input type="radio" id="quiz-unsure-20" name="quiz-unsure-20" value="unsure">
+                    <label for="quiz-unsure-20">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -678,18 +720,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-21">No</label>
                     <input type="radio" id="quiz-no-21" name="quiz-no-21" value="no" checked>
+                    <label for="quiz-no-21">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-21">Yes</label>
                     <input type="radio" id="quiz-yes-21" name="quiz-yes-21" value="yes">
+                    <label for="quiz-yes-21">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-21">Unsure</label>
                     <input type="radio" id="quiz-unsure-21" name="quiz-unsure-21" value="unsure">
+                    <label for="quiz-unsure-21">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -699,18 +741,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-22">No</label>
                     <input type="radio" id="quiz-no-22" name="quiz-no-22" value="no" checked>
+                    <label for="quiz-no-22">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-22">Yes</label>
                     <input type="radio" id="quiz-yes-22" name="quiz-yes-22" value="yes">
+                    <label for="quiz-yes-22">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-22">Unsure</label>
                     <input type="radio" id="quiz-unsure-22" name="quiz-unsure-22" value="unsure">
+                    <label for="quiz-unsure-22">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -720,18 +762,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-23">No</label>
                     <input type="radio" id="quiz-no-23" name="quiz-no-23" value="no" checked>
+                    <label for="quiz-no-23">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-23">Yes</label>
                     <input type="radio" id="quiz-yes-23" name="quiz-yes-23" value="yes">
+                    <label for="quiz-yes-23">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-23">Unsure</label>
                     <input type="radio" id="quiz-unsure-23" name="quiz-unsure-23" value="unsure">
+                    <label for="quiz-unsure-23">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -741,18 +783,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-24">No</label>
                     <input type="radio" id="quiz-no-24" name="quiz-no-24" value="no" checked>
+                    <label for="quiz-no-24">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-24">Yes</label>
                     <input type="radio" id="quiz-yes-24" name="quiz-yes-24" value="yes">
+                    <label for="quiz-yes-24">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-24">Unsure</label>
                     <input type="radio" id="quiz-unsure-24" name="quiz-unsure-24" value="unsure">
+                    <label for="quiz-unsure-24">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -762,18 +804,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-25">No</label>
                     <input type="radio" id="quiz-no-25" name="quiz-no-25" value="no" checked>
+                    <label for="quiz-no-25">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-25">Yes</label>
                     <input type="radio" id="quiz-yes-25" name="quiz-yes-25" value="yes">
+                    <label for="quiz-yes-25">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-25">Unsure</label>
                     <input type="radio" id="quiz-unsure-25" name="quiz-unsure-25" value="unsure">
+                    <label for="quiz-unsure-25">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -783,18 +825,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-26">No</label>
                     <input type="radio" id="quiz-no-26" name="quiz-no-26" value="no" checked>
+                    <label for="quiz-no-26">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-26">Yes</label>
                     <input type="radio" id="quiz-yes-26" name="quiz-yes-26" value="yes">
+                    <label for="quiz-yes-26">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-26">Unsure</label>
                     <input type="radio" id="quiz-unsure-26" name="quiz-unsure-26" value="unsure">
+                    <label for="quiz-unsure-26">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -804,18 +846,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-27">No</label>
                     <input type="radio" id="quiz-no-27" name="quiz-no-27" value="no" checked>
+                    <label for="quiz-no-27">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-27">Yes</label>
                     <input type="radio" id="quiz-yes-27" name="quiz-yes-27" value="yes">
+                    <label for="quiz-yes-27">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-27">Unsure</label>
                     <input type="radio" id="quiz-unsure-27" name="quiz-unsure-27" value="unsure">
+                    <label for="quiz-unsure-27">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -825,18 +867,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-28">No</label>
                     <input type="radio" id="quiz-no-28" name="quiz-no-28" value="no" checked>
+                    <label for="quiz-no-28">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-28">Yes</label>
                     <input type="radio" id="quiz-yes-28" name="quiz-yes-28" value="yes">
+                    <label for="quiz-yes-28">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-28">Unsure</label>
                     <input type="radio" id="quiz-unsure-28" name="quiz-unsure-28" value="unsure">
+                    <label for="quiz-unsure-28">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -846,18 +888,18 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-29">No</label>
                     <input type="radio" id="quiz-no-29" name="quiz-no-29" value="no" checked>
+                    <label for="quiz-no-29">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-29">Yes</label>
                     <input type="radio" id="quiz-yes-29" name="quiz-yes-29" value="yes">
+                    <label for="quiz-yes-29">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-29">Unsure</label>
                     <input type="radio" id="quiz-unsure-29" name="quiz-unsure-29" value="unsure">
+                    <label for="quiz-unsure-29">Unsure</label>
                   </div>
                 </td>
               </tr>
@@ -867,32 +909,33 @@ permalink: /projects/wcagdataviz/
                 </td>
                 <td class="quiz-options">
                   <div>
-                    <label for="quiz-no-30">No</label>
                     <input type="radio" id="quiz-no-30" name="quiz-no-30" value="no" checked>
+                    <label for="quiz-no-30">No</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-yes-30">Yes</label>
                     <input type="radio" id="quiz-yes-30" name="quiz-yes-30" value="yes">
+                    <label for="quiz-yes-30">Yes</label>
                   </div>
                   
                   <div>
-                    <label for="quiz-unsure-30">Unsure</label>
                     <input type="radio" id="quiz-unsure-30" name="quiz-unsure-30" value="unsure">
+                    <label for="quiz-unsure-30">Unsure</label>
                   </div>
                 </td>
               </tr>
             </table>
             <input type="submit" class="btn-primary" role="button" id="wcag-dataviz-submit" value="Submit">
     
+            <div class="clear"></div>
+
             <h3>How Accessible is My Interface?</h3>
             <p>
               Web accessibility guidelines can feel like a lot to take in.
-              I created a simple visual below as an experiment:
               <b>Can visuals impart a more digestible understanding of how product accessibility can be improved?</b>
             </p>
             <p>
-              The chart is divided into two columns representing WCAG levels A and AA. The four columns represent the four core principles (Percievable, Operable, Understandable, and Robust).
+              The chart below is divided into two columns representing WCAG levels A and AA. Four rows represent the four core principles (Percievable, Operable, Understandable, and Robust).
               Based on your answers to the checklist above, colored squares representing each guideline are inserted into the chart.
             </p>
             <div class="wcag-dataviz-key">

@@ -16,6 +16,14 @@ div {
   box-sizing: border-box;
 }
 
+section {
+  margin: 0 0 20rem 0;
+}
+
+.clear {
+  height: 5rem;
+}
+
 .wrapper {
   display: flex;
   margin: 0 auto;
@@ -68,7 +76,7 @@ div {
 }
 
 .quiz {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0 auto;
 }
 
@@ -87,6 +95,10 @@ div {
   padding: 1rem 0 1rem 2rem;
 }
 
+.quiz tr:last-child td {
+  border: 0;
+}
+
 .quiz-options {
   display: flex;
 }
@@ -103,6 +115,7 @@ div {
 .wcag-dataviz {
   font-size: 1.1rem;
   font-weight: bold;
+  margin: 0 0 3rem 0;
   table-layout: fixed;
   width: 100%;
 }
@@ -132,7 +145,7 @@ div {
 }
 
 .wcag-dataviz-key {
-  margin: 0 0 1rem 0;
+  margin: 3rem 0 1rem 0;
 }
 
 .wcag-dataviz-key .wcag-dataviz-cube {
@@ -145,6 +158,7 @@ div {
 
 
 .map-dataviz {
+  margin: 3rem 0 0 0;
   position: relative;
 }
 
@@ -215,13 +229,17 @@ div {
 .progress-bar {
   border-radius: .5rem;
   display: flex;
-  height: 4rem;
   overflow: hidden;
 }
 
 .progress-bar .base {
   background: #000066;
+  color: #ffbb33;
   flex: 1;
+  font-size: 2rem;
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 1rem;
 }
 
 .progress-bar .fill {
@@ -236,6 +254,7 @@ div {
   flex-direction: column;
   height: 60vh;
   justify-content: flex-end;
+  margin: 3rem 0 0 0;
   position: relative;
 }
 
@@ -301,6 +320,7 @@ div {
 
 .other-slides {
   background: #fff;
+  padding: 10rem 0;
   position: relative;
   z-index: 10;
 }
@@ -565,4 +585,160 @@ div {
   height: 20rem;
   width: 20rem;
   transform: rotateX(-90deg) translateZ(10rem);
+}
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: "";
+  
+  /*Needed for the line-height to take effect*/
+  display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+  height: 1rem;
+  width: 1rem;
+  
+  border: 3px solid #000066;
+  border-radius: .2rem;
+  left: 0;
+  top: 0;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+  height: .3rem;
+  width: .6rem;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(-45deg);
+  left: .3rem;
+  top: .3rem;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+.checkbox input[type="checkbox"]:checked + label:before {
+  background: #000066;
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+/* .checkbox input[type="checkbox"]:focus + label::before {
+} */
+
+
+#types-dataviz {
+  margin: 3rem 0;
+}
+
+#types-dataviz-radios .radio {
+  margin: 0 0 1rem 0;
+}
+
+
+.quiz-options div
+#types-dataviz-radios div {
+  position: relative;
+}
+
+.quiz-options input[type="radio"],
+#types-dataviz-radios input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.quiz-options label{
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem 0 0 0;
+}
+
+#types-dataviz-radios label {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 2rem;
+}
+
+.quiz-options label::before,
+.quiz-options label::after,
+#types-dataviz-radios label::before,
+#types-dataviz-radios label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+.quiz-options label::before,
+#types-dataviz-radios label::before {
+  height: 1rem;
+  width: 1rem;
+  border: 3px solid #000066;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
+
+.quiz-options label::after,
+#types-dataviz-radios label::after {
+  height: .3rem;
+  width: .6rem;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(-45deg);
+  left: .3rem;
+  top: .3rem;
+}
+
+.quiz-options input[type="radio"] + label::after,
+#types-dataviz-radios input[type="radio"] + label::after {
+  content: none;
+}
+
+.quiz-options input[type="radio"]:checked + label::after,
+#types-dataviz-radios input[type="radio"]:checked + label::after {
+  content: "";
+}
+
+.quiz-options input[type="radio"]:checked + label:before,
+#types-dataviz-radios input[type="radio"]:checked + label:before {
+  background: #000066;
+}
+
+.quiz-options input[type="radio"]:focus + label::before,
+#types-dataviz-radios input[type="radio"]:focus + label::before {
+  outline: 1px solid #000066;
+}
+
+
+#types-dataviz {
+  margin: 3rem 0;
+}
+
+#types-dataviz-radios .radio {
+  margin: 0 0 1rem 0;
 }
