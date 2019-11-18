@@ -1,6 +1,30 @@
 $(document).ready(function () {
   submitQuiz();
 
+  window.onscroll = function() {stickMenu()};
+
+  var navbar = document.getElementById("sidebar");
+  var sticky = navbar.offsetTop + navbar.offsetHeight;
+
+  function stickMenu() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+
+  $(".menu-toggle").on("click", function () {
+    $(".sidebar").toggleClass("active");
+  });
+
+  $(".menu-toggle").keypress(function(e) {
+    const code = (e.keyCode ? e.keyCode : e.which);
+    if(code == 13) { //Enter keycode
+      $(".sidebar").toggleClass("active");
+    }
+  });
+
   $(".quiz-options input[type='radio']").keypress(function(e) {
     const code = (e.keyCode ? e.keyCode : e.which);
     if(code == 13) { //Enter keycode
