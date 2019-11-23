@@ -7,7 +7,7 @@ $(document).ready(function () {
   var sticky = navbar.offsetTop + navbar.offsetHeight;
 
   function stickMenu() {
-    if (window.pageYOffset >= sticky) {
+    if (window.pageYOffset - navbar.offsetHeight >= sticky) {
       navbar.classList.add("sticky")
     } else {
       navbar.classList.remove("sticky");

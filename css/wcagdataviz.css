@@ -855,6 +855,7 @@ section {
 
   .heading {
     margin: -2rem 5rem 0 0;
+    padding: 0;
   }
   
   .title {
@@ -894,7 +895,7 @@ section {
   }
 
   .sidebar.sticky {
-    bottom: 0;
+    top: 0;
     position: fixed;
   }
 
