@@ -186,6 +186,18 @@
     width: 100%;
 }
 
+@media only screen and (min-width: 750px) {
+    .video-box {
+        padding: 0;
+    }
+
+    .video {
+        height: 360px;
+        position: relative;
+        width: 640px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
 
     .project-overview {

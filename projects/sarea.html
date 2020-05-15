@@ -1,0 +1,74 @@
+---
+layout: default
+title: Sarea
+permalink: /projects/sarea/
+csci2275FinalSlides:
+  - img/projects/sarea/sarea-csci2275-slides/slide0.jpg
+  - img/projects/sarea/sarea-csci2275-slides/slide1.jpg  
+  - img/projects/sarea/sarea-csci2275-slides/slide2.jpg
+  - img/projects/sarea/sarea-csci2275-slides/slide3.jpg
+  - img/projects/sarea/sarea-csci2275-slides/slide4.jpg
+  - img/projects/sarea/sarea-csci2275-slides/slide5.jpg
+  - img/projects/sarea/sarea-csci2275-slides/slide6.jpg
+  - img/projects/sarea/sarea-csci2275-slides/slide7.jpg
+  - img/projects/sarea/sarea-csci2275-slides/slide8.jpg
+---
+
+<div class="project">
+    
+    <div class="project-overview">
+        <div class="project-summary">
+            <h1>Sarea</h1>
+            <p>
+                Sarea is a digital replacement for business cards. This events-centric networking app lets you create events, RSVP to events, and request contact information from attendees.
+            </p>
+        </div>
+        <div class="project-details">
+            <p>
+                <b>Role:</b> Developer and designer
+            </p>
+            <p>
+                <b>Duration:</b> Fall 2019
+            </p>
+            <p>
+                <b>Technologies:</b> React
+            </p>
+        </div>
+    </div>
+</div>
+    
+<img class="project-hero" src="{{ site.url }}/img/projects/sarea/sarea-prev.jpg" alt="Sarea business card app previews: Event and RSVP pages" title="Sarea Business Card App Previews">
+<div class="project">
+
+    
+    <p class="project-p">
+        See the Sarea preview:
+        <br>
+        <em>Note: This video has narration</em>
+    </p>
+    <div class="video-box">
+        <iframe class="video" width="966" height="543" src="https://www.youtube.com/embed/LHjQ_UoydRE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <p class="project-p">
+        Sarea's concept was born during a college scholarship dinner. Another guest discussed the utility of paper business cards and the shortcomings of existing virtual networking apps. At the time, I was brainstorming ideas for my Data Structures final project and thought it would be a fun challenge to incorporate data structures into a networking app project.
+    </p>
+
+    <p class="project-p">
+        I decided to create a demo/sandbox for a potential digital business card app using stacks and queues. The sandbox uses React state to temporaily store data in the data structures. This data reverts to a pre-defined initial state on hard refresh.
+    </p>
+
+    {% include slideshow.html 
+        id="csci2275FinalSlideshow"
+        slides=page.csci2275FinalSlides
+    %}
+
+<script src="{{ site.url }}/js/projects.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/projects.css">
+<style>
+    #csci2275FinalSlideshow {
+        max-width: 800px;
+        width: 100%;
+    }
+</style>
+
