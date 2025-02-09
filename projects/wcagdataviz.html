@@ -1,0 +1,1254 @@
+---
+title: Web Accessibility Data Visualization
+permalink: /projects/access/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Access: A Visual Introduction to Accessible Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/wcagdataviz.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../../js/wcagdataviz.js"></script>
+  </head>
+  <body>
+    <div class="title-slide" id="slide-start">
+      <div class="heading-wrap">
+        <div class="access-anim">
+          <div class="access-anim-platform-box">
+            <div class="access-anim-platform"></div>
+          </div>
+          <div class="access-anim-cubes">
+            <div class="access-anim-cube">
+              <div class="access-anim-cube-f"></div>
+              <div class="access-anim-cube-r"></div>
+              <div class="access-anim-cube-t"></div>
+            </div>
+            <div class="access-anim-cube">
+              <div class="access-anim-cube-f"></div>
+              <div class="access-anim-cube-r"></div>
+              <div class="access-anim-cube-t"></div>
+            </div>
+            <div class="access-anim-cube">
+              <div class="access-anim-cube-f"></div>
+              <div class="access-anim-cube-r"></div>
+              <div class="access-anim-cube-t"></div>
+            </div>
+            <div class="access-anim-cube">
+              <div class="access-anim-cube-f"></div>
+              <div class="access-anim-cube-r"></div>
+              <div class="access-anim-cube-t"></div>
+            </div>
+            <div class="access-anim-cube">
+              <div class="access-anim-cube-f"></div>
+              <div class="access-anim-cube-r"></div>
+              <div class="access-anim-cube-t"></div>
+            </div>
+            <div class="access-anim-cube">
+              <div class="access-anim-cube-f"></div>
+              <div class="access-anim-cube-r"></div>
+              <div class="access-anim-cube-t"></div>
+            </div>
+            <div class="access-anim-cube">
+              <div class="access-anim-cube-f"></div>
+              <div class="access-anim-cube-r"></div>
+              <div class="access-anim-cube-t"></div>
+            </div>
+          </div>
+          <div class="access-anim-bar-chart">
+            <div class="access-anim-bar-chart-line"></div>
+            <div class="access-anim-bar-chart-line"></div>
+            <div class="access-anim-bar-chart-line"></div>
+            <div class="access-anim-bar bar-1">
+              <div class="access-anim-bar-f"></div>
+              <div class="access-anim-bar-r"></div>
+              <div class="access-anim-bar-t"></div>
+            </div>
+            <div class="access-anim-bar bar-2">
+              <div class="access-anim-bar-f"></div>
+              <div class="access-anim-bar-r"></div>
+              <div class="access-anim-bar-t"></div>
+            </div>
+            <div class="access-anim-bar bar-3">
+              <div class="access-anim-bar-f"></div>
+              <div class="access-anim-bar-r"></div>
+              <div class="access-anim-bar-t"></div>
+            </div>
+          </div>
+          <div class="access-anim-progress">
+            <div class="access-anim-progress-f">
+              <div class="access-anim-progress-f-l"></div>
+              <div class="access-anim-progress-f-r"></div>
+            </div>
+            <div class="access-anim-progress-r"></div>
+            <div class="access-anim-progress-t">
+              <div class="access-anim-progress-t-l"></div>
+              <div class="access-anim-progress-t-r"></div>
+            </div>
+          </div>
+          <div class="access-anim-ppl">
+              <i class="fas fa-male"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-male"></i>
+          </div>
+        </div>
+        <div class="heading">
+          <div class="title"><span>A</span>ccess</div>
+          <div class="subtitle">Visual introduction to accessible design.</div>
+        </div>
+      </div>
+    </div>
+    <div class="other-slides">
+      <div class="wrapper">
+        <div class="sidebar" id="sidebar">
+          <nav>
+            <ul>
+              <li>
+                <a href="#slide-start">Start</a>
+              </li>
+              <li>
+                <a href="#slide-intro">Introduction</a>
+              </li>
+              <li>
+                <a href="#slide-ada">ADA Title III</a>
+              </li>
+              <li>
+                <a href="#slide-wcag">WCAG</a>
+              </li>
+              <li>
+                <a href="#slide-checklist">Accessibility Checklist</a>
+              </li>
+              <li>
+                <a href="#slide-closing">Closing Thoughts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-toggle" tabindex="1" role="button" aria-pressed="false">Menu</div>
+        </div>
+        <div class="portal">
+          <section id="slide-intro">
+            <h1>
+              An Introduction to Accessible Web Design
+              <a href="#slide-intro" title="An Introduction to Accessible Web Design"><i class="fas fa-link"></i></a>
+            </h1>
+            <p>
+              <strong>1 billion people</strong> (15% of the world population) have some form of disability. In the United States, 1 in 4 adults live with a disability. That's 61 million Americans.
+            </p>
+            <p>
+              Many websites are not designed to accomodate the unique challenges individuals may face - including ability to see/hear content or operate a mouse.
+            </p>
+
+            <div class="clear"></div>
+
+            <h3>Visualizing Abilities and Needs</h3>
+            <p>
+              The progress bar below represents the percentage of Americans affected by a given condition(s).
+              Toggle the different radioes below to calculate the portion of the population affected.
+            </p>
+            <div class="progress-bar" id="types-dataviz">
+              <div class="fill" id="types-dataviz-fill"></div>
+              <div class="base" id="types-dataviz-base">25.7%</div>
+            </div>
+            <div id="types-dataviz-radios">
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-1" value="13.7">
+                <label for="types-dataviz-radio-1">Mobility</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-2" value="10.8">
+                <label for="types-dataviz-radio-2">Cognition</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-3" value="6.8">
+                <label for="types-dataviz-radio-3">Independent Living</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-4" value="5.9">
+                <label for="types-dataviz-radio-4">Hearing</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-5" value="4.6">
+                <label for="types-dataviz-radio-5">Vision</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-6" value="3.7">
+                <label for="types-dataviz-radio-6">Self-Care</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="types-dataviz-radio-7" value="25.7" checked>
+                <label for="types-dataviz-radio-7">All</label>
+              </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <blockquote cite="https://www.w3.org/standards/webdesign/accessibility">
+              <p>
+                The power of the web is in its universality. Access by everyone regardless of disability is an essential aspect.
+              </p>
+              <footer>- Tim Berners-Lee, W3C Director and inventor of the World Wide Web</footer>
+            </blockquote>
+          </section>
+
+          <section id="slide-ada">
+            <h2>
+              Americans With Disabilities Act (ADA) Title III
+              <a href="#slide-ada" title="Americans With Disabilities Act (ADA) Title III"><i class="fas fa-link"></i></a>
+            </h2>
+            <blockquote cite="https://www.ada.gov/ada_title_III.htm">
+              <p>
+                Title III prohibits discrimination on the basis of disability in the activities of places of public accommodations
+              </p>
+              <footer>- United States Department of Justice</footer>
+            </blockquote>
+            <p>
+              Originally enacted in 1991, ADA Title III also encompasses websites. Recent years have seen a surge in web accessibility litigation.
+            </p>
+
+            <div class="clear"></div>
+
+            <h3>Number of Website Accessibility Lawsuits</h3>
+            <p>
+              The bar chart below depicts the number of web accessibility lawsuits filed that year -
+              814 in 2017 and 2258 in 2018. 2408 new cases are projected to be filed by the end of 2019.
+            </p>
+            <div class="graph-lawsuits">
+              <div class="line-y">
+                <div>3000</div>
+              </div>
+              <div class="line-y">
+                <div>2500</div>
+              </div>
+              <div class="line-y">
+                <div>2000</div>
+              </div>
+              <div class="line-y">
+                <div>1500</div>
+              </div>
+              <div class="line-y">
+                <div>100</div>
+              </div>
+              <div class="line-y">
+                <div>500</div>
+              </div>
+              <div class="bar bar-2017">814</div>
+              <div class="bar bar-2018">2258</div>
+              <div class="bar bar-2019">2408</div>
+            </div>
+            <div class="graph-lawsuits-x">
+              <div>2017</div>
+              <div>2018</div>
+              <div>2019 (Projected)</div>
+            </div>
+            
+            <div class="clear"></div>
+
+            <h3>Distribution of Lawsuits Across the US (Top 10 States in 2018)</h3>
+            <p>
+              Each blue marker on the US map below represents one of the top 8 states where web accessibility lawsuits were filed in 2018.
+              New York (64%) and Florida (32%) make up 96% of all cases.
+            </p>
+            
+            <div class="map-dataviz">
+              <div class="map-dataviz-marker ny">64%</div>
+              <div class="map-dataviz-marker fl">32%</div>
+              <div class="map-dataviz-marker ca"></div>
+              <div class="map-dataviz-marker tx"></div>
+              <div class="map-dataviz-marker ma"></div>
+              <div class="map-dataviz-marker ga"></div>
+              <div class="map-dataviz-marker pa"></div>
+              <div class="map-dataviz-marker oh"></div>
+              <img src="../../img/projects/accessdataviz/usMap.png" alt="A grey image of the US map">
+            </div>
+          </section>
+
+          <section id="slide-wcag">
+            <h2>
+              Web Content and Accessibility Guidelines (WCAG)
+              <a href="#slide-wcag" title="Web Content and Accessibility Guidelines (WCAG)"><i class="fas fa-link"></i></a>
+            </h2>
+            <p>
+              ADA Title III does not prescribe specific accessibility guidelines for websites.
+              However, many creators and organizations follow the international standard outlined by W3C's Web Content and Accessibility Guidelines.
+            </p>
+            <p>
+              WCAG criteria revolve around four key principles:
+            </p>
+            <ul>
+              <li>Percievable: Content can be perceived and consumed.</li>
+              <li>Operable: People can use a website's functionality.</li>
+              <li>Understandable: Functionality is understandable and predictable.</li>
+              <li>Robust: Content can be interpreted reliably in different situations</li>
+            </ul>
+            <p>
+              WGAG identifies three conformance levels that become progressively stringent:
+            </p>
+            <ol>
+              <li>A: Minimum compliance.</li>
+              <li>AA: Satisfies A and AA criteria.</li>
+              <li>AAA: Highest level of conformance. Satisfies A, AA, and AAA criteria.</li>
+            </ol>
+          </section>
+  
+          <section id="slide-checklist">
+            <h2>
+              Web Accessibility Checklist and Visual
+              <a href="#slide-checklist" title="Web Accessibility Checklist and Visual"><i class="fas fa-link"></i></a>
+            </h2>
+            <p>
+              Are you a developer or designer? Fill out the following checklist to generate a simple visual representing the areas your site is compliant/noncompliant in.
+              Note: All checklist criteria are copied/summarized from W3C WCAG 2.0. The checklist covers levels A and AA.
+            </p>
+            <table class="quiz" id="quiz">
+              <tr class="crit-1-1-1-A">
+                <td>
+                  1.1.1: Non-decorative non-text content has a text alternative. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-1" name="quiz-no-1" value="no" checked>
+                    <label for="quiz-no-1">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-1" name="quiz-yes-1" value="yes">
+                    <label for="quiz-yes-1">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-1" name="quiz-unsure-1" value="unsure">
+                    <label for="quiz-unsure-1">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr  class="crit-1-2-1-A">
+                <td>
+                  1.2.1: Alternatives are provided for pre-recorded video-only and audio-only media. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-2" name="quiz-no-2" value="no" checked>
+                    <label for="quiz-no-2">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-2" name="quiz-yes-2" value="yes">
+                    <label for="quiz-yes-2">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-2" name="quiz-unsure-2" value="unsure">
+                    <label for="quiz-unsure-2">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-2-2-A">
+                <td>
+                  1.2.2: Captions are provided for pre-recorded audio. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-3" name="quiz-no-3" value="no" checked>
+                    <label for="quiz-no-3">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-3" name="quiz-yes-3" value="yes">
+                    <label for="quiz-yes-3">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-3" name="quiz-unsure-3" value="unsure">
+                    <label for="quiz-unsure-3">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-2-3-A">
+                <td>
+                  1.2.3: Audio descriptions (narration of important visual details) or alternatives are provided for pre-recorded media. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-4" name="quiz-no-4" value="no" checked>
+                    <label for="quiz-no-4">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-4" name="quiz-yes-4" value="yes">
+                    <label for="quiz-yes-4">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-4" name="quiz-unsure-4" value="unsure">
+                    <label for="quiz-unsure-4">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-2-4-AA">
+                <td>
+                  1.2.4: Captions are provided for live audio content. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-5" name="quiz-no-5" value="no" checked>
+                    <label for="quiz-no-5">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-5" name="quiz-yes-5" value="yes">
+                    <label for="quiz-yes-5">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-5" name="quiz-unsure-5" value="unsure">
+                    <label for="quiz-unsure-5">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-2-5-AA">
+                <td>
+                  1.2.5: Audio descriptions are provided for all pre-recorded video. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-6" name="quiz-no-6" value="no" checked>
+                    <label for="quiz-no-6">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-6" name="quiz-yes-6" value="yes">
+                    <label for="quiz-yes-6">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-6" name="quiz-unsure-6" value="unsure">
+                    <label for="quiz-unsure-6">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-3-1-A">
+                <td>
+                  1.3.1: Information, structure, and relationships can be determined programatically or through text. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-7" name="quiz-no-7" value="no" checked>
+                    <label for="quiz-no-7">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-7" name="quiz-yes-7" value="yes">
+                    <label for="quiz-yes-7">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-7" name="quiz-unsure-7" value="unsure">
+                    <label for="quiz-unsure-7">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-3-2-A">
+                <td>
+                  1.3.2: Correct reading sequence can be programatically determined. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-8" name="quiz-no-8" value="no" checked>
+                    <label for="quiz-no-8">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-8" name="quiz-yes-8" value="yes">
+                    <label for="quiz-yes-8">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-8" name="quiz-unsure-8" value="unsure">
+                    <label for="quiz-unsure-8">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-3-3-A">
+                <td>
+                  1.3.3: Instructions for operating content don't rely soley on sensory characteristics like shape, color, position, or sound. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-9" name="quiz-no-9" value="no" checked>
+                    <label for="quiz-no-9">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-9" name="quiz-yes-9" value="yes">
+                    <label for="quiz-yes-9">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-9" name="quiz-unsure-9" value="unsure">
+                    <label for="quiz-unsure-9">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-3-4-AA">
+                <td>
+                  1.3.4: Unless essential, content is not limited to a single orientation (Ex: landscape, portrait). (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-31" name="quiz-no-31" value="no" checked>
+                    <label for="quiz-no-31">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-31" name="quiz-yes-31" value="yes">
+                    <label for="quiz-yes-31">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-31" name="quiz-unsure-31" value="unsure">
+                    <label for="quiz-unsure-31">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-3-5-AA">
+                <td>
+                  1.3.5: The purpose of inputs can be programatically determined. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-32" name="quiz-no-32" value="no" checked>
+                    <label for="quiz-no-32">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-32" name="quiz-yes-32" value="yes">
+                    <label for="quiz-yes-32">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-32" name="quiz-unsure-32" value="unsure">
+                    <label for="quiz-unsure-32">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-4-1-A">
+                <td>
+                  1.4.1: Color is not the only means of conveying information. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-10" name="quiz-no-10" value="no" checked>
+                    <label for="quiz-no-10">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-10" name="quiz-yes-10" value="yes">
+                    <label for="quiz-yes-10">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-10" name="quiz-unsure-10" value="unsure">
+                    <label for="quiz-unsure-10">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-4-2-A">
+                <td>
+                  1.4.2: Automatic audio that plays for more than 3 seconds has a pause, stop, or volume control mechanism. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-11" name="quiz-no-11" value="no" checked>
+                    <label for="quiz-no-11">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-11" name="quiz-yes-11" value="yes">
+                    <label for="quiz-yes-11">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-11" name="quiz-unsure-11" value="unsure">
+                    <label for="quiz-unsure-11">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-4-3-AA">
+                <td>
+                  1.4.3: Non-decorative text has a constrast ratio of at least 4.5:1. Large text has a contrast ratio of at least 3:1. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-12" name="quiz-no-12" value="no" checked>
+                    <label for="quiz-no-12">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-12" name="quiz-yes-12" value="yes">
+                    <label for="quiz-yes-12">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-12" name="quiz-unsure-12" value="unsure">
+                    <label for="quiz-unsure-12">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-4-4-AA">
+                <td>
+                  1.4.4: Text (excluding captions and images) can be resized up to 200%. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-13" name="quiz-no-13" value="no" checked>
+                    <label for="quiz-no-13">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-13" name="quiz-yes-13" value="yes">
+                    <label for="quiz-yes-13">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-13" name="quiz-unsure-13" value="unsure">
+                    <label for="quiz-unsure-13">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-4-5-AA">
+                <td>
+                  1.4.5: Text is used instead of images of text unless image presentation is essential or can be customized. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-14" name="quiz-no-14" value="no" checked>
+                    <label for="quiz-no-14">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-14" name="quiz-yes-14" value="yes">
+                    <label for="quiz-yes-14">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-14" name="quiz-unsure-14" value="unsure">
+                    <label for="quiz-unsure-14">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-4-10-AA">
+                <td>
+                  1.4.10: Content does not require 2D scrolling (both x and y). (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-33" name="quiz-no-33" value="no" checked>
+                    <label for="quiz-no-33">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-33" name="quiz-yes-33" value="yes">
+                    <label for="quiz-yes-33">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-33" name="quiz-unsure-33" value="unsure">
+                    <label for="quiz-unsure-33">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-4-10-AA">
+                <td>
+                  1.4.11: Interface components and graphical objects have a 3:1 adjacent color contrast ratio. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-34" name="quiz-no-34" value="no" checked>
+                    <label for="quiz-no-34">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-34" name="quiz-yes-34" value="yes">
+                    <label for="quiz-yes-34">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-34" name="quiz-unsure-34" value="unsure">
+                    <label for="quiz-unsure-34">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-4-10-AA">
+                <td>
+                  1.4.12: Ample text spacing: (AA)
+                  <ul>
+                    <li>Line height/spacing at least 1.5 times the font size</li>
+                    <li>Space following paragraphs at least 2 times the font size</li>
+                    <li>Letter spacing at least .12 times the font size</li>
+                    <li>Word spacing at least .16 times the font size</li>
+                  </ul>
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-35" name="quiz-no-35" value="no" checked>
+                    <label for="quiz-no-35">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-35" name="quiz-yes-35" value="yes">
+                    <label for="quiz-yes-35">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-35" name="quiz-unsure-35" value="unsure">
+                    <label for="quiz-unsure-35">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-1-4-13-AA">
+                <td>
+                  1.4.13: Letter, number, punctuation, and symbol key shortcuts can be disabled, is only active when a specific component has focus, or can be remapped to a non-printable character like Ctrl or Alt. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-36" name="quiz-no-36" value="no" checked>
+                    <label for="quiz-no-36">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-36" name="quiz-yes-36" value="yes">
+                    <label for="quiz-yes-36">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-36" name="quiz-unsure-36" value="unsure">
+                    <label for="quiz-unsure-36">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-2-1-1-A">
+                <td>
+                  2.1.1: Functionality is operable via keyboard unless input depends on the path of movement. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-15" name="quiz-no-15" value="no" checked>
+                    <label for="quiz-no-15">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-15" name="quiz-yes-15" value="yes">
+                    <label for="quiz-yes-15">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-15" name="quiz-unsure-15" value="unsure">
+                    <label for="quiz-unsure-15">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-2-1-2-A">
+                <td>
+                  2.1.2: If focus can be moved to a component via keyboard, focus can be moved away via keyboard. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-16" name="quiz-no-16" value="no" checked>
+                    <label for="quiz-no-16">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-16" name="quiz-yes-16" value="yes">
+                    <label for="quiz-yes-16">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-16" name="quiz-unsure-16" value="unsure">
+                    <label for="quiz-unsure-16">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-2-2-1-A">
+                <td>
+                  2.2.1: Content time limits are removable or adjustable. (Exceptions exist) (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-17" name="quiz-no-17" value="no" checked>
+                    <label for="quiz-no-17">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-17" name="quiz-yes-17" value="yes">
+                    <label for="quiz-yes-17">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-17" name="quiz-unsure-17" value="unsure">
+                    <label for="quiz-unsure-17">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-2-2-2-A">
+                <td>
+                  2.2.2: Users can pause, stop, or hide blinking, scrolling, or auto-updating information. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-18" name="quiz-no-18" value="no" checked>
+                    <label for="quiz-no-18">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-18" name="quiz-yes-18" value="yes">
+                    <label for="quiz-yes-18">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-18" name="quiz-unsure-18" value="unsure">
+                    <label for="quiz-unsure-18">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-2-5-2-A">
+                <td>
+                  2.5.2: Single pointer functionality is cancelled by an up-event, a mechanism, or completes after the down-event. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-37" name="quiz-no-37" value="no" checked>
+                    <label for="quiz-no-37">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-37" name="quiz-yes-37" value="yes">
+                    <label for="quiz-yes-37">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-37" name="quiz-unsure-37" value="unsure">
+                    <label for="quiz-unsure-37">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-2-5-3-A">
+                <td>
+                  2.5.3: Interface components with labels have names that contain any visually-presented label text.. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-38" name="quiz-no-38" value="no" checked>
+                    <label for="quiz-no-38">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-38" name="quiz-yes-38" value="yes">
+                    <label for="quiz-yes-38">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-38" name="quiz-unsure-38" value="unsure">
+                    <label for="quiz-unsure-38">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-2-5-4-A">
+                <td>
+                  2.5.4: Functionality operated by device/user motion can be operated by interface components and disabled to prevent accidental actuation. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-39" name="quiz-no-39" value="no" checked>
+                    <label for="quiz-no-39">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-39" name="quiz-yes-39" value="yes">
+                    <label for="quiz-yes-39">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-39" name="quiz-unsure-39" value="unsure">
+                    <label for="quiz-unsure-39">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-3-1-1-A">
+                <td>
+                  3.1.1: The default language of a page can be programatically determined. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-19" name="quiz-no-19" value="no" checked>
+                    <label for="quiz-no-19">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-19" name="quiz-yes-19" value="yes">
+                    <label for="quiz-yes-19">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-19" name="quiz-unsure-19" value="unsure">
+                    <label for="quiz-unsure-19">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-3-1-2-AA">
+                <td>
+                  3.1.2: The language of each individual passage or phrase can be programatically determined. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-20" name="quiz-no-20" value="no" checked>
+                    <label for="quiz-no-20">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-20" name="quiz-yes-20" value="yes">
+                    <label for="quiz-yes-20">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-20" name="quiz-unsure-20" value="unsure">
+                    <label for="quiz-unsure-20">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-3-2-1-A">
+                <td>
+                  3.2.1: When a component receives focus, it does not initiate a change in context. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-21" name="quiz-no-21" value="no" checked>
+                    <label for="quiz-no-21">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-21" name="quiz-yes-21" value="yes">
+                    <label for="quiz-yes-21">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-21" name="quiz-unsure-21" value="unsure">
+                    <label for="quiz-unsure-21">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-3-2-2-A">
+                <td>
+                  3.2.2: Changing component settings won't automatically cause a change in context unless the user has been advised. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-22" name="quiz-no-22" value="no" checked>
+                    <label for="quiz-no-22">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-22" name="quiz-yes-22" value="yes">
+                    <label for="quiz-yes-22">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-22" name="quiz-unsure-22" value="unsure">
+                    <label for="quiz-unsure-22">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-3-2-3-AA">
+                <td>
+                  3.2.3: Navigation/navigation order is consistent across a website. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-23" name="quiz-no-23" value="no" checked>
+                    <label for="quiz-no-23">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-23" name="quiz-yes-23" value="yes">
+                    <label for="quiz-yes-23">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-23" name="quiz-unsure-23" value="unsure">
+                    <label for="quiz-unsure-23">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-3-2-4-AA">
+                <td>
+                  3.2.4: Components with the same functionality are identified consistently. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-24" name="quiz-no-24" value="no" checked>
+                    <label for="quiz-no-24">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-24" name="quiz-yes-24" value="yes">
+                    <label for="quiz-yes-24">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-24" name="quiz-unsure-24" value="unsure">
+                    <label for="quiz-unsure-24">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-3-3-1-A">
+                <td>
+                  3.3.1: Input errors are described to the user in text. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-25" name="quiz-no-25" value="no" checked>
+                    <label for="quiz-no-25">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-25" name="quiz-yes-25" value="yes">
+                    <label for="quiz-yes-25">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-25" name="quiz-unsure-25" value="unsure">
+                    <label for="quiz-unsure-25">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-3-3-2-A">
+                <td>
+                  3.3.2: Labels or instructions are provided when content needs input. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-26" name="quiz-no-26" value="no" checked>
+                    <label for="quiz-no-26">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-26" name="quiz-yes-26" value="yes">
+                    <label for="quiz-yes-26">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-26" name="quiz-unsure-26" value="unsure">
+                    <label for="quiz-unsure-26">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-3-3-3-AA">
+                <td>
+                  3.3.3: Suggestions are provided for input errors. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-27" name="quiz-no-27" value="no" checked>
+                    <label for="quiz-no-27">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-27" name="quiz-yes-27" value="yes">
+                    <label for="quiz-yes-27">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-27" name="quiz-unsure-27" value="unsure">
+                    <label for="quiz-unsure-27">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-3-3-4-AA">
+                <td>
+                  3.3.4: Actions involving legal commitments, finances, and data are reversible, checked, or can be confirmed by the user. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-28" name="quiz-no-28" value="no" checked>
+                    <label for="quiz-no-28">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-28" name="quiz-yes-28" value="yes">
+                    <label for="quiz-yes-28">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-28" name="quiz-unsure-28" value="unsure">
+                    <label for="quiz-unsure-28">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-4-1-1-A">
+                <td>
+                  4.1.1: Markup elements are properly nested, don't contain duplicate attributes, and have unique IDs. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-29" name="quiz-no-29" value="no" checked>
+                    <label for="quiz-no-29">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-29" name="quiz-yes-29" value="yes">
+                    <label for="quiz-yes-29">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-29" name="quiz-unsure-29" value="unsure">
+                    <label for="quiz-unsure-29">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-4-1-2-A">
+                <td>
+                  4.1.2: The name and role of user interface components can be programatically determined. (A)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-30" name="quiz-no-30" value="no" checked>
+                    <label for="quiz-no-30">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-30" name="quiz-yes-30" value="yes">
+                    <label for="quiz-yes-30">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-30" name="quiz-unsure-30" value="unsure">
+                    <label for="quiz-unsure-30">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="crit-4-1-3-AA">
+                <td>
+                  4.1.3: A status message's role can be programatically determined. (AA)
+                </td>
+                <td class="quiz-options">
+                  <div>
+                    <input type="radio" id="quiz-no-40" name="quiz-no-40" value="no" checked>
+                    <label for="quiz-no-40">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-yes-40" name="quiz-yes-40" value="yes">
+                    <label for="quiz-yes-40">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="quiz-unsure-40" name="quiz-unsure-40" value="unsure">
+                    <label for="quiz-unsure-40">Unsure</label>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <input type="submit" class="btn-primary" role="button" id="wcag-dataviz-submit" value="Submit">
+    
+            <div class="clear"></div>
+
+            <h3>How Accessible is My Interface?</h3>
+            <p>
+              Web accessibility guidelines can feel like a lot to take in.
+              <strong>Can visuals impart a more digestible understanding of how product accessibility can be improved?</strong>
+            </p>
+            <p>
+              The chart below is divided into two columns representing WCAG levels A and AA. Four rows represent the four core principles (Percievable, Operable, Understandable, and Robust).
+              Based on your answers to the checklist above, colored squares representing each guideline are inserted into the chart.
+            </p>
+            <div class="wcag-dataviz-key">
+              <div class="wcag-dataviz-cube yes"></div> Compliant
+              <div class="wcag-dataviz-cube no"></div> Noncompliant
+              <div class="wcag-dataviz-cube unsure"></div> Unsure
+            </div>
+            <table class="wcag-dataviz">
+              <tr>
+                <td></td>
+                <td>A</td>
+                <td>AA</td>
+              </tr>
+              <tr>
+                <td>Percievable</td>
+                <td id="wcag-dataviz-1-A"></td>
+                <td id="wcag-dataviz-1-AA"></td>
+              </tr>
+              <tr>
+                <td>Operable</td>
+                <td id="wcag-dataviz-2-A"></td>
+                <td id="wcag-dataviz-2-AA"></td>
+              </tr>
+              <tr>
+                <td>Understandable</td>
+                <td id="wcag-dataviz-3-A"></td>
+                <td id="wcag-dataviz-3-AA"></td>
+              </tr>
+              <tr>
+                <td>Robust</td>
+                <td id="wcag-dataviz-4-A"></td>
+                <td id="wcag-dataviz-4-AA"></td>
+              </tr>
+            </table>
+
+            <p>
+              Noticeable patterns that emerge from the visual could be used to: 
+            </p>
+            <ul>
+              <li>Identify broad areas where a site/product is compliant.</li>
+              <li>Identify broad areas that are noncompliant and may need more focus and adjustment.</li>
+              <li>
+                Identify broad areas that aren't well understood and could use more testing and research.
+                These guidelines present a good opportunity to learn more about accessibility concerns.
+              </li>
+            </ul>
+          </section>
+
+          <section id="slide-closing">
+            <h2>
+              Closing Thoughts
+              <a href="#slide-closing" title="Closing Thoughts"><i class="fas fa-link"></i></a>
+            </h2>
+          </section>
+
+          <section id="slide-bibliography">
+            <h2>
+              Bibliography
+              <a href="#slide-bibliography" title="Bibliography"><i class="fas fa-link"></i></a>
+            </h2>
+            <p>
+              “ADA.gov.” Public Accommodations and Commercial Facilities (Title III), United States Department of Justice, 11 Mar. 2011, www.ada.gov/ada_title_III.htm. ADA Title III information and regulations
+            </p>
+            <p>
+              “Disability Inclusion Overview.” World Bank, World Bank Group, www.worldbank.org/en/topic/disability. Global disability statistics
+            </p>
+            <p>
+              Launey, Kristina M, and Minh N Vu. “Federal Website Access Lawsuit Numbers Increase 7 Percent in 2019.” ADA Title III, Seyfarth Shaw, 1 Nov. 2019, www.adatitleiii.com/2019/11/federal-website-access-lawsuit-numbers-increase-7-percent-in-2019-with-possible-bump-from-supreme-court-denial-of-cert-in-dominos/. ADA Title III litigation statistics and 2019 projection.
+            </p>
+            <p>
+              Okoro, Catherine A, et al. “Prevalence of Disabilities and Health Care Access by Disability Status and Type Among Adults - United States, 2016.” Centers for Disease Control and Prevention, U.S. Department of Health &amp; Human Services, 16 Aug. 2018, www.cdc.gov/mmwr/volumes/67/wr/mm6732a3.htm?s_cid=mm6732a3_w. 2016 United States disability statistics
+            </p>
+            <p>
+              Taylor, Jason. “ADA Web Accessibility Lawsuit Report [Infographic].” UsableNet, UsableNet, 21 Sept. 2019, blog.usablenet.com/ada-web-accessibility-lawsuit-report-infographic. Number of web accessibility lawsuits and litigation distribution.
+            </p>
+            <p>
+              “Web Content Accessibility Guidelines (WCAG) 2.1.” Edited by Andrew Kirkpatrick et al., W3C, 5 June 2018, www.w3.org/TR/WCAG21/.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

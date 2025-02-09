@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151976977-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-151976977-1');
+    </script>
+  <title>Gernene</title>
+  <meta name="description" content="I'm Gernene - A full-stack developer and designer
+  who crafts intuitive apps using code and creativity.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.url }}/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.url }}/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.url }}/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.url }}/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="{{ site.url }}/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="{{ site.url }}/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="{{ site.url }}/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="{{ site.url }}/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="{{ site.url }}/mstile-310x310.png" />
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Poppins:300,300i,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css">
+  <script src="https://use.fontawesome.com/d9824fe07b.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
+
+  {% if page.custom_css %}
+      {% for stylesheet in page.custom_css %}
+          <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+      {% endfor %}
+  {% endif %}
+
+  {% if page.custom_js %}
+      {% for js_file in page.custom_js %}
+          <script src='/js/{{ js_file }}.js' type="text/javascript"></script>
+      {% endfor %}
+  {% endif %}
+</head>
+<body>
+
+<div class="wrapper">
+
+  <div id="nav">
+    <div id="nav-top">
+      <div id="nav-sm">
+        <a href="https://github.com/Gernene"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/gernene.tan"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <a class="nav-home" href="{{ site.url }}">
+        <img src="{{ site.url }}/img/TangerineLogo.png">
+        Gernene
+      </a>
+      <div id='hamburger' onclick='hamburger(this)'>
+        <div class='bar1'></div>
+        <div class='bar2'></div>
+        <div class='bar3'></div>
+      </div>
+    </div>
+    {% include nav.html %}
+  </div>
+
+  <div id="content">
+    {{ content }}
+  </div>
+
+  <div id="footer">
+    &copy; Gernene 2016-{{ site.time | date: '%Y' }}
+    <div id="footer-sm">
+      <a href="https://github.com/Gernene" target="blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/gernene.tan" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    {% include nav.html %}
+  </div>
+
+</div>
+
+</body>
+</html>

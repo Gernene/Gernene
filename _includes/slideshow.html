@@ -1,0 +1,16 @@
+<div class="slideshow" id="{{ include.id }}">
+    <div class="slides">
+        {% for img in include.slides %}
+        <img class="slide" src="{{ site/url }}/{{ img }}">
+        {% endfor %}
+    </div>
+    <div class="slideshow-nav">
+        <div class="slideshow-arrow slideshow-l">&#10094;</div>
+        <div class="slideshow-dots">
+            {% for img in include.slides %}
+                <div class="slideshow-dot"></div>
+            {% endfor %}
+        </div>
+        <div class="slideshow-arrow slideshow-r">&#10095;</div>
+    </div>
+</div>

@@ -1,0 +1,957 @@
+html,
+body {
+  color: rgba(0, 0, 0, .8);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5em;;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  position: relative;
+}
+
+a {
+  color: #000066;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+section {
+  margin: 0 0 20rem 0;
+  position: relative;
+}
+
+h1 a,
+h2 a,
+h3 a {
+  color: rgba(0, 0, 0, .8);
+  font-size: 1rem;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover {
+  color: #000099;
+}
+
+.clear {
+  height: 5rem;
+}
+
+.btn-primary {
+  background: #000066;
+  border: 3px solid #000066;
+  border-radius: .5rem;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  transition: all .4s ease;
+}
+
+.btn-primary:hover {
+  background: #fff;
+  color: #000066;
+  cursor: pointer;
+}
+
+.wrapper {
+  padding: 0 1rem;
+}
+
+.portal {
+  flex: 1;
+}
+
+.quiz {
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+
+.quiz tr {
+  display: flex;
+}
+
+.quiz td {
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  flex: 1;
+  padding: 1rem 0;
+}
+
+.quiz td:last-child {
+  flex: 0;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.quiz tr:last-child td {
+  border: 0;
+}
+
+.quiz-options {
+  display: flex;
+}
+
+.quiz-options div {
+  margin: 0 1rem 0 0;
+  text-align: center;
+}
+
+.quiz-options div:last-child {
+  margin: 0;
+}
+
+.wcag-dataviz {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 3rem 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.wcag-dataviz td {
+  vertical-align: top;
+}
+
+.wcag-dataviz-cube {
+  border-radius: .4rem;
+  display: inline-block;
+  height: 1.5rem;
+  margin: 0 .5rem .5rem 0;
+  width: 1.5rem;
+}
+
+.wcag-dataviz-cube.yes {
+  background: #000066;
+}
+
+.wcag-dataviz-cube.no {
+  background: #ffbb33;
+}
+
+.wcag-dataviz-cube.unsure {
+  background: rgba(0, 0, 0, .2);
+}
+
+.wcag-dataviz-key {
+  margin: 3rem 0 1rem 0;
+}
+
+.wcag-dataviz-key .wcag-dataviz-cube {
+  margin: 0 .5rem 0 2rem;
+}
+
+.wcag-dataviz-key .wcag-dataviz-cube:first-child {
+  margin: 0 .5rem 0 0;
+}
+
+
+.map-dataviz {
+  margin: 3rem 0 0 0;
+  position: relative;
+}
+
+.map-dataviz img {
+  width: 100%;
+}
+
+.map-dataviz-marker {
+  align-items: center;
+  background: #000066;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  position: absolute;
+}
+
+.map-dataviz-marker.ny {
+  height: 4rem;
+  left: 80%;
+  top: 18%;
+  width: 4rem;
+}
+
+.map-dataviz-marker.fl {
+  height: 3rem;
+  left: 80%;
+  top: 80%;
+  width: 3rem;
+}
+
+.map-dataviz-marker.ca {
+  height: .8rem;
+  left: 7%;
+  top: 50%;
+  width: .8rem;
+}
+
+.map-dataviz-marker.tx {
+  height: .8rem;
+  left: 45%;
+  top: 78%;
+  width: .8rem;
+}
+
+.map-dataviz-marker.ma {
+  height: .8rem;
+  left: 90%;
+  top: 25%;
+  width: .8rem;
+}
+
+.map-dataviz-marker.pa {
+  height: .8rem;
+  left: 80%;
+  top: 35%;
+  width: .8rem;
+}
+
+.map-dataviz-marker.ga {
+  height: .8rem;
+  left: 75%;
+  top: 70%;
+  width: .8rem;
+}
+
+.map-dataviz-marker.oh {
+  height: .8rem;
+  left: 72%;
+  top: 37%;
+  width: .8rem;
+}
+
+.progress-bar {
+  border-radius: .5rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.progress-bar .base {
+  background: #000066;
+  color: #ffbb33;
+  flex: 1;
+  font-size: 2rem;
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.progress-bar .fill {
+  background: #ffbb33;
+  transition: all .4s ease;
+  width: 30%;
+}
+
+.graph-lawsuits {
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: flex-end;
+  margin: 3rem 0 0 3rem;
+  position: relative;
+}
+
+.graph-lawsuits .line-y {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  flex: 1;
+  position: relative;
+}
+
+.graph-lawsuits .line-y div {
+  position: absolute;
+  margin: -.6rem 0 0 -3rem;
+}
+
+.graph-lawsuits .bar {
+  background: #000066;
+  border-radius: .8rem .8rem 0 0;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 0 0 2rem;
+  padding: .5rem;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+
+.graph-lawsuits .bar.bar-2017 {
+  height: 27%;
+}
+
+.graph-lawsuits .bar.bar-2018 {
+  height: 75%;
+  left: 8rem;
+}
+
+.graph-lawsuits .bar.bar-2019 {
+  height: 80%;
+  left: 16rem;
+}
+
+.graph-lawsuits-x {
+  display: flex;
+  margin: 0 0 0 3rem;
+}
+
+.graph-lawsuits-x div {
+  margin: 0 0 0 2rem;
+  text-align: center;
+  width: 6rem;
+}
+
+.heading-wrap {
+  height: 100vh;
+}
+
+.title-slide {
+  background: #000066;
+}
+
+.slide-0-bg {
+  position: fixed;
+}
+
+.other-slides {
+  background: #fff;
+  padding: 10rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.heading {
+  background: #000066;
+  padding: 3rem 1rem 1rem 1rem;
+  position: relative;
+}
+
+.title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.title span {
+  color: #ffbb33;
+}
+
+.subtitle {
+  color: #ffbb33;
+  font-size: 2rem;
+  text-transform: lowercase;
+}
+
+.access-anim {
+  bottom: 10rem;
+  left: 0;
+  margin: 0 0 0 4rem;
+  perspective: 100vw;
+  position: fixed;
+}
+
+.access-anim-bar-chart {
+  border: 3px solid #fff;
+  border-top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-45deg) translateZ(-1rem);
+  width: 14rem;
+}
+
+.access-anim-bar-chart-line {
+  border-top: 3px solid #fff;
+  flex: 1;
+}
+
+.access-anim-bar {
+  bottom: 0;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(1rem);
+  width: 2rem;
+}
+
+.access-anim-bar.bar-1 {
+  height: 8rem;
+  left: 2rem;
+}
+
+.access-anim-bar.bar-2 {
+  height: 6rem;
+  left: 6rem;
+}
+
+.access-anim-bar.bar-3 {
+  height: 4rem;
+  left: 10rem;
+}
+
+.access-anim-bar-t {
+  background: #000066;
+  border: 3px solid #fff;
+  border-right: 0;
+  height: 2rem;
+  position: absolute;
+  width: 2rem;
+}
+
+.access-anim-bar-f {
+  background: #fff;
+  border: 3px solid #fff;
+  position: absolute;
+  transform: translateZ(1rem);
+  width: 2rem;
+}
+
+.access-anim-bar-r {
+  background: #000066;
+  border: 3px solid #fff;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(1rem);
+  width: 2rem;
+}
+
+.access-anim-bar.bar-1 .access-anim-bar-t {
+  top: 3rem;
+  transform: rotateX(-90deg) translateZ(-4rem);
+}
+
+.access-anim-bar.bar-1 .access-anim-bar-f,
+.access-anim-bar.bar-1 .access-anim-bar-r {
+  height: 8rem;
+}
+
+.access-anim-bar.bar-2 .access-anim-bar-t {
+  top: 2rem;
+  transform: rotateX(-90deg) translateZ(-3rem);
+}
+
+.access-anim-bar.bar-2 .access-anim-bar-f,
+.access-anim-bar.bar-2 .access-anim-bar-r {
+  height: 6rem;
+}
+
+.access-anim-bar.bar-3 .access-anim-bar-t {
+  top: 1rem;
+  transform: rotateX(-90deg) translateZ(-2rem);
+}
+
+.access-anim-bar.bar-3 .access-anim-bar-f,
+.access-anim-bar.bar-3 .access-anim-bar-r {
+  height: 4rem;
+}
+
+.access-anim-progress {
+  height: 2rem;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-45deg) translateY(13rem) translateZ(5rem);
+  width: 14rem;
+}
+
+.access-anim-progress-t {
+  background: #000066;
+  display: flex;
+  height: 2rem;
+  position: absolute;
+  transform: rotateX(-90deg) translateZ(-1rem);
+  width: 14rem;
+}
+
+.access-anim-progress-f {
+  background: #000066;
+  display: flex;
+  height: 2rem;
+  position: absolute;
+  transform: translateZ(1rem);
+  width: 14rem;
+}
+
+.access-anim-progress-r {
+  background: #000066;
+  border: 3px solid #fff;
+  height: 2rem;
+  left: 6rem;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(7rem);
+  width: 2rem;
+}
+
+.access-anim-progress-f-l {
+  background: #ffbb33;
+  border: 3px solid #ffbb33;
+  width: 4rem;
+}
+
+.access-anim-progress-t-l {
+  background: #000066;
+  border: 3px solid #ffbb33;
+  width: 4rem;
+}
+
+.access-anim-progress-t-r {
+  background: #000066;
+  border: 3px solid #fff;
+  border-left: 0;
+  border-right: 0;
+  flex: 1;
+}
+
+.access-anim-progress-f-r {
+  background: #fff;
+  border: 3px solid #fff;
+  border-left: 0;
+  border-top: 0;
+  flex: 1;
+}
+
+.access-anim-ppl {
+  background: #fff;
+  border: 3px solid #000066;
+  color: #000066;
+  font-size: 2rem;
+  padding: 1rem;
+  transform: rotateX(-30deg) rotateY(-45deg) translateY(5rem) translateZ(3rem);
+  width: 10rem;
+}
+
+.access-anim-ppl i:first-child {
+  color: #ffbb33;
+}
+
+.access-anim-cubes {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-45deg) translateZ(-8rem);
+  width: 10rem;
+}
+
+.access-anim-cube {
+  height: 1rem;
+  margin: 0 1rem 1rem 0;
+  transform-style: preserve-3d;
+  width: 1rem;
+}
+
+.access-anim-cube-t,
+.access-anim-cube-f,
+.access-anim-cube-r {
+  height: 1rem;
+  position: absolute;
+  width: 1rem;
+}
+
+.access-anim-cube-t {
+  background: #000066;
+  border: 3px solid #ffbb33;
+  transform: rotateX(-90deg) translateZ(-.5rem);
+}
+
+.access-anim-cube-f {
+  background: #ffbb33;
+  transform: translateZ(.5rem);
+}
+
+.access-anim-cube-r {
+  background: #000066;
+  border: 3px solid #ffbb33;
+  transform: rotateY(90deg) translateZ(.5rem);
+}
+
+.access-anim-platform-box {
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-45deg) translateY(5rem);
+}
+
+.access-anim-platform {
+  border: 3px solid #fff;
+  height: 20rem;
+  width: 20rem;
+  transform: rotateX(-90deg) translateZ(10rem);
+}
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: "";
+  
+  /*Needed for the line-height to take effect*/
+  display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+  height: 1rem;
+  width: 1rem;
+  
+  border: 3px solid #000066;
+  border-radius: .2rem;
+  left: 0;
+  top: 0;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+  height: .3rem;
+  width: .6rem;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(-45deg);
+  left: .3rem;
+  top: .3rem;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+.checkbox input[type="checkbox"]:checked + label:before {
+  background: #000066;
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+/* .checkbox input[type="checkbox"]:focus + label::before {
+} */
+
+
+#types-dataviz {
+  margin: 3rem 0;
+}
+
+#types-dataviz-radios .radio {
+  margin: 0 0 1rem 0;
+}
+
+
+.quiz-options div
+#types-dataviz-radios div {
+  position: relative;
+}
+
+.quiz-options input[type="radio"],
+#types-dataviz-radios input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.quiz-options label{
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem 0 0 0;
+}
+
+#types-dataviz-radios label {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 2rem;
+}
+
+.quiz-options label::before,
+.quiz-options label::after,
+#types-dataviz-radios label::before,
+#types-dataviz-radios label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+.quiz-options label::before,
+#types-dataviz-radios label::before {
+  height: 1rem;
+  width: 1rem;
+  border: 3px solid #000066;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
+
+.quiz-options label::after,
+#types-dataviz-radios label::after {
+  height: .3rem;
+  width: .6rem;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(-45deg);
+  left: .3rem;
+  top: .3rem;
+}
+
+.quiz-options input[type="radio"] + label::after,
+#types-dataviz-radios input[type="radio"] + label::after {
+  content: none;
+}
+
+.quiz-options input[type="radio"]:checked + label::after,
+#types-dataviz-radios input[type="radio"]:checked + label::after {
+  content: "";
+}
+
+.quiz-options input[type="radio"]:checked + label:before,
+#types-dataviz-radios input[type="radio"]:checked + label:before {
+  background: #000066;
+}
+
+.quiz-options input[type="radio"]:focus + label::before,
+#types-dataviz-radios input[type="radio"]:focus + label::before {
+  outline: 1px solid #000066;
+}
+
+
+#types-dataviz {
+  margin: 3rem 0;
+}
+
+#types-dataviz-radios .radio {
+  margin: 0 0 1rem 0;
+}
+
+.sidebar nav {
+  background: #000066;
+  height: 80vh;
+  width: 100%;
+  z-index: 200;
+}
+
+.sidebar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  margin: 0 0 -2.5rem 0;
+  position: fixed;
+  top: -80vh;
+  transition: all .4s ease;
+  width: 100%;
+  z-index: 100;
+}
+
+.sidebar.active {
+  top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-toggle {
+  align-items: flex-end;
+  background: #000066;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+  height: 5rem;
+  justify-content: center;
+  margin: -2.5rem 0 0 0;
+  padding: 0 0 1rem 0;
+  transition: all .4s ease;
+  width: 5rem;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background: #000099;
+  cursor: pointer;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all .4s ease;
+}
+
+.sidebar a:hover {
+  background: #000099;
+}
+
+@media only screen and (max-width: 500px) {
+  .wcag-dataviz-key {
+    display: block;
+  }
+
+  .other-slides {
+    padding: 5rem 0;
+  }
+
+  section {
+    margin: 0 0 5rem 0;
+  }
+
+  .clear {
+    height: 3rem;
+  }
+
+  .quiz tr {
+    display: block;
+  }
+  
+  .quiz td {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    display: flex;
+    flex: 1;
+    padding: 1rem 0;
+  }
+
+  .quiz tr td:first-child {
+    border: 0;
+    padding: 1rem 0 .5rem 0;
+  }
+
+  .quiz tr td:last-child {
+    padding: 0 0 1rem 0;
+  }
+
+  .graph-lawsuits {
+    font-size: 1rem;
+  }
+
+  .graph-lawsuits .bar {
+    margin: 0 0 0 1rem;
+    width: 3rem;
+  }
+
+  .graph-lawsuits .bar.bar-2018 {
+    left: 4rem;
+  }
+
+  .graph-lawsuits .bar.bar-2019 {
+    left: 8rem;
+  }
+
+  .graph-lawsuits-x div {
+    margin: 0 0 0 1rem;
+    text-align: center;
+    width: 3rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  h1 a,
+  h2 a,
+  h3 a {
+    position: absolute;
+    right: -2rem;
+    top: 0;
+  }
+
+  .heading-wrap {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1500px;
+    position: relative;
+  }
+
+  .heading {
+    margin: -2rem 5rem 0 0;
+    padding: 0;
+  }
+  
+  .title {
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+  
+  .subtitle {
+    font-size: 3rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .access-anim {
+    bottom: auto;
+    top: 10rem;
+  }
+
+  .wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 16rem;
+  }
+
+  .sidebar {
+    align-items: flex-end;
+    display: flex;
+    font-weight: bold;
+    margin: -1rem 0 0 0;
+    padding: 2rem 0 .5rem 0;
+    position: absolute;
+    top: auto;
+    width: 18rem;
+  }
+
+  .sidebar.sticky {
+    top: 0;
+    position: fixed;
+  }
+
+  .sidebar nav {
+    background: none;
+    height: auto;
+  }
+
+  .sidebar a::after {
+    content: "";
+    height: 0;
+    border: .5rem solid transparent;
+    border-left: .5rem solid rgba(0, 0, 0, .8);
+    margin: .25rem 0 0 .5rem;
+    position: absolute;
+    transition: all .4s ease;
+    width: 0;
+  }
+
+  .sidebar a {
+    color: rgba(0, 0, 0, .8);
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: all .4s ease;
+  }
+
+  .sidebar a:hover {
+    background: none;
+    color: #000099;
+    text-decoration: underline;
+  }
+
+  .sidebar a:hover::after {
+    border-left: .5rem solid #000099;
+  }
+}

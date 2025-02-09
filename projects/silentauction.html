@@ -1,0 +1,177 @@
+---
+layout: default
+title: Silent Auction
+permalink: /projects/silentauction/
+---
+
+<div class="project">
+    
+    <div class="project-overview">
+        <div class="project-summary">
+            <h1>Silent Auction</h1>
+            <p>
+                Every year, Fairview High School’s National Honor Society (NHS) hosts a silent auction to support a local organization. I worked in parallel with another developer to build NHS a web-based silent auction app.
+            </p>
+        </div>
+        <div class="project-details">
+            <p>
+                <b>Role:</b> Full-stack developer (front-end emphasis)
+            </p>
+            <p>
+                <b>Duration:</b> 2019
+            </p>
+            <p>
+                <b>Technologies:</b> NodeJS, React, TypeScript
+            </p>
+        </div>
+    </div>
+</div>
+    
+<img class="project-hero" src="{{ site.url }}/img/projects/silent-auction/overview.jpg" alt="Fairview High School Website Redesign">
+<div class="project">
+
+    <div class="accordion expand">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Goals & Criteria</h2>
+            <div class="accordion-icon expand"></div>
+        </div>
+        <div class="accordion-content">
+            <ol>
+                <li>
+                    Anonymous bidding
+                </li>
+                <li>
+                    Alternate auctions based on auction date
+                </li>
+                <li>
+                    Display information about auctions (ex: starting price and highest bid) in clear, accessible manner
+                </li>
+                <li>
+                    Simple content management system
+                </li>
+                <li>
+                    Quick and easy way for bidders to provide contact info
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="accordion expand">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Context</h2>
+            <div class="accordion-icon expand"></div>
+        </div>
+        <div class="accordion-content">
+            <p class="project-p">
+                Traditionally, NHS conducts its silent auction digitally. This year, NHS prepared 24 auctionable bundles containing items from multiple sponsors. At parent-teacher conferences, NHS members would present parents the silent auction site via Chromebook or iPad. Parents would then be asked to bid on bundles.
+            </p>
+            <p class="project-p">
+                Another site had been built for the annual silent auction a number of years ago. My partner and I struggled to understand and operate the site due to an absence of documentation, buggy code, and obscure features that failed to meet NHS's current needs. We ultimately decided that between salvaging the old site and creating a new one, the latter was more feasible and sustainable over time.
+            </p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Challenges</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content"> 
+            <ul>
+                <li>
+                    <b>Understanding needs</b>
+                    <br>
+                    As this was my first time participating in the silent auction event, a lot of communication was needed to help me understand the context of the situation and what functions the app needed to support.
+                </li>
+                <li>
+                    <b>Time constraints</b>
+                    <br>
+                    We had just a few days to build the site.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Design & Development Process</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content">
+            <p class="project-p">
+                Due to the extreme project time frame (four days), development and design took place almost simultaneously. Before beginning work, I made several quick wireframes to show the other developer (who would be building the application backend) how I planned to structure the user interface and what information I would need from the backend.
+            </p>
+            <div class="project-sketches">
+                <img src="{{ site.url }}/img/projects/silent-auction/sketch-1.jpg" alt="Mockup Sketch" title="Mockup Sketch">
+                <img src="{{ site.url }}/img/projects/silent-auction/sketch-2.jpg" alt="Mockup Sketch" title="Mockup Sketch">
+            </div>
+            <div class="project-l">
+                <div class="project-l-content">
+                    <p>
+                        I proceeded to create and style different React components (ex: sign up form, auctions, bidding forms) to incorporate into the application. As we continued to learn about NHS’s needs (such as a request to display the logos of the sponsors for each auction), I made slight adjustments to the designs.
+                    </p>
+                </div>
+                <img class="project-l-preview" src="{{ site.url }}/img/projects/silent-auction/sketch-3.jpg" alt="Auctions Modified to Accomodate Sponsor Logos" title="Auctions Modified to Accomodate Sponsor Logos">
+            </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Solution</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content">  
+            <p class="project-p">
+                By working efficiently and switching roles between backend and frontend development, my partner and I completed the site just in time. After two days, all auctions closed above starting price.
+            </p>
+            
+            <img class="project-mockups" src="{{ site.url }}/img/projects/silent-auction/mockups.jpg" alt="Mockups" title="Mockups">
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Reflections</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content">
+            <p class="project-p">
+                Although I was very pleased with the results, working on silent auction taught me some important lessons about time-management. Ideally, we should have spent more time developing the new app instead of trying in vain to rescue its predecessor. Development was beyond stressful and even a small disruption or mistake could have compromised the project's completion.
+            </p>
+            <p class="project-p">
+                Also, we'll definitely take care to document the new site to the best of our abilities. :3
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script src="{{ site.url }}/js/projects.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/projects.css">
+<style>
+    .project-sketches {
+        margin: 3rem 0;
+        text-align: center;
+    }
+
+    .project-sketches img {
+        border-radius: .5rem;
+        display: inline-block;
+        margin: 0 .5rem 1rem .5rem;
+        max-height: 25rem;
+        max-width: 100%;
+    }
+
+    .project-mockups {
+        border-radius: 1rem;
+        margin: 2rem 0 3rem 0;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 400px) {
+        .project-sketches img {
+            margin: 0 0 .5rem 0;
+        }
+
+    }
+</style>

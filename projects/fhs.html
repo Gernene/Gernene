@@ -1,0 +1,242 @@
+---
+layout: default
+title: Fairview High School
+permalink: /projects/fhs/
+counselingWireframes:
+  - img/projects/fhs/counseling-wires/home.jpg
+  - img/projects/fhs/counseling-wires/about.jpg
+  - img/projects/fhs/counseling-wires/academics.jpg
+  - img/projects/fhs/counseling-wires/counseling.jpg
+  - img/projects/fhs/counseling-wires/athletics.jpg
+  - img/projects/fhs/counseling-wires/arts.jpg
+  - img/projects/fhs/counseling-wires/clubs.jpg
+  - img/projects/fhs/counseling-wires/college.jpg
+---
+
+<div class="project">
+    
+    <div class="project-overview">
+        <div class="project-summary">
+            <h1>Fairview High School</h1>
+            <p>
+                I led a <b><a href="https://fairviewhs.org">responsive redesign</a></b> and content restructure of Fairview High School’s website to provide an intuitive way for students, staff, and parents to find information and manage their content. 
+            </p>
+        </div>
+        <div class="project-details">
+            <p>
+                <b>Role:</b> Webmaster and Co-Leader, Redesign Lead
+            </p>
+            <p>
+                <b>Duration:</b> 2016-2019
+            </p>
+            <p>
+                <b>Technologies:</b> Ruby on Rails
+            </p>
+        </div>
+    </div>
+</div>
+    
+<img class="project-hero" src="{{ site.url }}/img/projects/fhs/overview.jpg" alt="Fairview High School Website Redesign" title="Fairview High School Website Redesign">
+<div class="project">
+
+    <div class="accordion expand">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Goals</h2>
+            <div class="accordion-icon expand"></div>
+        </div>
+        <div class="accordion-content">
+            <ol>
+                <li>
+                    <b>Improve cross-device usability</b>
+                    <br>
+                    The original site was not responsive and built specifically for desktop. A completely separate set of styles/views was created for mobile devices. This setup was difficult for the Fairview Web Team to maintain and failed to provide the same information and ease-of-use across different devices.
+                </li>
+                <li>
+                    <b>Improve content organization</b>
+                    <br>
+                    Content provided by the school’s counseling department was relegated to a separate section of the site even when more appropriate elsewhere.
+                </li>
+                <li>
+                    <b>Simplify content editing</b>
+                    <br>
+                    Site editors often lacked the knowledge of HTML and CSS needed to add/edit content on the site.
+                </li>
+            </ol>
+            <div class="project-old">
+                <img src="{{ site.url }}/img/projects/fhs/old-desktop.png" alt="Original Non-Responsive Desktop Site" title="Original Non-Responsive Desktop Site">
+                <img src="{{ site.url }}/img/projects/fhs/old-mobile.png" alt="Original Mobile Site" title="Original Mobile Site">
+                <img src="{{ site.url }}/img/projects/fhs/old-counseling.png" alt="Counseling Site" title="Counseling Site">
+                <img src="{{ site.url }}/img/projects/fhs/old-cms.png" alt="Original CMS" title="Original CMS">
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Challenges</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content"> 
+            <ul>
+                <li>
+                    <b>Large project scope</b>
+                    <br>
+                    A wide array of features and ideas were implemented simultaneously by a small team.
+                </li>
+                <li>
+                    <b>Time constraints</b>
+                    <br>
+                    Web Team is run by student volunteers. Members have a limited amount of time to contribute to project development.
+                </li>
+                <li>
+                    <b>Technical barriers</b>
+                    <br>
+                    Solutions to the complex content management system (CMS) were limited to the technical expertise of volunteer site editors.
+                </li>
+                <li>
+                    <b>Compromise and communication</b>
+                    <br>
+                    Reconciling content/information retention with technical and time constraints was very difficult. There were many situations where individuals held differing opinions about what changes were necessary and how to implement them.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Design & Development Process</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content"> 
+            <h3>Responsive Redesign</h3> 
+            <p class="project-p">
+                In 2016, I helped Web Team prepare various mockups in anticipation of a purely visual redesign. These mockups were reviewed by other team members and adjusted according to their feedback.
+            </p>
+            <img class="project-mockups" src="{{ site.url }}/img/projects/fhs/visual-mockups.png" alt="Visual Mockups" title="Visual Mockups">
+            <div class="project-l">
+                <div class="project-l-content">
+                    <p>
+                        Development of the new UI took place over several months. In 2017, Web Team revealed the new design for beta testing. We collected feedback from staff and students through surveys and personal interviews.
+                    </p>
+                </div>
+                <img class="project-l-preview" src="{{ site.url }}/img/projects/fhs/redesign1.jpg" alt="Redesign BETA" title="Redesign BETA">
+            </div>
+            <h3>Content Restructure</h3>
+            <div class="project-l">
+                <div class="project-l-content">
+                    <p>
+                        By 2018, as Web Team continued to adjust the redesign, Fairview’s counseling department used a combination of card sorting and personal feedback to develop a new content hierarchy and organization proposal for the website. 
+                    </p>
+                    <p>
+                        The proposal sought to address the difficulties students and parents faced when searching for school information on the site.
+                    </p>
+                </div>
+                
+                {% include slideshow.html 
+                    id="counselingWireframes"
+                    slides=page.counselingWireframes 
+                %}
+            </div>
+
+            
+            <p class="project-p">
+                While exploring ways to present so much information, we also made significant stylistic adjustments to the redesign to enhance clarity and scannability.
+            </p>
+            
+            <div class="restructure-sketches">
+                <img src="{{ site.url }}/img/projects/fhs/restructure-sketch-1.jpg" alt="Mockup Sketch" title="Mockup Sketch">
+                <img src="{{ site.url }}/img/projects/fhs/restructure-sketch-2.jpg" alt="Mockup Sketch" title="Mockup Sketch">
+                <img src="{{ site.url }}/img/projects/fhs/restructure-sketch-3.jpg" alt="Mockup Sketch" title="Mockup Sketch">
+                <img src="{{ site.url }}/img/projects/fhs/restructure-sketch-4.jpg" alt="Mockup Sketch" title="Mockup Sketch">
+            </div>
+
+            <h3>Simplifying Content Management</h3>
+            <p class="project-p">
+                After multiple discussions, the team decided to build a “templating” system for counseling. Editors could contribute to integration efforts by reformatting old content using pre-made responsive templates.
+            </p>
+            <img class="cms-sketch" src="{{ site.url }}/img/projects/fhs/cms-sketch.jpg" alt="CMS Planning" title="CMS Planning">
+            <p class="project-p">
+                When the team proposed the templating system to Fairview’s counseling editors, we learned that the number of editors knowledgeable in HTML and CSS had decreased over time. The current CMS (and by extension, the templating system) were too complicated for the existing volunteers to operate. The situation forced my team to consider alternatives.
+            </p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Solution</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content">  
+            <p class="project-p">
+                Web Team decided to release the responsive redesign and most structural changes in March 2019. We presented Fairview's website editors a CMS GUI to aid the restructuring process and allow them to manage content more efficiently. Due to time constraints, the GUI currently exists as a separate application from the rest of the site but will be integrated in the near future.
+            </p>
+            <img class="project-solution" src="{{ site.url }}/img/projects/fhs/solution.jpg" alt="Project Mockups" title="Project Mockups">
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Reflections</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content">
+            <p class="project-p">
+                As I continued to learn and grow during the process, the FHS project taught me the importance of learning about my audience and avoiding assumptions. Our limited access to data about our users' needs and experiences made me realize the significance of UX research. During development, my lack of knowledge led to minor complications during the content restructure/CMS development.
+            </p>
+            <p class="project-p">
+                Despite the multitude of challenges we had to confront together, Web Team was able to deliver change the community had been awaiting for a long time. This has been one of my largest, most content-intensive projects. I'm excited to watch Web Team and the website grow. This memorable experience will inform my work and perspective for all the endeavors to come!
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script src="{{ site.url }}/js/projects.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/projects.css">
+<style>
+    .cms-sketch {
+        border-radius: 1rem;
+        width: 100%;
+    }
+
+    .project-old,
+    .restructure-sketches {
+        margin: 3rem 0;
+        text-align: center;
+    }
+
+    .project-old img {
+        border-radius: .5rem;
+        display: inline-block;
+        margin: 0 .5rem 1rem .5rem;
+        max-height: 15rem;
+        max-width: 100%;
+    }
+
+    .restructure-sketches img {
+        border-radius: .5rem;
+        display: inline-block;
+        margin: 0 .5rem 1rem .5rem;
+        max-height: 25rem;
+        max-width: 100%;
+    }
+
+    .project-mockups {
+        margin: 2rem 0 3rem 0;
+        width: 100%;
+    }
+
+    .project-solution {
+        border-radius: 1rem;
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 400px) {
+        .project-old img,
+        .restructure-sketches img {
+            margin: 0 0 .5rem 0;
+        }
+
+    }
+</style>

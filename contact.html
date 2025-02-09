@@ -1,0 +1,31 @@
+---
+layout: default
+permalink: /contact/
+---
+
+<div id="contact">
+
+<div id="contact-info">
+  <h1>Contact</h1>
+  <p>
+    Nice to meet you! Please let me know if you have any questions, concerns, or just want to talk!
+  </p>
+
+</div>
+
+<form target="contact-iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSelruAlQ5tg5gsa36Bjt-hmb5sCoS-zVfVhtReyRiVV7jdtkg/formResponse">
+  <div id="contact-error">Please fill in all the fields.</div>
+  <div id="contact-success">Your message has been sent!</div>
+
+  <label>Name:</label>
+  <input id="contact-name" name="entry.1852039877" type="text"/>
+  <label>Email:</label>
+  <input id="contact-email" name="entry.336565433" type="text"/>
+  <label>Message:</label>
+  <textarea id="contact-message" name="entry.899785974"></textarea>
+  <input id="contact-submit" class="btn" type="submit" value="Send">
+</form>
+
+<iframe name="contact-iframe" style="display: none;"></iframe>
+
+</div>

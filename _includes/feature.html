@@ -1,0 +1,19 @@
+<a class="feature" href="{{ include.path }}">
+    <div class="feature-img-box">
+        <img src="/img/{{ include.img }}" class="feature-img">
+    </div>
+    <div class="feature-info">
+        <div class="feature-info-top">
+            <h4>{{ include.title }}</h4>
+            <p>{{ include.desc }}</p>
+            </div>
+            <div class="feature-call">
+                {% if include.cta %}
+                    {{ include.cta }}
+                {% else %}
+                    See Project
+                {% endif %}
+            <div class="feature-arrow"></div>
+        </div>
+    </div>
+</a>
