@@ -50,6 +50,11 @@ body {
   width: 100%;
 }
 
+.accordion img {
+  max-width: 800px;
+  width: 100%;
+}
+
 a {
   color: #f4694a;
   transition: all ease .4s;
@@ -60,7 +65,7 @@ a:hover { color: #FF8D49; }
 h1, h2, h3, h4 { color: #486E87; }
 
 h1, h2 {
-  font-family: "Julius Sans One", cursive;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .btn {

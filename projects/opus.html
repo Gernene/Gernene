@@ -1,0 +1,125 @@
+---
+layout: default
+title: OPUS
+permalink: /projects/opus/
+---
+
+<div class="project">
+    
+    <div class="project-overview">
+        <div class="project-summary">
+            <h1>OPUS</h1>
+            <p>
+                OPUS is a tech-powered private tuition company. I helped develop both its official marketing website and progress-tracking web app.
+            </p>
+        </div>
+        <div class="project-details">
+            <p>
+                <b>Role:</b> Software developer
+            </p>
+            <p>
+                <b>Duration:</b> Since fall 2024
+            </p>
+            <p>
+                <b>Technologies:</b> NodeJS, NextJS/React, PostgreSQL
+            </p>
+        </div>
+    </div>
+</div>
+
+<img class="project-hero" src="{{ site.url }}/img/projects/opus/opus-overview.jpg" alt="OPUS Preview" title="OPUS Preview">
+    
+
+<div class="project">
+
+    <div class="accordion expand">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Web App Requirements</h2>
+            <div class="accordion-icon expand"></div>
+        </div>
+        <div class="accordion-content">
+            <p class="project-p">
+                One of OPUS' core value propositions is a money-back guarantee: Customers are refunded if their child/student does not show improvement. In order to measure and monitor student progress, OPUS tutees take a quiz at the end of every lesson. Previously, quiz scores were recorded in different Google Drive spreadsheets which became unwieldy to manage. Hence, we created a custom web app to give OPUS <strong>a better way to track and update student progress.</strong>
+            </p>
+            <p class="project-p">
+                I began this project by identifying potential users/stakeholders and creating actionable requirements. Some of the most important ones are summarized below:
+            </p>
+            <ul>
+                <li><strong>Stakeholders:</strong> Admin/business owner, tutors, parents, students</li>
+                <li>Parents can monitor their childrens' progress</li>
+                <li>Tutors can record lesson information</li>
+                <li>Admins can manage users including parents, tutors, students, and other admins</li>
+                <li>Flag students who have "deproved"</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion expand">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Personas, User Journey, Wireframes</h2>
+            <div class="accordion-icon expand"></div>
+        </div>
+        <div class="accordion-content">
+            <p class="project-p">
+                Originally, an OPUS lead would find out about the company through a digital ad and schedule a consultation via phone call. During this call, an OPUS representative would discuss the lead's tuition needs and make arrangements for lesson scheduling.
+            </p>
+            <p class="project-p">
+                I made some simple user journey sketches to explore how this OPUS lead/customer might interact with a web app as well as what screens I'd need to design.
+            </p>
+            <div>
+                <img src="{{ site.url }}/img/projects/opus/sketches/user-journey-1.jpg" alt="User Journey Sketch 1" title="User Journey Sketch 1">
+                <img src="{{ site.url }}/img/projects/opus/sketches/user-journey-2.jpg" alt="User Journey Sketch 2" title="User Journey Sketch 2">
+                <img src="{{ site.url }}/img/projects/opus/sketches/user-journey-3.jpg" alt="User Journey Sketch 3" title="User Journey Sketch 3">
+            </div>
+            <p class="project-p">
+                A few wireframes for brainstorming certain screens:
+            </p>
+            <div>
+                <img src="{{ site.url }}/img/projects/opus/sketches/wireframes-1.jpg" alt="Wireframe 1" title="Wireframe 1">
+                <img src="{{ site.url }}/img/projects/opus/sketches/wireframes-2.jpg" alt="Wireframe Sketch 2" title="Wireframe 2">
+                <img src="{{ site.url }}/img/projects/opus/sketches/wireframes-3.jpg" alt="Wireframe Sketch 3" title="Wireframe 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion expand">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Software Architecture and Database Design</h2>
+            <div class="accordion-icon expand"></div>
+        </div>
+        <div class="accordion-content">
+            <p class="project-p">
+                I opted for a simple but modular design for OPUS after considering several factors:
+            </p>
+            <ul>
+                <li>Small team size</li>
+                <li>Small and "contained" market size</li>
+                <li>Need for flexibility to accomodate changing requirements and product needs</li>
+                <li>Limit unecessary technical complexity, added frameworks</li>
+            </ul>
+            <p class="project-p">
+                The OPUS web app consists of a React frontend which interfaces with the Typescript backend/server via a REST API. The server handles all business logic while retrieving data from the PostgreSQL database. A few diagrams taken from the technical documentation:
+            </p>
+            <div>
+                <img src="{{ site.url }}/img/projects/opus/software-architecture.jpg" alt="Software Architecture" title="Software Architecture">
+                <img src="{{ site.url }}/img/projects/opus/database-erd.jpg" alt="Database ERD" title="Database ERD">
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-title">
+            <h2 class="accordion-h">Reflections</h2>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-content">
+            <p class="project-p">
+                OPUS was an opportunity for me to oversee the creation of a real business application from the database to the user interface. It gave me a better understanding of how different components fit together, affect design decisions, and challenged me to think more strategically when choosing what technologies/apporaches to use.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script src="{{ site.url }}/js/projects.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/projects.css">
