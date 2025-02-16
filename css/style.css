@@ -50,6 +50,11 @@ body {
   width: 100%;
 }
 
+.accordion img {
+  max-width: 800px;
+  width: 100%;
+}
+
 a {
   color: #f4694a;
   transition: all ease .4s;
@@ -60,7 +65,7 @@ a:hover { color: #FF8D49; }
 h1, h2, h3, h4 { color: #486E87; }
 
 h1, h2 {
-  font-family: "Julius Sans One", cursive;
+  /* font-family: "Julius Sans One", sans-serif; */
 }
 
 .btn {
@@ -69,8 +74,9 @@ h1, h2 {
   box-shadow: -.1rem -.1rem .3rem .1rem rgba(255, 141, 73, .4), .1rem .1rem .4rem .1rem rgba(56, 213, 217, .4);
   color: #fff;
   display: inline-block;
+  font-weight: bold;
   margin: 2rem 0 0 0;
-  padding: .5rem 1rem;
+  padding: .6em 1.2em;
   text-decoration: none;
   transition: all ease .4s;
 }
@@ -85,9 +91,8 @@ h1, h2 {
   box-shadow: 0 0 .6rem .1rem #10AEBD;
   display: flex;
   flex: 1;
-  font-family: 'Julius Sans One', serif;
-  font-size: 1.4rem;
-  font-weight: bold;
+  /* font-family: 'Julius Sans One', serif; */
+  /* font-size: 1.4rem; */
   padding: 0 2rem;
   position: relative;
   text-align: center;
@@ -156,6 +161,8 @@ h1, h2 {
   color: #FF8D49;
   display: inline-flex;
   flex: 1;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .nav-home:hover {
@@ -236,18 +243,21 @@ h1, h2 {
 }
 
 #intro {
-  display: flex;
+  display: block;
+  /* grid-template-columns: auto 1fr; */
   padding: 4% 7% 7% 7%;
   position: relative;
+}
+
+#intro h1 > span {
+  color: #f4694a;
 }
 
 #intro-right,
 #intro-greet,
 #intro-hello {
   align-items: center;
-  display: inline-flex;
-  flex: 1;
-  font-size: 1.5rem;
+  display: block;
   justify-content: center;
   overflow: hidden;
   text-align: center;
@@ -258,7 +268,9 @@ h1, h2 {
   width: 30rem;
 }
 
-#intro-right { flex-direction: column; }
+#intro-right {
+  flex-direction: column;
+}
 
 #intro-right div {
   background: rgba(247, 253, 255, .5);
@@ -275,7 +287,8 @@ h1, h2 {
 #intro-hello {
   color: #486E87;
   flex-direction: column;
-  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  /* font-family: 'Julius Sans One', sans-serif; */
   overflow: hidden;
 }
 
@@ -290,9 +303,10 @@ h1, h2 {
 
 #intro-logo {
   align-self: flex-start;
-  margin: 0 1rem 0 0;
+  display: block;
+  margin: 0 auto 1rem auto;
   opacity: .9;
-  width: 32%;
+  width: 6rem;
 }
 
 #index-angies { background: #bc4b00; }
@@ -431,8 +445,10 @@ h1, h2 {
 #resume span { flex: 1; }
 
 #contact {
-  display: flex;
+  display: block;
   padding: 2% 7%;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 #contact-error,
@@ -744,6 +760,7 @@ h1, h2 {
 .feature-call {
   align-items: center;
   display: flex;
+  font-weight: bold;
   justify-content: space-between;
   text-decoration: none;
 }
@@ -1008,6 +1025,7 @@ h1, h2 {
   }
 
   #intro {
+    display: block;
     padding: 4% 4% 2rem 4%;
   }
 
@@ -1021,10 +1039,6 @@ h1, h2 {
   #intro-left { margin: 0 0 1rem 0; }
 
   #intro-right { font-size: 1.25rem; }
-
-  #intro-logo {
-    margin: 0;
-  }
 
   #intro-hello div:first-child { font-size: 2.6rem; }
 
