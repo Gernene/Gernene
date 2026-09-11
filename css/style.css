@@ -158,7 +158,7 @@ h1, h2 {
 
 .nav-home {
   align-items: center;
-  color: #FF8D49;
+  color: #FFA774;
   display: inline-flex;
   flex: 1;
   font-weight: bold;
@@ -166,12 +166,12 @@ h1, h2 {
 }
 
 .nav-home:hover {
-  color: #f4694a;
+  opacity: .6;
 }
 
 .nav-home img {
   height: 2rem;
-  margin: 0 .5rem 0 0;
+  margin: -.5rem .2rem 0 0;
 }
 
 #hamburger {
@@ -385,11 +385,15 @@ h1, h2 {
 }
 
 #index-about {
-  padding: 8rem 15%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 8rem 1rem;
 }
 
 .index-skills {
-  padding: 0 15%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 1rem;
 }
 
 .index-skill {
